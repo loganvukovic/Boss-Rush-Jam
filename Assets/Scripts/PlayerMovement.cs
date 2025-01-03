@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,13 +10,16 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
     public GameObject stage;
-    
+    public LayerMask groundLayer;
+
     private float curSpeed;
     public float maxSpeed;
     public float accelerationSpeed;
     public float decelerationSpeed;
     private float horizontalInput;
 
+    public float jumpSpeed;
+    public Transform groundCheck;
 
     private Quaternion startRotation;
     private Quaternion targetRotation;
@@ -57,6 +61,12 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Workey");
+            rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
+        }
+
         horizontalInput = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
@@ -65,5 +75,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
 
+    }
+
+    private bool isGrounded()
+    {
+        return Physics.OverlapSphere(groundCheck.position, 0.3f, groundLayer).Length > 0;
     }
 }
