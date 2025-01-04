@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) & !rotating)
         {
             startRotation = stage.transform.rotation;
-            targetRotation = startRotation * Quaternion.Euler(0, 90, 0);
+            targetRotation = startRotation * Quaternion.Euler(0, -90, 0);
             rotating = true;
         }
 
