@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public float decelerationSpeed;
     private float horizontalInput;
 
+    public bool canJump;
+    public int maxJumps;
+    public int remainingJumps;
     public float jumpSpeed;
     public Transform groundCheck;
 
@@ -80,9 +83,21 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded())
+        {
+            canJump = true;
+            remainingJumps = maxJumps;
+        }
+        else if (!isGrounded() && remainingJumps > 0)
+        {
+            canJump = true;
+        }
+        else canJump = false;
+
+        if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
+            remainingJumps--;
         }
 
 
