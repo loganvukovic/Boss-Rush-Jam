@@ -23,10 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Quaternion startRotation;
     private Quaternion targetRotation;
-    private bool rotating;
+    [HideInInspector] public bool rotating;
     public float rotationDuration;
     private float timeElapsed;
     public string curSide;
+
+    public bool attacking;
 
     void Start()
     {
@@ -35,17 +37,20 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !rotating)
+        attacking = GetComponent<PlayerAttack>().attacking;
+
+        if (horizontalInput < 0)
+            transform.localScale = new Vector3 (-1, 1, 1);
+
+        else if (horizontalInput > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+
+        if (!rotating)
         {
-            startRotation = stage.transform.rotation;
-            targetRotation = startRotation * Quaternion.Euler(0, 90, 0);
-            rotating = true;
-        }
-        if (Input.GetKeyDown(KeyCode.E) & !rotating)
-        {
-            startRotation = stage.transform.rotation;
-            targetRotation = startRotation * Quaternion.Euler(0, -90, 0);
-            rotating = true;
+            if (Input.GetKeyDown(KeyCode.Q))
+                Rotate(90);
+            if (Input.GetKeyDown(KeyCode.E))
+                Rotate(-90);
         }
 
         if (rotating && timeElapsed < rotationDuration)
@@ -67,9 +72,17 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
         }
 
-        horizontalInput = Input.GetAxis("Horizontal");
 
-        rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
+        if (attacking && isGrounded())
+        {
+            rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        }
+
+        else
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
+        }
     }
 
     private void FixedUpdate()
@@ -77,8 +90,15 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    private bool isGrounded()
+    public bool isGrounded()
     {
         return Physics.OverlapSphere(groundCheck.position, 0.3f, groundLayer).Length > 0;
+    }
+
+    private void Rotate(float angle)
+    {
+        startRotation = stage.transform.rotation;
+        targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
+        rotating = true;
     }
 }
