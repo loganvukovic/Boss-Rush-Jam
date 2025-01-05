@@ -18,6 +18,7 @@ public class PlayerAttack : MonoBehaviour
     public float combo3Length;
 
     public bool isGrounded;
+    public bool isDashing;
 
     void Start()
     {
@@ -58,13 +59,14 @@ public class PlayerAttack : MonoBehaviour
             curCombo = 0;
         }
 
+        isDashing = GetComponent<PlayerMovement>().isDashing;
         isGrounded = GetComponent<PlayerMovement>().isGrounded();
         rotating = GetComponent<PlayerMovement>().rotating;
 
         if (rotating)
             return;
 
-        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown)
+        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing)
         {
             if (curCombo == 0 || !isGrounded)
             {

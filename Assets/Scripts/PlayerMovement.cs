@@ -30,6 +30,12 @@ public class PlayerMovement : MonoBehaviour
 
     public bool attacking;
 
+    private bool canDash = true;
+    [HideInInspector] public bool isDashing;
+    [SerializeField] private float dashingPower = 24f;
+    [SerializeField] private float dashingTime = 0.2f;
+    [SerializeField] private float dashingCooldown = 1f;
+
     void Start()
     {
         curSide = "North";
@@ -66,6 +72,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
+        if (isDashing)
+        {
+            return;
+        }
+
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Workey");
@@ -80,8 +91,15 @@ public class PlayerMovement : MonoBehaviour
 
         else
         {
-            horizontalInput = Input.GetAxis("Horizontal");
-            rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
+            if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+            {
+                StartCoroutine(Dash());
+            }
+            else
+            {
+                horizontalInput = Input.GetAxis("Horizontal");
+                rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
+            }
         }
     }
 
@@ -100,5 +118,18 @@ public class PlayerMovement : MonoBehaviour
         startRotation = stage.transform.rotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
         rotating = true;
+    }
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        rb.velocity = new Vector3(-transform.localScale.x * dashingPower, 0f, 0f);
+        //audioSource.clip = dashSound;
+        //audioSource.Play();
+        yield return new WaitForSeconds(dashingTime);
+        rb.velocity = new Vector3(rb.velocity.x, 0f, 0f);
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
