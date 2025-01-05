@@ -44,6 +44,8 @@ public class PlayerAttack : MonoBehaviour
         if (attackTimer > combo1Length)
         {
             hitboxes[0].SetActive(false);
+            hitboxes[4].SetActive(false);
+            hitboxes[5].SetActive(false);
         }
         if (attackTimer > combo2Length)
         {
@@ -90,7 +92,20 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        if (curCombo == 0 || !isGrounded)
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            hitboxes[4].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+        }
+        else if (Input.GetAxis("Vertical") < 0 && !isGrounded)
+        {
+            hitboxes[5].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+        }
+
+        else if (curCombo == 0 || !isGrounded)
         {
             hitboxes[0].SetActive(true);
             attackTimer = 0f;
