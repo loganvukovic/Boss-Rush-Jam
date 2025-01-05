@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashingTime = 0.2f;
     [SerializeField] private float dashingCooldown = 1f;
 
+    private bool isSlamming;
+
     void Start()
     {
         curSide = "North";
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         attacking = GetComponent<PlayerAttack>().attacking;
+        isSlamming = GetComponent<PlayerAttack>().isSlamming;
 
         if (horizontalInput < 0)
             transform.localScale = new Vector3 (-1, 1, 1);
@@ -79,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Workey");
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
         }
 
@@ -91,9 +93,13 @@ public class PlayerMovement : MonoBehaviour
 
         else
         {
-            if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+            if (Input.GetKeyDown(KeyCode.LeftShift) && canDash && (isGrounded() || Input.GetAxis("Vertical") >= 0))
             {
                 StartCoroutine(Dash());
+            }
+            else if (isSlamming)
+            {
+                rb.velocity = new Vector3(0, rb.velocity.y, 0);
             }
             else
             {

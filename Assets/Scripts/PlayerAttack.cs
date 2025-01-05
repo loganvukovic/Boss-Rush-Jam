@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
 {
     public GameObject[] hitboxes;
 
+    public Rigidbody rb;
+
     private bool rotating;
     public float attackTimer;
     public float attackCooldown;
@@ -19,6 +21,9 @@ public class PlayerAttack : MonoBehaviour
 
     public bool isGrounded;
     public bool isDashing;
+
+    public bool isSlamming;
+    public float slamSpeed;
 
     void Start()
     {
@@ -62,37 +67,60 @@ public class PlayerAttack : MonoBehaviour
         isDashing = GetComponent<PlayerMovement>().isDashing;
         isGrounded = GetComponent<PlayerMovement>().isGrounded();
         rotating = GetComponent<PlayerMovement>().rotating;
+        if (isGrounded)
+        {
+            isSlamming = false;
+            hitboxes[3].SetActive(false);
+        }
 
         if (rotating)
             return;
 
-        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing)
+        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
         {
-            if (curCombo == 0 || !isGrounded)
-            {
-                hitboxes[0].SetActive(true);
-                attackTimer = 0f;
-                attacking = true;
-                curCombo = 1;
-            }
-
-            else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
-            {
-                hitboxes[1].SetActive(true);
-                attackTimer = 0f;
-                attacking = true;
-                curCombo = 2;
-            }
-            
-            else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
-            {
-                hitboxes[2].SetActive(true);
-                attackTimer = 0f;
-                attacking = true;
-                curCombo = 3;
-            }
+            Attack();
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxis("Vertical") < 0)
+        {
+            GroundSlam();
+        }
 
+    }
+
+    private void Attack()
+    {
+        if (curCombo == 0 || !isGrounded)
+        {
+            hitboxes[0].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+            curCombo = 1;
+        }
+
+        else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
+        {
+            hitboxes[1].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+            curCombo = 2;
+        }
+
+        else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
+        {
+            hitboxes[2].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+            curCombo = 3;
+        }
+    }
+    private void GroundSlam()
+    {
+        if (!isGrounded)
+        {
+            rb.velocity = new Vector3(0, -1 * slamSpeed, 0);
+            isSlamming = true;
+            hitboxes[3].SetActive(true);
+        }
     }
 }
