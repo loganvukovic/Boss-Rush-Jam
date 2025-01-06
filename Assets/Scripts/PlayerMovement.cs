@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-1, -1, 1);
             projectileSpawner.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
@@ -146,7 +146,6 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
             remainingJumps--;
         }
-
 
         if (attacking && isGrounded())
         {
