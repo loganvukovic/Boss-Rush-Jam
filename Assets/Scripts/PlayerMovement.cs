@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public string curSide;
 
     public bool attacking;
+    private int curCombo;
 
     private bool canDash = true;
     [HideInInspector] public bool isDashing;
@@ -41,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isSlamming;
 
+    public GameObject projectileSpawner;
+
     void Start()
     {
         curSide = "North";
@@ -48,14 +51,21 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
+        curCombo = GetComponent<PlayerAttack>().curCombo;
         attacking = GetComponent<PlayerAttack>().attacking;
         isSlamming = GetComponent<PlayerAttack>().isSlamming;
 
         if (horizontalInput < 0)
-            transform.localScale = new Vector3 (-1, 1, 1);
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+            projectileSpawner.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
 
         else if (horizontalInput > 0)
+        {
             transform.localScale = new Vector3(1, 1, 1);
+            projectileSpawner.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
 
         if (!rotating)
         {
@@ -101,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (attacking && isGrounded())
+        if ((attacking || curCombo != 0) && isGrounded())
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }

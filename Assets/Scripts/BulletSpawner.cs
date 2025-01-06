@@ -16,6 +16,8 @@ public class BulletSpawner : MonoBehaviour
 
     private GameObject spawnedBullet;
 
+    public bool autoFire;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,14 +29,14 @@ public class BulletSpawner : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= firingRate)
+        if (timer >= firingRate && autoFire)
         {
             Fire();
             timer = 0;
         }
     }
 
-    private void Fire()
+    public void Fire()
     {
         if (bullet)
         {

@@ -25,6 +25,10 @@ public class PlayerAttack : MonoBehaviour
     public bool isSlamming;
     public float slamSpeed;
 
+    public float shootTimer;
+    public float shootCooldown;
+    public BulletSpawner bulletSpawner;
+
     void Start()
     {
         foreach (GameObject hitbox in hitboxes)
@@ -40,6 +44,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         attackTimer += Time.deltaTime;
+        shootTimer += Time.deltaTime;
 
         if (attackTimer > combo1Length)
         {
@@ -56,7 +61,7 @@ public class PlayerAttack : MonoBehaviour
             hitboxes[2].SetActive(false);
         }
 
-        if (attackTimer > attackCooldown)
+        if (attackTimer > attackCooldown && shootTimer > attackCooldown)
         {
             attacking = false;
         }
@@ -81,6 +86,11 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
         {
             Attack();
+        }
+
+        if (Input.GetKeyDown(KeyCode.J) && !attacking && shootTimer > shootCooldown && !isDashing && !isSlamming)
+        {
+            Shoot();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxis("Vertical") < 0)
@@ -128,6 +138,12 @@ public class PlayerAttack : MonoBehaviour
             attacking = true;
             curCombo = 3;
         }
+    }
+
+    private void Shoot()
+    {
+        bulletSpawner.Fire();
+        shootTimer = 0f;
     }
     private void GroundSlam()
     {
