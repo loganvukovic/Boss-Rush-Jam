@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 400
 --- !u!1 &1146964733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,6 +2024,7 @@ GameObject:
   - component: {fileID: 1957851011}
   - component: {fileID: 1957851010}
   - component: {fileID: 1957851009}
+  - component: {fileID: 1957851013}
   m_Layer: 0
   m_Name: BossCube
   m_TagString: Untagged
@@ -2118,6 +2119,24 @@ Transform:
   - {fileID: 920790826}
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957851013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957851008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fe4796e17926c43a859ab8749e0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canRotate: 1
+  rotating: 0
+  rotateTimer: 0
+  rotateCooldown: 5
+  timeElapsed: 0
+  rotationDuration: 1
 --- !u!1 &1979744126
 GameObject:
   m_ObjectHideFlags: 0
