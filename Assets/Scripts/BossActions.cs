@@ -12,8 +12,8 @@ public class BossActions : MonoBehaviour
     public float timeElapsed;
     public float rotationDuration;
 
-    Quaternion startRotation;
-    Quaternion targetRotation;
+    public Quaternion startRotation;
+    public Quaternion targetRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -39,12 +39,19 @@ public class BossActions : MonoBehaviour
             if (rotating && timeElapsed < rotationDuration)
             {
                 timeElapsed += Time.deltaTime;
+                Debug.Log(Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration));
                 transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
                 if (transform.rotation == targetRotation)
                 {
                     timeElapsed = 0;
                     rotating = false;
                 }
+            }
+
+            //Round rotation to nearest multiple of 90
+            if(!rotating && transform.rotation.y % 90 != 0)
+            {
+                transform.rotation = Quaternion.Euler(0, (transform.rotation.y / 90) * 90, 0);
             }
         }
     }

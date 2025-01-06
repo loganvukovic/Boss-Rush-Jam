@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 400
+  maxHealth: 300
 --- !u!1 &1146964733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,9 +2134,11 @@ MonoBehaviour:
   canRotate: 1
   rotating: 0
   rotateTimer: 0
-  rotateCooldown: 5
+  rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
+  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  targetRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1979744126
 GameObject:
   m_ObjectHideFlags: 0
