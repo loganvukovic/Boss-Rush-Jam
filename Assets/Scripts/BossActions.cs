@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class BossActions : MonoBehaviour
 {
+    public Transform tf;
+    public PlayerMovement playerMovement;
+
     public bool canRotate;
     public bool rotating;
+    public bool stageRotating;
 
     public float rotateTimer;
     public float rotateCooldown;
@@ -24,6 +28,8 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        stageRotating = playerMovement.rotating;
+
         if (canRotate)
         {
             rotateTimer += Time.deltaTime;
@@ -39,7 +45,6 @@ public class BossActions : MonoBehaviour
             if (rotating && timeElapsed < rotationDuration)
             {
                 timeElapsed += Time.deltaTime;
-                Debug.Log(Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration));
                 transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
                 if (transform.rotation == targetRotation)
                 {
@@ -49,9 +54,9 @@ public class BossActions : MonoBehaviour
             }
 
             //Round rotation to nearest multiple of 90
-            if(!rotating && transform.rotation.y % 90 != 0)
+            if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
             {
-                transform.rotation = Quaternion.Euler(0, (transform.rotation.y / 90) * 90, 0);
+                tf.rotation = Quaternion.Euler(0, Mathf.Round(tf.eulerAngles.y / 90f) * 90f, 0);
             }
         }
     }
