@@ -4,7 +4,7 @@ using System.Linq;
 using System.Xml;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -44,10 +44,22 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject projectileSpawner;
 
+    public float curHealth;
+    public float maxHealth;
+    public bool tookDamage = false;
+    private float damageTimer;
+    public float invincibilityDuration;
+    public float flickerTimer;
+    public float flickerDuration;
+    public MeshRenderer meshRenderer;
+    public Image healthBar;
+
     void Start()
     {
         curSide = "North";
         timeElapsed = 0;
+        curHealth = maxHealth;
+        meshRenderer = GetComponent<MeshRenderer>();
     }
     void Update()
     {
@@ -65,6 +77,31 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
             projectileSpawner.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+
+        healthBar.fillAmount = curHealth / maxHealth;
+        if (tookDamage)
+        {
+            damageTimer += Time.deltaTime;
+            flickerTimer += Time.deltaTime;
+        }
+
+        if (damageTimer >= invincibilityDuration)
+        {
+            tookDamage = false;
+            damageTimer = 0f;
+            flickerTimer = 0f;
+            meshRenderer.enabled = true;
+        }
+
+        if (tookDamage && flickerTimer >= flickerDuration)
+        {
+            flickerTimer = 0f;
+            if (meshRenderer.enabled)
+            {
+                meshRenderer.enabled = false;
+            }
+            else meshRenderer.enabled = true;
         }
 
         if (!rotating)
@@ -111,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if ((attacking || curCombo != 0) && isGrounded())
+        if (attacking && isGrounded())
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
@@ -162,5 +199,15 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bullet" && !tookDamage)
+        {
+            curHealth -= other.GetComponent<Bullet>().damage;
+            Destroy(other.gameObject);
+            tookDamage = true;
+        }
     }
 }
