@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -11,11 +13,26 @@ public class Bullet : MonoBehaviour
 
     public float timer = 0f;
     private Vector3 spawnPoint;
+    public bool isBomb;
+    public int spot;
+    public GameObject bombBox;
+    public Transform spawner;
 
     // Start is called before the first frame update
     void Start()
     {
         spawnPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
+        if (isBomb)
+        {
+            for (int i = -2; i < 3; i++)
+            {
+                if (spot != i)
+                {
+                    Instantiate(bombBox, new Vector3(spawner.position.x, spawner.position.y + (i * 2), spawner.position.z), transform.rotation, transform);
+                }
+            }
+        }
     }
 
     // Update is called once per frame
