@@ -343,12 +343,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198694426}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 7.767, y: 9.56, z: 7.21}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.7767, y: -0.04399996, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 356460844}
+  m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &198694428
 MonoBehaviour:
@@ -371,6 +371,7 @@ MonoBehaviour:
   stage: {fileID: 356460844}
   autoFire: 1
   bombSpawner: 1
+  gasterBlaster: 0
 --- !u!1 &356460843
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +404,6 @@ Transform:
   - {fileID: 2049459472}
   - {fileID: 1957851012}
   - {fileID: 1146964734}
-  - {fileID: 198694427}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381965128
@@ -866,6 +866,7 @@ MonoBehaviour:
   stage: {fileID: 356460844}
   autoFire: 0
   bombSpawner: 0
+  gasterBlaster: 0
 --- !u!4 &780793268
 Transform:
   m_ObjectHideFlags: 0
@@ -1002,6 +1003,7 @@ MonoBehaviour:
   stage: {fileID: 356460844}
   autoFire: 1
   bombSpawner: 0
+  gasterBlaster: 0
 --- !u!1 &1205898359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1452,60 @@ MonoBehaviour:
   shootTimer: 0
   shootCooldown: 0.3
   bulletSpawner: {fileID: 780793267}
+--- !u!1 &1412099790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1412099791}
+  - component: {fileID: 1412099792}
+  m_Layer: 0
+  m_Name: LaserSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1412099791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412099790}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.258819, y: 0.9659259, z: -0, w: 0}
+  m_LocalPosition: {x: -0.273, y: -0.157, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!114 &1412099792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412099790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 15
+  timer: 0
+  firingRate: 4
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 356460844}
+  autoFire: 1
+  bombSpawner: 0
+  gasterBlaster: 1
 --- !u!1 &1469352071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1941,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!1 &1738689443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738689444}
+  - component: {fileID: 1738689445}
+  m_Layer: 0
+  m_Name: LaserSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738689444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738689443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2588191, y: 0.9659258, z: 0, w: 0}
+  m_LocalPosition: {x: 0.273, y: -0.157, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 30}
+--- !u!114 &1738689445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738689443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 0
+  timer: 0
+  firingRate: 4
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 356460844}
+  autoFire: 1
+  bombSpawner: 0
+  gasterBlaster: 1
 --- !u!1 &1777895154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2389,9 @@ Transform:
   m_Children:
   - {fileID: 920790826}
   - {fileID: 381965129}
+  - {fileID: 198694427}
+  - {fileID: 1738689444}
+  - {fileID: 1412099791}
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1957851013

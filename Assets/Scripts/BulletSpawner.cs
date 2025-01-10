@@ -18,6 +18,7 @@ public class BulletSpawner : MonoBehaviour
 
     public bool autoFire;
     public bool bombSpawner;
+    public bool gasterBlaster;
 
     // Start is called before the first frame update
     void Start()
@@ -51,12 +52,20 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().isBomb = true;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
             }
+            else if (gasterBlaster)
+            {
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage);
+                spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
+                spawnedBullet.GetComponent<Bullet>().damage = damage;
+                spawnedBullet.GetComponent<Bullet>().destroyOnHit = false;
+            }
             else
             {
                 spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage);
                 spawnedBullet.GetComponent<Bullet>().speed = speed;
                 spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                 spawnedBullet.GetComponent<Bullet>().damage = damage;
+                spawnedBullet.GetComponent<Bullet>().destroyOnHit = true;
             }
         }
     }

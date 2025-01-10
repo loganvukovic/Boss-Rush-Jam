@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
     public float timer = 0f;
     private Vector3 spawnPoint;
     public bool isBomb;
+    public bool destroyOnHit;
     public int spot;
     public GameObject bombBox;
     public Transform spawner;

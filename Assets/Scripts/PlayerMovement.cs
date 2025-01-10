@@ -205,8 +205,11 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "Bullet" && !tookDamage)
         {
             curHealth -= other.GetComponent<Bullet>().damage;
-            Destroy(other.gameObject);
             tookDamage = true;
+            if (other.GetComponent<Bullet>().destroyOnHit)
+            {
+                Destroy(other.gameObject);
+            }
         }
     }
 }
