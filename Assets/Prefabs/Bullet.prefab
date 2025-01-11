@@ -123,3 +123,11 @@ MonoBehaviour:
   speed: 1
   damage: 5
   timer: 0
+  isBomb: 0
+  destroyOnHit: 0
+  spot: 0
+  bombBox: {fileID: 0}
+  spawn: {fileID: 4606388854812501616, guid: 7afd98c095624084f9fa21a8c3c45d28, type: 3}
+  spawner: {fileID: 0}
+  playerMovement: {fileID: 0}
+  bossActions: {fileID: 0}

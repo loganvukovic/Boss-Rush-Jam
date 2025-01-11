@@ -17,12 +17,15 @@ public class Bullet : MonoBehaviour
     public bool destroyOnHit;
     public int spot;
     public GameObject bombBox;
+    public GameObject spawn;
     public Transform spawner;
+    public PlayerMovement playerMovement;
+    public BossActions bossActions;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        //spawn = Instantiate(spawn, transform.position, transform.rotation);
 
         if (isBomb)
         {
@@ -39,6 +42,16 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isBomb)
+        {
+            spawnPoint = new Vector3(spawner.transform.position.x, spawner.transform.position.y + (spot * 2), spawner.transform.position.z);
+        }
+        else
+            spawnPoint = spawner.transform.position;
+
+        if (playerMovement.rotating || bossActions.rotating)
+            return;
+
         if (timer > bulletLife)
             Destroy(this.gameObject);
         timer += Time.deltaTime;
@@ -49,9 +62,9 @@ public class Bullet : MonoBehaviour
     {
         float x, y, z;
 
-        x = timer * speed * transform.right.x;
-        y = timer * speed * transform.right.y;
-        z = timer * speed * transform.right.z;
+            x = timer * speed * transform.right.x;
+            y = timer * speed * transform.right.y;
+            z = timer * speed * transform.right.z;
 
         return new Vector3(x + spawnPoint.x, y + spawnPoint.y, z + spawnPoint.z);
     }
