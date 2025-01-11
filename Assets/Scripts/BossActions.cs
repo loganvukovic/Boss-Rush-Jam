@@ -16,8 +16,12 @@ public class BossActions : MonoBehaviour
     public float timeElapsed;
     public float rotationDuration;
 
-    public Quaternion startRotation;
-    public Quaternion targetRotation;
+    private Quaternion startRotation;
+    private Quaternion targetRotation;
+
+    public BulletSpawner[] spawners;
+    public float attackTimer;
+    public float attackCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,13 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        attackTimer += Time.deltaTime;
+        if (attackTimer > attackCooldown)
+        {
+            PickAttack(Random.Range(0, spawners.Length));
+        }
+
+
         stageRotating = playerMovement.rotating;
 
         if (canRotate)
@@ -67,5 +78,21 @@ public class BossActions : MonoBehaviour
         startRotation = transform.rotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
         rotating = true;
+    }
+
+    private void PickAttack(int attack)
+    {
+        attackTimer = 0;
+        spawners[attack].Fire();
+        attackCooldown = spawners[attack].cooldown;
+
+        BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
+        if(linkedSpawners.Length != 0)
+        {
+            foreach (BulletSpawner spawner in linkedSpawners)
+            {
+                spawner.Fire();
+            }
+        }
     }
 }

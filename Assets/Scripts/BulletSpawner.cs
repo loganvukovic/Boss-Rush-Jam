@@ -10,6 +10,7 @@ public class BulletSpawner : MonoBehaviour
 
     public float timer;
     public float firingRate;
+    public float cooldown;
 
     public GameObject bullet;
     public Transform stage;
@@ -20,7 +21,11 @@ public class BulletSpawner : MonoBehaviour
 
     public bool autoFire;
     public bool bombSpawner;
+    public bool LRBombs;
     public bool gasterBlaster;
+
+    public BulletSpawner[] linkedSpawners;
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,14 +58,20 @@ public class BulletSpawner : MonoBehaviour
             if (bombSpawner)
             {
                 int bombSpot = Random.Range(-2, 3);
-                spawnedBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + (bombSpot * 2), transform.position.z), transform.rotation, transform);
+                if (!LRBombs)
+                {
+                    spawnedBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + (bombSpot * 2), transform.position.z), transform.rotation, transform);
+                }
+                else spawnedBullet = Instantiate(bullet, new Vector3(transform.position.x + (bombSpot * 2), transform.position.y, transform.position.z), transform.rotation, transform);
                 spawnedBullet.GetComponent<Bullet>().speed = speed;
                 spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                 spawnedBullet.GetComponent<Bullet>().spot = bombSpot;
                 spawnedBullet.GetComponent<Bullet>().isBomb = true;
+                spawnedBullet.GetComponent<Bullet>().destroyOnHit = true;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
                 spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
+                spawnedBullet.GetComponent<Bullet>().LRBombs = LRBombs;
             }
             //Laser
             else if (gasterBlaster)

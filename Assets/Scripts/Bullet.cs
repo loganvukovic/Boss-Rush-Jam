@@ -14,6 +14,8 @@ public class Bullet : MonoBehaviour
     public float timer = 0f;
     private Vector3 spawnPoint;
     public bool isBomb;
+    public bool LRBombs;
+    public bool isBox = false;
     public bool destroyOnHit;
     public int spot;
     public GameObject bombBox;
@@ -29,11 +31,36 @@ public class Bullet : MonoBehaviour
 
         if (isBomb)
         {
-            for (int i = -2; i < 3; i++)
+            if (!LRBombs)
             {
-                if (spot != i)
+                for (int i = -2; i < 3; i++)
                 {
-                    Instantiate(bombBox, new Vector3(spawner.position.x, spawner.position.y + (i * 2), spawner.position.z), transform.rotation, transform);
+                    if (spot != i)
+                    {
+                        GameObject spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x, spawner.position.y + (i * 2), spawner.position.z), transform.rotation, transform);
+                        spawnedBox.GetComponent<Bullet>().destroyOnHit = true;
+                        spawnedBox.GetComponent<Bullet>().bulletLife = bulletLife;
+                        spawnedBox.GetComponent<Bullet>().spawner = spawner;
+                        spawnedBox.GetComponent<Bullet>().playerMovement = playerMovement;
+                        spawnedBox.GetComponent<Bullet>().bossActions = bossActions;
+                        spawnedBox.GetComponent<Bullet>().isBox = true;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = -6; i < 10; i++)
+                {
+                    if (spot != i)
+                    {
+                        GameObject spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x + (i * 2), spawner.position.y, spawner.position.z), transform.rotation, transform);
+                        spawnedBox.GetComponent<Bullet>().destroyOnHit = true;
+                        spawnedBox.GetComponent<Bullet>().bulletLife = bulletLife;
+                        spawnedBox.GetComponent<Bullet>().spawner = transform;
+                        spawnedBox.GetComponent<Bullet>().playerMovement = playerMovement;
+                        spawnedBox.GetComponent<Bullet>().bossActions = bossActions;
+                        spawnedBox.GetComponent<Bullet>().isBox = true;
+                    }
                 }
             }
         }
@@ -46,8 +73,7 @@ public class Bullet : MonoBehaviour
         {
             spawnPoint = new Vector3(spawner.transform.position.x, spawner.transform.position.y + (spot * 2), spawner.transform.position.z);
         }
-        else
-            spawnPoint = spawner.transform.position;
+        else spawnPoint = spawner.transform.position;
 
         if (playerMovement.rotating || bossActions.rotating)
             return;
@@ -55,7 +81,10 @@ public class Bullet : MonoBehaviour
         if (timer > bulletLife)
             Destroy(this.gameObject);
         timer += Time.deltaTime;
-        transform.position = Movement(timer);
+        if (!isBox)
+        {
+            transform.position = Movement(timer);
+        }
     }
 
     private Vector3 Movement(float timer)
@@ -67,5 +96,21 @@ public class Bullet : MonoBehaviour
             z = timer * speed * transform.right.z;
 
         return new Vector3(x + spawnPoint.x, y + spawnPoint.y, z + spawnPoint.z);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage)
+        {
+            other.GetComponentInParent<PlayerMovement>().curHealth -= damage;
+            other.GetComponentInParent<PlayerMovement>().tookDamage = true;
+            if (destroyOnHit)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        if (other.tag == "PlayerHB" && this.tag == "Destroyable")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -100,7 +100,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -124,5 +124,11 @@ MonoBehaviour:
   damage: 5
   timer: 0
   isBomb: 0
+  LRBombs: 0
+  destroyOnHit: 0
   spot: 0
   bombBox: {fileID: 2135355725658798377, guid: f29670ea47724e049bd5efc20a7a70d1, type: 3}
+  spawn: {fileID: 0}
+  spawner: {fileID: 0}
+  playerMovement: {fileID: 0}
+  bossActions: {fileID: 0}

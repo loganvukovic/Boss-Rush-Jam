@@ -206,7 +206,7 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Bullet" && !tookDamage)
         {
@@ -217,5 +217,11 @@ public class PlayerMovement : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
-    }
+        if (other.tag == "Destroyable" && !tookDamage)
+        {
+            curHealth -= 5;
+            tookDamage = true;
+            Destroy(other.gameObject);
+        }
+    }*/
 }
