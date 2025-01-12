@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear}
+    public BulletType bulletType;
+
     public float speed;
     public float bulletLife;
     public float damage;
@@ -53,9 +56,9 @@ public class BulletSpawner : MonoBehaviour
             timer = 0;
         }
 
-        if (followUps.Length > 0)
+        if (justFired)
         {
-            if (justFired)
+            if (followUps.Length > 0)
             {
                 followUpTimer += Time.deltaTime;
 
@@ -70,6 +73,17 @@ public class BulletSpawner : MonoBehaviour
                     followUpTimer = 0;
                 }
             }
+            else if (bulletType == BulletType.Spear)
+            {
+                followUpTimer += Time.deltaTime;
+
+                if (followUpTimer > followUpTime)
+                {
+                    justFired = false;
+                    followUpTimer = 0;
+                    spawnedBullet.GetComponent<Animator>().Play("SpearExtend");
+                }
+            }
         }
     }
 
@@ -80,7 +94,7 @@ public class BulletSpawner : MonoBehaviour
             justFired = true;
 
             //Bomb
-            if (bombSpawner)
+            if (bulletType == BulletType.Bomb)
             {
                 int bombSpot = Random.Range(-2, 3);
                 if (!LRBombs)
@@ -99,7 +113,18 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().LRBombs = LRBombs;
             }
             //Laser
-            else if (gasterBlaster)
+            else if (bulletType == BulletType.Laser)
+            {
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, transform);
+                spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
+                spawnedBullet.GetComponent<Bullet>().damage = damage;
+                spawnedBullet.GetComponent<Bullet>().destroyOnHit = false;
+                spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
+                spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
+                spawnedBullet.GetComponent<Bullet>().spawner = transform;
+            }
+            //Spear
+            else if (bulletType == BulletType.Spear)
             {
                 spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, transform);
                 spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;

@@ -481,12 +481,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   speed: 4
   bulletLife: 7
   damage: 5
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
@@ -540,6 +541,7 @@ Transform:
   - {fileID: 1127777173}
   - {fileID: 924631367}
   - {fileID: 2093772116}
+  - {fileID: 1877735176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381965128
@@ -918,6 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -1164,6 +1167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -1227,6 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 0
   speed: 15
   bulletLife: 10
   damage: 0
@@ -1477,6 +1482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -1540,6 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -1723,12 +1730,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   speed: 4
   bulletLife: 7
   damage: 5
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
@@ -1876,6 +1884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   speed: 4
   bulletLife: 7
   damage: 5
@@ -2045,7 +2054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1146964734
 Transform:
   m_ObjectHideFlags: 0
@@ -2073,6 +2082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 0
   speed: 5
   bulletLife: 100
   damage: 10
@@ -2121,6 +2131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -2408,6 +2419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -2715,6 +2727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -2908,6 +2921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -2973,6 +2987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -3039,6 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -3104,6 +3120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -3167,6 +3184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -3401,6 +3419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -3585,6 +3604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   speed: 4
   bulletLife: 7
   damage: 5
@@ -3664,6 +3684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1
   damage: 10
@@ -4014,7 +4035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.117673635, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4160,6 +4181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -4173,7 +4195,7 @@ MonoBehaviour:
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
-  gasterBlaster: 1
+  gasterBlaster: 0
   linkedSpawners:
   - {fileID: 1532647461}
   followUps:
@@ -4197,6 +4219,70 @@ Transform:
   - {fileID: 967459556}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
+--- !u!1 &1877735175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877735176}
+  - component: {fileID: 1877735177}
+  m_Layer: 0
+  m_Name: SouthSpear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1877735176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877735175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 6.759, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1877735177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877735175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 1
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1897986049
 GameObject:
   m_ObjectHideFlags: 0
@@ -4226,6 +4312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 3
   speed: 4
   bulletLife: 1.3
   damage: 10
@@ -4538,12 +4625,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletType: 2
   speed: 4
-  bulletLife: 4
-  damage: 7
+  bulletLife: 7
+  damage: 5
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
@@ -4727,7 +4815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.117673635, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
