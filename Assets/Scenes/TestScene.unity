@@ -919,7 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  bulletLife: 1
+  bulletLife: 1.3
   damage: 10
   timer: 0
   firingRate: 4
@@ -937,7 +937,7 @@ MonoBehaviour:
   followUps:
   - {fileID: 1738689445}
   followUpTimer: 0
-  followUpTime: 0.8
+  followUpTime: 1.3
   justFired: 0
 --- !u!4 &461650460
 Transform:
@@ -948,10 +948,11 @@ Transform:
   m_GameObject: {fileID: 461650458}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: 0.9659258, z: 0, w: 0}
-  m_LocalPosition: {x: 0.273, y: -0.157, z: 0.721}
+  m_LocalPosition: {x: 0.111, y: -0.0635, z: 0.721}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1738689444}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 30}
 --- !u!1 &481593756
@@ -1134,6 +1135,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &768363884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768363886}
+  - component: {fileID: 768363885}
+  m_Layer: 0
+  m_Name: UpLaserSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &768363885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768363884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &768363886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768363884}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1532647462}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &780793266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1448,132 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924631366}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &937718465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 937718467}
+  - component: {fileID: 937718466}
+  m_Layer: 0
+  m_Name: MiddleLaserSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &937718466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937718465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &937718467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937718465}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1897986051}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!1 &967459554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 967459556}
+  - component: {fileID: 967459555}
+  m_Layer: 0
+  m_Name: DownLaserSpawner (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &967459555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967459554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &967459556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967459554}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1873084955}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1004978312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,6 +2092,69 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+--- !u!1 &1158815822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158815824}
+  - component: {fileID: 1158815823}
+  m_Layer: 0
+  m_Name: RightLaserSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1158815823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158815822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &1158815824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158815822}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1517526580}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1205898359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2379,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!1 &1254886258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254886260}
+  - component: {fileID: 1254886259}
+  m_Layer: 0
+  m_Name: LeftLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1254886259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254886258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 2
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 1517526579}
+  followUps:
+  - {fileID: 1548661098}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1254886260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254886258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0.38, y: 0.6345, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1548661099}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!1 &1319437048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,12 +2696,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412099790}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.258819, y: 0.9659259, z: -0, w: 0}
-  m_LocalPosition: {x: -0.273, y: -0.157, z: 0.721}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1957851012}
+  m_Father: {fileID: 1549016666}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!114 &1412099792
 MonoBehaviour:
@@ -2560,6 +2879,265 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499616735}
   m_CullTransparentMesh: 1
+--- !u!1 &1517526578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1517526580}
+  - component: {fileID: 1517526579}
+  m_Layer: 0
+  m_Name: RightLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1517526579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517526578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps:
+  - {fileID: 1158815823}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1517526580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517526578}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -0.38, y: 0.6345, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1158815824}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
+--- !u!1 &1528691404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528691406}
+  - component: {fileID: 1528691405}
+  m_Layer: 0
+  m_Name: MiddleLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1528691405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528691404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 2
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 1897986050}
+  followUps:
+  - {fileID: 1663053500}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1528691406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528691404}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -0.115, y: 0.6345, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1663053501}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
+--- !u!1 &1532647460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532647462}
+  - component: {fileID: 1532647461}
+  m_Layer: 0
+  m_Name: UpLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1532647461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532647460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps:
+  - {fileID: 768363885}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1532647462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532647460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
+  m_LocalPosition: {x: -1.258, y: 0.311, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 768363886}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
+--- !u!1 &1548661097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548661099}
+  - component: {fileID: 1548661098}
+  m_Layer: 0
+  m_Name: LeftLaserSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1548661098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548661097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &1548661099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548661097}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1254886260}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1549016664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,7 +3168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  bulletLife: 1
+  bulletLife: 1.3
   damage: 10
   timer: 0
   firingRate: 4
@@ -2607,7 +3185,7 @@ MonoBehaviour:
   followUps:
   - {fileID: 1412099792}
   followUpTimer: 0
-  followUpTime: 0.8
+  followUpTime: 1.3
   justFired: 0
 --- !u!4 &1549016666
 Transform:
@@ -2618,10 +3196,11 @@ Transform:
   m_GameObject: {fileID: 1549016664}
   serializedVersion: 2
   m_LocalRotation: {x: -0.258819, y: 0.9659259, z: -0, w: 0}
-  m_LocalPosition: {x: -0.273, y: -0.157, z: 0.721}
+  m_LocalPosition: {x: -0.111, y: -0.0635, z: 0.721}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1412099791}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1606856494
@@ -2793,6 +3372,69 @@ MonoBehaviour:
   curHealth: 0
   maxHealth: 0
   healthBar: {fileID: 1819335679}
+--- !u!1 &1663053499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1663053501}
+  - component: {fileID: 1663053500}
+  m_Layer: 0
+  m_Name: MiddleLaserSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1663053500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663053499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!4 &1663053501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663053499}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1528691406}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1670605380
 GameObject:
   m_ObjectHideFlags: 0
@@ -3003,12 +3645,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738689443}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: 0.9659258, z: 0, w: 0}
-  m_LocalPosition: {x: 0.273, y: -0.157, z: 0.721}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1957851012}
+  m_Father: {fileID: 461650460}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 30}
 --- !u!114 &1738689445
 MonoBehaviour:
@@ -3489,6 +4131,137 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1873084953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873084955}
+  - component: {fileID: 1873084954}
+  m_Layer: 0
+  m_Name: DownLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1873084954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873084953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 2
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 1532647461}
+  followUps:
+  - {fileID: 967459555}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1873084955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873084953}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
+  m_LocalPosition: {x: -1.258, y: -0.401, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 967459556}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
+--- !u!1 &1897986049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897986051}
+  - component: {fileID: 1897986050}
+  m_Layer: 0
+  m_Name: MiddleLaserTell (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1897986050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897986049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps:
+  - {fileID: 937718466}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+--- !u!4 &1897986051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897986049}
+  serializedVersion: 2
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0.115, y: 0.6345, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 937718467}
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
 --- !u!1 &1957851008
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,10 +4371,14 @@ Transform:
   - {fileID: 198694427}
   - {fileID: 1984731310}
   - {fileID: 1026891515}
-  - {fileID: 1738689444}
   - {fileID: 461650460}
-  - {fileID: 1412099791}
   - {fileID: 1549016666}
+  - {fileID: 1873084955}
+  - {fileID: 1532647462}
+  - {fileID: 1528691406}
+  - {fileID: 1897986051}
+  - {fileID: 1254886260}
+  - {fileID: 1517526580}
   - {fileID: 1719746739}
   - {fileID: 1060004181}
   m_Father: {fileID: 356460844}
@@ -3633,6 +4410,9 @@ MonoBehaviour:
   - {fileID: 461650459}
   - {fileID: 1719746738}
   - {fileID: 1026891516}
+  - {fileID: 1873084954}
+  - {fileID: 1528691405}
+  - {fileID: 1254886259}
   attackTimer: 0
   attackCooldown: 3
 --- !u!1 &1979744126
