@@ -32,24 +32,7 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Round rotation to nearest multiple of 90
-        if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
-        {
-            tf.rotation = Quaternion.Euler(0, Mathf.Round(tf.eulerAngles.y / 90f) * 90f, 0);
-        }
-
         stageRotating = playerMovement.rotating;
-
-        if (stageRotating)
-        {
-            return;
-        }
-
-        attackTimer += Time.deltaTime;
-        if (attackTimer > attackCooldown)
-        {
-            PickAttack(Random.Range(0, spawners.Length));
-        }
 
         if (canRotate)
         {
@@ -73,6 +56,23 @@ public class BossActions : MonoBehaviour
                     rotating = false;
                 }
             }
+        }
+
+        //Round rotation to nearest multiple of 90
+        if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
+        {
+            tf.rotation = Quaternion.Euler(0, Mathf.Round(tf.eulerAngles.y / 90f) * 90f, 0);
+        }
+
+        if (stageRotating)
+        {
+            return;
+        }
+
+        attackTimer += Time.deltaTime;
+        if (attackTimer > attackCooldown)
+        {
+            PickAttack(Random.Range(0, spawners.Length));
         }
     }
 

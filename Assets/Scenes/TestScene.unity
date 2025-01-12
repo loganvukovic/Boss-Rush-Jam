@@ -496,6 +496,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &356460843
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +889,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!1 &461650458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461650460}
+  - component: {fileID: 461650459}
+  m_Layer: 0
+  m_Name: CrossLaserTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &461650459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461650458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 2
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 1549016665}
+  followUps:
+  - {fileID: 1738689445}
+  followUpTimer: 0
+  followUpTime: 0.8
+  justFired: 0
+--- !u!4 &461650460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461650458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2588191, y: 0.9659258, z: 0, w: 0}
+  m_LocalPosition: {x: 0.273, y: -0.157, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 30}
 --- !u!1 &481593756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1178,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!4 &780793268
 Transform:
   m_ObjectHideFlags: 0
@@ -1475,6 +1548,10 @@ MonoBehaviour:
   LRBombs: 1
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &1048823197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,6 +1701,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!4 &1060004181
 Transform:
   m_ObjectHideFlags: 0
@@ -1817,6 +1898,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &1205898359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,6 +2411,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 1
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &1469352071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2560,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499616735}
   m_CullTransparentMesh: 1
+--- !u!1 &1549016664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1549016666}
+  - component: {fileID: 1549016665}
+  m_Layer: 0
+  m_Name: CrossLaserTell (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1549016665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549016664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  bulletLife: 1
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps:
+  - {fileID: 1412099792}
+  followUpTimer: 0
+  followUpTime: 0.8
+  justFired: 0
+--- !u!4 &1549016666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549016664}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.258819, y: 0.9659259, z: -0, w: 0}
+  m_LocalPosition: {x: -0.273, y: -0.157, z: 0.721}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1957851012}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1606856494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,6 +2959,10 @@ MonoBehaviour:
   gasterBlaster: 0
   linkedSpawners:
   - {fileID: 1060004180}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!4 &1719746739
 Transform:
   m_ObjectHideFlags: 0
@@ -2879,8 +3036,11 @@ MonoBehaviour:
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
-  linkedSpawners:
-  - {fileID: 1412099792}
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &1753079220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,7 +3599,9 @@ Transform:
   - {fileID: 1984731310}
   - {fileID: 1026891515}
   - {fileID: 1738689444}
+  - {fileID: 461650460}
   - {fileID: 1412099791}
+  - {fileID: 1549016666}
   - {fileID: 1719746739}
   - {fileID: 1060004181}
   m_Father: {fileID: 356460844}
@@ -3468,7 +3630,7 @@ MonoBehaviour:
   spawners:
   - {fileID: 198694428}
   - {fileID: 1984731309}
-  - {fileID: 1738689445}
+  - {fileID: 461650459}
   - {fileID: 1719746738}
   - {fileID: 1026891516}
   attackTimer: 0
@@ -3611,6 +3773,10 @@ MonoBehaviour:
   LRBombs: 0
   gasterBlaster: 0
   linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!4 &1984731310
 Transform:
   m_ObjectHideFlags: 0

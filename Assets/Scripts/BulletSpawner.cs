@@ -25,12 +25,16 @@ public class BulletSpawner : MonoBehaviour
     public bool gasterBlaster;
 
     public BulletSpawner[] linkedSpawners;
+    public BulletSpawner[] followUps;
+    public float followUpTimer;
+    public float followUpTime;
+    public bool justFired;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        justFired = false;
     }
 
     // Update is called once per frame
@@ -48,12 +52,33 @@ public class BulletSpawner : MonoBehaviour
             Fire();
             timer = 0;
         }
+
+        if (followUps.Length > 0)
+        {
+            if (justFired)
+            {
+                followUpTimer += Time.deltaTime;
+
+                if (followUpTimer > followUpTime)
+                {
+                    foreach (BulletSpawner spawner in followUps)
+                    {
+                        spawner.Fire();
+                    }
+
+                    justFired = false;
+                    followUpTimer = 0;
+                }
+            }
+        }
     }
 
     public void Fire()
     {
         if (bullet)
         {
+            justFired = true;
+
             //Bomb
             if (bombSpawner)
             {
