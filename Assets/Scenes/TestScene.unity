@@ -243,6 +243,134 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!1 &71631548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71631550}
+  - component: {fileID: 71631549}
+  m_Layer: 0
+  m_Name: SouthSpear (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &71631549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71631548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &71631550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71631548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &114192516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114192518}
+  - component: {fileID: 114192517}
+  m_Layer: 0
+  m_Name: SouthSpear (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114192517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114192516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &114192518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114192516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &120737756
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +490,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120737756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &166321763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166321764}
+  - component: {fileID: 166321765}
+  m_Layer: 0
+  m_Name: SouthSpear (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166321764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166321763}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &166321765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166321763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &166679146
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +698,262 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+--- !u!1 &204147374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204147376}
+  - component: {fileID: 204147375}
+  m_Layer: 0
+  m_Name: SouthSpear (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &204147375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204147374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &204147376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204147374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &271574121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271574123}
+  - component: {fileID: 271574122}
+  m_Layer: 0
+  m_Name: SouthSpear (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &271574122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271574121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &271574123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271574121}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &287394678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287394679}
+  - component: {fileID: 287394680}
+  m_Layer: 0
+  m_Name: SouthSpear (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287394679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287394678}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &287394680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287394678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &299432208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299432210}
+  - component: {fileID: 299432209}
+  m_Layer: 0
+  m_Name: SouthSpear (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &299432209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299432208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &299432210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299432208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &356460843
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +994,10 @@ Transform:
   - {fileID: 1127777173}
   - {fileID: 924631367}
   - {fileID: 2093772116}
-  - {fileID: 1877735176}
+  - {fileID: 1919606550}
+  - {fileID: 550997353}
+  - {fileID: 927720334}
+  - {fileID: 2102190561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381965128
@@ -770,6 +1226,203 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!1 &403932526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403932527}
+  - component: {fileID: 403932528}
+  m_Layer: 0
+  m_Name: SouthSpear (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403932527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403932526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &403932528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403932526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &421976336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421976337}
+  - component: {fileID: 421976338}
+  m_Layer: 0
+  m_Name: SouthSpear (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421976337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421976336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 6.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &421976338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421976336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &423525687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423525689}
+  - component: {fileID: 423525688}
+  m_Layer: 0
+  m_Name: SouthSpear (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &423525688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423525687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &423525689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423525687}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &442838859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1716,262 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481593756}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &550997352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550997353}
+  - component: {fileID: 550997354}
+  m_Layer: 0
+  m_Name: EastSpear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &550997353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550997352}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -26.5, y: 6.759, z: 11.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &550997354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550997352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &554288258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554288260}
+  - component: {fileID: 554288259}
+  m_Layer: 0
+  m_Name: SouthSpear (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &554288259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554288258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &554288260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554288258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &612979408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 612979410}
+  - component: {fileID: 612979409}
+  m_Layer: 0
+  m_Name: SouthSpear (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &612979409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612979408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &612979410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612979408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &720588271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720588272}
+  - component: {fileID: 720588273}
+  m_Layer: 0
+  m_Name: SouthSpear (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &720588272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720588271}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &720588273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720588271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &731962826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +2175,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1319437054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &884976077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884976078}
+  - component: {fileID: 884976079}
+  m_Layer: 0
+  m_Name: SouthSpear (35)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884976078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884976077}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &884976079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884976077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &920790825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,6 +2426,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924631366}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &927720333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927720334}
+  - component: {fileID: 927720335}
+  m_Layer: 0
+  m_Name: WestSpear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &927720334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927720333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 26.5, y: 6.759, z: -11.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &927720335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927720333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &937718465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,6 +2787,70 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+--- !u!1 &1034176885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034176887}
+  - component: {fileID: 1034176886}
+  m_Layer: 0
+  m_Name: SouthSpear (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1034176886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034176885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1034176887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034176885}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1048823197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,6 +2956,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048823197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1055797717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055797719}
+  - component: {fileID: 1055797718}
+  m_Layer: 0
+  m_Name: SouthSpear (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1055797718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055797717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1055797719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055797717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1060004179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,6 +3622,203 @@ Transform:
   - {fileID: 1548661099}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
+--- !u!1 &1255011723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1255011724}
+  - component: {fileID: 1255011725}
+  m_Layer: 0
+  m_Name: SouthSpear (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255011724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255011723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 6.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1255011725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255011723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1265302392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1265302394}
+  - component: {fileID: 1265302393}
+  m_Layer: 0
+  m_Name: SouthSpear (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1265302393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265302392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1265302394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265302392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1278225333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278225334}
+  - component: {fileID: 1278225335}
+  m_Layer: 0
+  m_Name: SouthSpear (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278225334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278225333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1278225335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278225333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1319437048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,6 +4045,134 @@ MonoBehaviour:
   shootTimer: 0
   shootCooldown: 0.3
   bulletSpawner: {fileID: 780793267}
+--- !u!1 &1341656481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341656483}
+  - component: {fileID: 1341656482}
+  m_Layer: 0
+  m_Name: SouthSpear (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1341656482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341656481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1341656483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341656481}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 16.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1375314592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375314594}
+  - component: {fileID: 1375314593}
+  m_Layer: 0
+  m_Name: SouthSpear (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1375314593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375314592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1375314594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375314592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 6.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1412099790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,6 +4236,139 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 0
+  justFired: 0
+--- !u!1 &1438386954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438386956}
+  - component: {fileID: 1438386955}
+  m_Layer: 0
+  m_Name: SouthSpear (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1438386955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438386954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1438386956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438386954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1447772131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447772132}
+  - component: {fileID: 1447772133}
+  m_Layer: 0
+  m_Name: SouthSpear (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1447772132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447772131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1447772133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447772131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
   justFired: 0
 --- !u!1 &1469352071
 GameObject:
@@ -3091,6 +4714,70 @@ Transform:
   - {fileID: 768363886}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
+--- !u!1 &1536200112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536200113}
+  - component: {fileID: 1536200114}
+  m_Layer: 0
+  m_Name: SouthSpear (26)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1536200113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536200112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1536200114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536200112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1548661097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,6 +5262,198 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+--- !u!1 &1674277274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674277275}
+  - component: {fileID: 1674277276}
+  m_Layer: 0
+  m_Name: SouthSpear (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674277275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674277274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1674277276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674277274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1676638198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1676638199}
+  - component: {fileID: 1676638200}
+  m_Layer: 0
+  m_Name: SouthSpear (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1676638199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676638198}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1676638200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676638198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1712723102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712723104}
+  - component: {fileID: 1712723103}
+  m_Layer: 0
+  m_Name: SouthSpear (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1712723103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712723102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1712723104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712723102}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1719746737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,6 +5519,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1733539463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733539464}
+  - component: {fileID: 1733539465}
+  m_Layer: 0
+  m_Name: SouthSpear (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733539464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733539463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 8.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1733539465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733539463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1738689443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,6 +5752,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753079220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1770817803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1770817805}
+  - component: {fileID: 1770817804}
+  m_Layer: 0
+  m_Name: SouthSpear (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1770817804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770817803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1770817805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770817803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.2, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1777895154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3985,6 +5992,70 @@ CapsuleCollider:
   m_Height: 2.4
   m_Direction: 2
   m_Center: {x: 0, y: 0.15, z: 1.24}
+--- !u!1 &1799110424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799110425}
+  - component: {fileID: 1799110426}
+  m_Layer: 0
+  m_Name: SouthSpear (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1799110425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799110424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 18.7, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1799110426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799110424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1819335677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,12 +6315,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877735175}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -11.2, y: 6.759, z: -26.5}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 6.2, z: -26.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 356460844}
+  m_Father: {fileID: 2102190561}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1877735177
 MonoBehaviour:
@@ -4268,17 +6339,52 @@ MonoBehaviour:
   bulletLife: 4
   damage: 10
   timer: 0
-  firingRate: 4
+  firingRate: 6
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
-  autoFire: 1
+  autoFire: 0
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
-  linkedSpawners: []
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  - {fileID: 1960643336}
+  - {fileID: 2031354368}
+  - {fileID: 204147375}
+  - {fileID: 1712723103}
+  - {fileID: 1770817804}
+  - {fileID: 114192517}
+  - {fileID: 423525688}
+  - {fileID: 1341656482}
+  - {fileID: 554288259}
+  - {fileID: 1034176886}
+  - {fileID: 299432209}
+  - {fileID: 612979409}
+  - {fileID: 1265302393}
+  - {fileID: 71631549}
+  - {fileID: 1438386955}
+  - {fileID: 271574122}
+  - {fileID: 1055797718}
+  - {fileID: 2121661356}
+  - {fileID: 1447772133}
+  - {fileID: 287394680}
+  - {fileID: 1536200114}
+  - {fileID: 1733539465}
+  - {fileID: 1674277276}
+  - {fileID: 1278225335}
+  - {fileID: 166321765}
+  - {fileID: 1799110426}
+  - {fileID: 1676638200}
+  - {fileID: 720588273}
+  - {fileID: 403932528}
+  - {fileID: 884976079}
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
@@ -4349,6 +6455,70 @@ Transform:
   - {fileID: 937718467}
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 180}
+--- !u!1 &1919606549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919606550}
+  - component: {fileID: 1919606551}
+  m_Layer: 0
+  m_Name: NorthSpear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919606550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919606549}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11.2, y: 6.759, z: 26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1919606551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919606549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1 &1957851008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,16 +6662,106 @@ MonoBehaviour:
   timeElapsed: 0
   rotationDuration: 1
   spawners:
-  - {fileID: 198694428}
-  - {fileID: 1984731309}
-  - {fileID: 461650459}
+  - {fileID: 1877735177}
+  - {fileID: 927720335}
+  - {fileID: 550997354}
   - {fileID: 1719746738}
   - {fileID: 1026891516}
   - {fileID: 1873084954}
   - {fileID: 1528691405}
   - {fileID: 1254886259}
+  - {fileID: 198694428}
+  - {fileID: 1984731309}
+  - {fileID: 461650459}
+  sideDependentSpawners: 3
+  northSpawners:
+  - {fileID: 1877735177}
+  - {fileID: 927720335}
+  - {fileID: 550997354}
+  westSpawners:
+  - {fileID: 550997354}
+  - {fileID: 1877735177}
+  - {fileID: 1919606551}
+  southSpawners:
+  - {fileID: 1919606551}
+  - {fileID: 927720335}
+  - {fileID: 550997354}
+  eastSpawners:
+  - {fileID: 927720335}
+  - {fileID: 1919606551}
+  - {fileID: 1877735177}
+  playerSide: 
   attackTimer: 0
   attackCooldown: 3
+--- !u!1 &1960643335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960643337}
+  - component: {fileID: 1960643336}
+  m_Layer: 0
+  m_Name: SouthSpear (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1960643336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960643335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners:
+  - {fileID: 2022824026}
+  - {fileID: 2058860781}
+  - {fileID: 1255011725}
+  - {fileID: 1375314593}
+  - {fileID: 421976338}
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &1960643337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960643335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.2, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1979744126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,6 +6920,134 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1957851012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2022824024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022824025}
+  - component: {fileID: 2022824026}
+  m_Layer: 0
+  m_Name: SouthSpear (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022824025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022824024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 6.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2022824026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022824024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!1 &2031354367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031354369}
+  - component: {fileID: 2031354368}
+  m_Layer: 0
+  m_Name: SouthSpear (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2031354368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031354367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &2031354369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031354367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.7, y: 11.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2049459468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,6 +7228,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051136333}
   m_CullTransparentMesh: 1
+--- !u!1 &2058860780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058860782}
+  - component: {fileID: 2058860781}
+  m_Layer: 0
+  m_Name: SouthSpear (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2058860781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058860780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+--- !u!4 &2058860782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058860780}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.7, y: 6.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2076214022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4990,6 +7442,137 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093772115}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2102190560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102190561}
+  m_Layer: 0
+  m_Name: SouthSpears
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2102190561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102190560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1877735176}
+  - {fileID: 1960643337}
+  - {fileID: 423525689}
+  - {fileID: 1265302394}
+  - {fileID: 1447772132}
+  - {fileID: 166321764}
+  - {fileID: 2022824025}
+  - {fileID: 2031354369}
+  - {fileID: 1341656483}
+  - {fileID: 71631550}
+  - {fileID: 287394679}
+  - {fileID: 1799110425}
+  - {fileID: 2058860782}
+  - {fileID: 204147376}
+  - {fileID: 554288260}
+  - {fileID: 1438386956}
+  - {fileID: 1536200113}
+  - {fileID: 1676638199}
+  - {fileID: 1255011724}
+  - {fileID: 1712723104}
+  - {fileID: 1034176887}
+  - {fileID: 271574123}
+  - {fileID: 1733539464}
+  - {fileID: 720588272}
+  - {fileID: 1375314594}
+  - {fileID: 1770817805}
+  - {fileID: 299432210}
+  - {fileID: 1055797719}
+  - {fileID: 1674277275}
+  - {fileID: 403932527}
+  - {fileID: 421976337}
+  - {fileID: 114192518}
+  - {fileID: 612979410}
+  - {fileID: 2121661355}
+  - {fileID: 1278225334}
+  - {fileID: 884976078}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2121661354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121661355}
+  - component: {fileID: 2121661356}
+  m_Layer: 0
+  m_Name: SouthSpear (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2121661355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121661354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 6.2, y: 21.2, z: -26.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2102190561}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2121661356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121661354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 4
+  speed: 4
+  bulletLife: 4
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
+  stage: {fileID: 1957851012}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  autoFire: 0
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

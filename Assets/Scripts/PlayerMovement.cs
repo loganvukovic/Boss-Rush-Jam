@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        curSide = "x";
+        curSide = "North";
         timeElapsed = 0;
         curHealth = maxHealth;
         meshRenderer = GetComponent<MeshRenderer>();
@@ -186,11 +186,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void Rotate(float angle)
     {
-        if (curSide == "x")
+        if (curSide == "North")
         {
-            curSide = "z";
+            if (angle == -90) curSide = "West";
+            else curSide = "East";
         }
-        else curSide = "x";
+        else if (curSide == "West")
+        {
+            if (angle == -90) curSide = "South";
+            else curSide = "North";
+        }
+        else if (curSide == "South")
+        {
+            if (angle == -90) curSide = "East";
+            else curSide = "West";
+        }
+        else if (curSide == "East")
+        {
+            if (angle == -90) curSide = "North";
+            else curSide = "South";
+        }
 
         startRotation = stage.transform.rotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);

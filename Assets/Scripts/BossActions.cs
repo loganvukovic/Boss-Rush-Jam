@@ -20,6 +20,12 @@ public class BossActions : MonoBehaviour
     private Quaternion targetRotation;
 
     public BulletSpawner[] spawners;
+    public int sideDependentSpawners = 0;
+    public BulletSpawner[] northSpawners;
+    public BulletSpawner[] westSpawners;
+    public BulletSpawner[] southSpawners;
+    public BulletSpawner[] eastSpawners;
+    public string playerSide;
     public float attackTimer;
     public float attackCooldown;
 
@@ -32,6 +38,31 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerSide = playerMovement.curSide;
+
+        if (sideDependentSpawners > 0)
+        {
+            for (int i = 0; i < sideDependentSpawners; i++)
+            {
+                if (playerSide == "North")
+                {
+                    spawners[i] = northSpawners[i];
+                }
+                if (playerSide == "South")
+                {
+                    spawners[i] = southSpawners[i];
+                }
+                if (playerSide == "West")
+                {
+                    spawners[i] = westSpawners[i];
+                }
+                if (playerSide == "East")
+                {
+                    spawners[i] = eastSpawners[i];
+                }
+            }
+        }
+
         stageRotating = playerMovement.rotating;
 
         if (canRotate)
