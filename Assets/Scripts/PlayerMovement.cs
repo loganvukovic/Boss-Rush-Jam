@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public int remainingJumps;
     public float jumpSpeed;
     public Transform groundCheck;
+    public bool onPassable;
 
     private Quaternion startRotation;
     private Quaternion targetRotation;
@@ -143,8 +144,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
-            remainingJumps--;
+            if (!onPassable || (!Input.GetKey(KeyCode.S) || !Input.GetKey(KeyCode.DownArrow)))
+            {
+                rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
+                remainingJumps--;
+            }
         }
 
         if (attacking && isGrounded())
@@ -205,6 +209,20 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
+
+    /*private void OnColliderStay(Collider other)
+    {
+        Debug.Log("aaaaa");
+        if (other.GetComponent<PassablePlatform>() != null)
+        {
+            onPassable = true;
+
+            if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
+            {
+                other.GetComponent<Collider>().enabled = false;
+            }
+        }
+    }*/
 
     /*private void OnTriggerEnter(Collider other)
     {
