@@ -25,6 +25,8 @@ public class BulletSpawner : MonoBehaviour
     public Vector3 aimedOffset;
     public float angle;
     public bool autoFire;
+    public bool sideDependant;
+    public string side;
     public bool bombSpawner;
     public bool LRBombs;
     public bool gasterBlaster;
@@ -61,6 +63,7 @@ public class BulletSpawner : MonoBehaviour
 
         if (timer >= firingRate && autoFire)
         {
+            if ((sideDependant && side == playerMovement.curSide) || !sideDependant)
             Fire();
             timer = 0;
         }

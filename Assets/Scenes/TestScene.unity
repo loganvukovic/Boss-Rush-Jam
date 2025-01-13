@@ -165,6 +165,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -188,6 +190,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1282264043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &9105233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9105234}
+  - component: {fileID: 9105235}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9105234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2063796589}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9105235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9105233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: East
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &11626138
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +316,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -312,6 +384,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -378,6 +452,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -565,6 +641,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -616,6 +694,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -682,6 +762,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -705,6 +787,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1282264043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &77825077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77825078}
+  - component: {fileID: 77825081}
+  - component: {fileID: 77825080}
+  - component: {fileID: 77825079}
+  m_Layer: 0
+  m_Name: LanternW (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &77825078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77825077}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.63, y: 10.31, z: -12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1392773476}
+  m_Father: {fileID: 1206481110}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &77825079
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77825077}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &77825080
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77825077}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &77825081
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77825077}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &94044532
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +936,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -829,6 +1019,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -895,6 +1087,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -946,6 +1140,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1012,6 +1208,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1197,6 +1395,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1278,6 +1478,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1329,6 +1531,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1410,6 +1614,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1551,6 +1757,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 1
   LRBombs: 0
   gasterBlaster: 0
@@ -1602,6 +1810,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1668,6 +1878,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1734,6 +1946,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1815,6 +2029,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -1948,6 +2164,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2014,6 +2232,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2065,6 +2285,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2131,6 +2353,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2154,6 +2378,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1282264043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &303526395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303526396}
+  - component: {fileID: 303526399}
+  - component: {fileID: 303526398}
+  - component: {fileID: 303526397}
+  m_Layer: 0
+  m_Name: LanternE (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303526396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303526395}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.63, y: 10.31, z: -12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 650444414}
+  m_Father: {fileID: 2058692456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &303526397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303526395}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &303526398
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303526395}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &303526399
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303526395}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &325105247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2527,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2278,6 +2610,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2344,6 +2678,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2410,6 +2746,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2462,7 +2800,10 @@ Transform:
   - {fileID: 292841149}
   - {fileID: 708634759}
   - {fileID: 1282264043}
-  - {fileID: 1562669266}
+  - {fileID: 1651674755}
+  - {fileID: 765271236}
+  - {fileID: 1206481110}
+  - {fileID: 2058692456}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356711955
@@ -2523,6 +2864,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2589,6 +2932,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2655,6 +3000,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -2706,6 +3053,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3013,6 +3362,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3079,6 +3430,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3130,6 +3483,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3332,6 +3687,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3383,6 +3740,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3467,6 +3826,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3533,6 +3894,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3599,6 +3962,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3665,6 +4030,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3716,6 +4083,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3887,6 +4256,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -3968,6 +4339,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4034,6 +4407,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4100,6 +4475,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4186,6 +4563,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4252,6 +4631,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4333,6 +4714,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4384,6 +4767,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4450,6 +4835,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4531,6 +4918,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4538,6 +4927,74 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
+  justFired: 0
+--- !u!1 &650444413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650444414}
+  - component: {fileID: 650444415}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650444414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650444413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 303526396}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650444415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650444413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: East
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
   justFired: 0
 --- !u!1 &694534703
 GameObject:
@@ -4597,6 +5054,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4648,6 +5107,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4796,6 +5257,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4862,6 +5325,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -4945,6 +5410,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &765271235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765271236}
+  m_Layer: 0
+  m_Name: SouthOnlySpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &765271236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765271235}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1822297408}
+  - {fileID: 2104786431}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &768363884
 GameObject:
   m_ObjectHideFlags: 0
@@ -4988,6 +5486,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5054,6 +5554,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 0
@@ -5135,6 +5637,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5143,6 +5647,112 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+--- !u!1 &878000173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 878000174}
+  - component: {fileID: 878000177}
+  - component: {fileID: 878000176}
+  - component: {fileID: 878000175}
+  m_Layer: 0
+  m_Name: LanternW
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &878000174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878000173}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.63, y: 10.31, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1737012645}
+  m_Father: {fileID: 1206481110}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &878000175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878000173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &878000176
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878000173}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &878000177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878000173}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &884976077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5201,6 +5811,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5267,6 +5879,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 1
+  sideDependant: 1
+  side: North
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 0
@@ -5333,6 +5947,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5384,6 +6000,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5465,6 +6083,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5718,6 +6338,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5819,6 +6441,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5870,6 +6494,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -5951,6 +6577,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6017,6 +6645,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6083,6 +6713,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6134,6 +6766,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6200,6 +6834,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6281,6 +6917,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6332,6 +6970,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6413,6 +7053,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6584,6 +7226,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 1
   LRBombs: 1
   gasterBlaster: 0
@@ -6635,6 +7279,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6716,6 +7362,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6872,6 +7520,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -6938,6 +7588,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 1
   LRBombs: 0
   gasterBlaster: 0
@@ -7004,6 +7656,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7070,6 +7724,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7136,6 +7792,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7336,6 +7994,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7402,6 +8062,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 1
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 0
@@ -7468,6 +8130,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7519,6 +8183,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7585,6 +8251,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7711,6 +8379,39 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1206481109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206481110}
+  m_Layer: 0
+  m_Name: WestOnlySpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206481110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206481109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 878000174}
+  - {fileID: 77825078}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208524028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,6 +8455,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -7835,6 +8538,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8007,6 +8712,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8091,6 +8798,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8142,6 +8851,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8223,6 +8934,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8356,6 +9069,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8422,6 +9137,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8699,6 +9416,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8765,6 +9484,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8831,6 +9552,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8912,6 +9635,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -8978,6 +9703,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9029,6 +9756,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9110,6 +9839,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9117,6 +9848,74 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1392773475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392773476}
+  - component: {fileID: 1392773477}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1392773476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392773475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77825078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392773477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392773475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: West
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
   justFired: 0
 --- !u!1 &1412099790
 GameObject:
@@ -9176,6 +9975,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9227,6 +10028,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9293,6 +10096,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9359,6 +10164,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9440,6 +10247,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9506,6 +10315,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9640,6 +10451,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9783,6 +10596,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9834,6 +10649,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9902,6 +10719,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -9968,6 +10787,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10049,6 +10870,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10100,6 +10923,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10169,6 +10994,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10252,6 +11079,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10318,6 +11147,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10369,6 +11200,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10435,6 +11268,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10518,6 +11353,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10569,6 +11406,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10619,13 +11458,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562669265}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12, y: 10.31, z: 7.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 889815405}
-  m_Father: {fileID: 356460844}
+  m_Father: {fileID: 1651674755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1562669268
 BoxCollider:
@@ -10756,6 +11595,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10822,6 +11663,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10888,6 +11731,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -10954,6 +11799,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11037,6 +11884,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606856494}
   m_CullTransparentMesh: 1
+--- !u!1 &1609815601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609815602}
+  - component: {fileID: 1609815603}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1609815602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609815601}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2104786431}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1609815603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609815601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: South
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+--- !u!1 &1627239981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627239982}
+  - component: {fileID: 1627239983}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1627239982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627239981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1822297408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1627239983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627239981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: South
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
 --- !u!1 &1644248780
 GameObject:
   m_ObjectHideFlags: 0
@@ -11080,6 +12063,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11103,6 +12088,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1282264043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1651674754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651674755}
+  m_Layer: 0
+  m_Name: NorthOnlySpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1651674755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651674754}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1562669266}
+  - {fileID: 2115601292}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651760968
 GameObject:
   m_ObjectHideFlags: 0
@@ -11240,6 +12258,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11442,6 +12462,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11508,6 +12530,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11574,6 +12598,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11625,6 +12651,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11691,6 +12719,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 1
   LRBombs: 0
   gasterBlaster: 0
@@ -11773,6 +12803,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11780,6 +12812,74 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1737012644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737012645}
+  - component: {fileID: 1737012646}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737012645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737012644}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 878000174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737012646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737012644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: West
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
   justFired: 0
 --- !u!1 &1738689443
 GameObject:
@@ -11839,6 +12939,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11905,6 +13007,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -11971,6 +13075,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12142,6 +13248,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12208,6 +13316,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12259,6 +13369,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12461,6 +13573,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12582,6 +13696,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12665,6 +13781,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819335677}
   m_CullTransparentMesh: 1
+--- !u!1 &1822297407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822297408}
+  - component: {fileID: 1822297411}
+  - component: {fileID: 1822297410}
+  - component: {fileID: 1822297409}
+  m_Layer: 0
+  m_Name: LanternS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1822297408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822297407}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12, y: 10.31, z: -7.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1627239982}
+  m_Father: {fileID: 765271236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1822297409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822297407}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1822297410
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822297407}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1822297411
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822297407}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1822886589
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,6 +13930,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12789,6 +14013,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -12947,6 +14173,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13013,6 +14241,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13064,6 +14294,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 0
@@ -13148,6 +14380,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13249,6 +14483,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13300,6 +14536,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13383,6 +14621,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13449,6 +14689,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13491,6 +14733,74 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
+  justFired: 0
+--- !u!1 &1943539459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1943539460}
+  - component: {fileID: 1943539461}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1943539460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943539459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115601292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1943539461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943539459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 1
+  side: North
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
   justFired: 0
 --- !u!1 &1947065623
 GameObject:
@@ -13550,6 +14860,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13775,6 +15087,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -13841,6 +15155,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14001,6 +15317,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 1
   LRBombs: 0
   gasterBlaster: 0
@@ -14082,6 +15400,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14148,6 +15468,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14199,6 +15521,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14460,6 +15784,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14468,6 +15794,39 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+--- !u!1 &2058692455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058692456}
+  m_Layer: 0
+  m_Name: EastOnlySpawners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058692456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058692455}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2063796589}
+  - {fileID: 303526396}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2058860780
 GameObject:
   m_ObjectHideFlags: 0
@@ -14511,6 +15870,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14534,6 +15895,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2102190561}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &2063796588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2063796589}
+  - component: {fileID: 2063796592}
+  - component: {fileID: 2063796591}
+  - component: {fileID: 2063796590}
+  m_Layer: 0
+  m_Name: LanternE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2063796589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063796588}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.63, y: 10.31, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9105234}
+  m_Father: {fileID: 2058692456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2063796590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063796588}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2063796591
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063796588}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2063796592
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063796588}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2073807617
 GameObject:
   m_ObjectHideFlags: 0
@@ -14592,6 +16059,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14689,6 +16158,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -14883,6 +16354,112 @@ Transform:
   - {fileID: 884976078}
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2104786430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104786431}
+  - component: {fileID: 2104786434}
+  - component: {fileID: 2104786433}
+  - component: {fileID: 2104786432}
+  m_Layer: 0
+  m_Name: LanternS (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104786431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104786430}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12, y: 10.31, z: -7.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1609815602}
+  m_Father: {fileID: 765271236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2104786432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104786430}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2104786433
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104786430}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2104786434
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104786430}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2111640372
 GameObject:
   m_ObjectHideFlags: 0
@@ -14926,6 +16503,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -15007,6 +16586,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
@@ -15015,6 +16596,112 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+--- !u!1 &2115601291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115601292}
+  - component: {fileID: 2115601295}
+  - component: {fileID: 2115601294}
+  - component: {fileID: 2115601293}
+  m_Layer: 0
+  m_Name: LanternN (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2115601292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115601291}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12, y: 10.31, z: 7.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1943539460}
+  m_Father: {fileID: 1651674755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2115601293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115601291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2115601294
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115601291}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2115601295
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115601291}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2121661354
 GameObject:
   m_ObjectHideFlags: 0
@@ -15073,6 +16760,8 @@ MonoBehaviour:
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
   autoFire: 0
+  sideDependant: 0
+  side: 
   bombSpawner: 0
   LRBombs: 0
   gasterBlaster: 1
