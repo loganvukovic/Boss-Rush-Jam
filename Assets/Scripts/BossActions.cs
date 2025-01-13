@@ -105,6 +105,7 @@ public class BossActions : MonoBehaviour
         //Round rotation to nearest multiple of 90
         if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
         {
+            Debug.Log((tf.eulerAngles.y / 90f) * 90f);
             tf.rotation = Quaternion.Euler(0, Mathf.Round(tf.eulerAngles.y / 90f) * 90f, 0);
         }
 
@@ -152,7 +153,7 @@ public class BossActions : MonoBehaviour
     private void PickAttack(int attack)
     {
         attackTimer = 0;
-        spawners[4].Fire();
+        spawners[attack].Fire();
         Debug.Log(spawners[attack].gameObject);
         attackCooldown = spawners[attack].cooldown;
 
