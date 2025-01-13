@@ -162,6 +162,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -241,6 +243,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -305,6 +309,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -369,6 +375,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -554,6 +562,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -603,6 +613,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -667,6 +679,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -731,6 +745,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -810,6 +826,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -874,6 +892,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -923,6 +943,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -987,6 +1009,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1170,6 +1194,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1249,6 +1275,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1298,6 +1326,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1377,6 +1407,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1516,6 +1548,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 1
   LRBombs: 0
@@ -1565,6 +1599,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1629,6 +1665,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1693,6 +1731,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1772,6 +1812,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1903,6 +1945,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -1967,6 +2011,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2016,6 +2062,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2080,6 +2128,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2144,6 +2194,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2223,6 +2275,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2287,6 +2341,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2351,6 +2407,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2404,6 +2462,7 @@ Transform:
   - {fileID: 292841149}
   - {fileID: 708634759}
   - {fileID: 1282264043}
+  - {fileID: 1562669266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356711955
@@ -2461,6 +2520,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2525,6 +2586,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2589,6 +2652,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2638,6 +2703,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -2943,6 +3010,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3007,6 +3076,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3056,6 +3127,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3256,6 +3329,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3305,6 +3380,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3387,6 +3464,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3451,6 +3530,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3515,6 +3596,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3579,6 +3662,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3628,6 +3713,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3797,6 +3884,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3876,6 +3965,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3940,6 +4031,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -3999,11 +4092,13 @@ MonoBehaviour:
   damage: 20
   timer: 0
   firingRate: 6
-  cooldown: 0
+  cooldown: 3
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4088,6 +4183,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4152,6 +4249,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4231,6 +4330,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4280,6 +4381,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4344,6 +4447,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4423,6 +4528,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4487,6 +4594,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4536,6 +4645,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4682,6 +4793,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4746,6 +4859,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4870,6 +4985,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -4934,6 +5051,8 @@ MonoBehaviour:
   stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5013,6 +5132,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5077,6 +5198,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5085,6 +5208,72 @@ MonoBehaviour:
   followUps: []
   followUpTimer: 0
   followUpTime: 2.5
+  justFired: 0
+--- !u!1 &889815404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889815405}
+  - component: {fileID: 889815406}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &889815405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889815404}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1562669266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &889815406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889815404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 1
+  speed: 7
+  bulletLife: 7
+  damage: 5
+  timer: 0
+  firingRate: 6
+  cooldown: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
   justFired: 0
 --- !u!1 &897817621
 GameObject:
@@ -5141,6 +5330,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5190,6 +5381,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5269,6 +5462,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5345,7 +5540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 300
+  maxHealth: 500
 --- !u!1 &924631366
 GameObject:
   m_ObjectHideFlags: 0
@@ -5515,11 +5710,13 @@ MonoBehaviour:
   damage: 20
   timer: 0
   firingRate: 6
-  cooldown: 0
+  cooldown: 3
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5619,6 +5816,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5668,6 +5867,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5747,6 +5948,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5811,6 +6014,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5875,6 +6080,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5924,6 +6131,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -5988,6 +6197,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6067,6 +6278,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6116,6 +6329,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6195,6 +6410,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6364,6 +6581,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 1
   LRBombs: 1
@@ -6413,6 +6632,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6492,6 +6713,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6646,6 +6869,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6710,6 +6935,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 1
   LRBombs: 0
@@ -6774,6 +7001,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6838,6 +7067,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -6902,6 +7133,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7100,6 +7333,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7164,6 +7399,8 @@ MonoBehaviour:
   stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 1
   bombSpawner: 0
   LRBombs: 0
@@ -7228,6 +7465,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7277,6 +7516,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7341,6 +7582,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7508,6 +7751,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7587,6 +7832,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7757,6 +8004,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7839,6 +8088,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7888,6 +8139,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -7967,6 +8220,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8098,6 +8353,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8162,6 +8419,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8437,6 +8696,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8501,6 +8762,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8565,6 +8828,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8644,6 +8909,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8708,6 +8975,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8757,6 +9026,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8836,6 +9107,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8900,6 +9173,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -8949,6 +9224,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9013,6 +9290,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9077,6 +9356,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9156,6 +9437,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9220,6 +9503,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9352,6 +9637,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9493,6 +9780,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9542,6 +9831,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9608,6 +9899,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9672,6 +9965,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9751,6 +10046,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9800,6 +10097,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9867,6 +10166,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -9948,6 +10249,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10012,6 +10315,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10061,6 +10366,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10125,6 +10432,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10206,6 +10515,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10255,6 +10566,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10279,6 +10592,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1282264043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1562669265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562669266}
+  - component: {fileID: 1562669270}
+  - component: {fileID: 1562669269}
+  - component: {fileID: 1562669268}
+  m_Layer: 0
+  m_Name: LanternN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562669266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562669265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: 10.31, z: 7.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 889815405}
+  m_Father: {fileID: 356460844}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1562669268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562669265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1562669269
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562669265}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1562669270
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562669265}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1564931288
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,6 +10753,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10398,6 +10819,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10462,6 +10885,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10526,6 +10951,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10650,6 +11077,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -10808,6 +11237,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11008,6 +11439,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11072,6 +11505,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11136,6 +11571,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11185,6 +11622,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11249,6 +11688,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 1
   LRBombs: 0
@@ -11329,6 +11770,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11393,6 +11836,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11457,6 +11902,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11521,6 +11968,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11690,6 +12139,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11754,6 +12205,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -11803,6 +12256,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12003,6 +12458,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12122,6 +12579,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12246,6 +12705,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12325,6 +12786,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12481,6 +12944,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12545,6 +13010,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12594,6 +13061,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12671,11 +13140,13 @@ MonoBehaviour:
   damage: 20
   timer: 0
   firingRate: 6
-  cooldown: 0
+  cooldown: 3
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12775,6 +13246,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12824,6 +13297,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12905,6 +13380,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -12964,11 +13441,13 @@ MonoBehaviour:
   damage: 20
   timer: 0
   firingRate: 6
-  cooldown: 0
+  cooldown: 3
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13068,6 +13547,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13291,6 +13772,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13355,6 +13838,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13513,6 +13998,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 1
   LRBombs: 0
@@ -13592,6 +14079,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13656,6 +14145,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13705,6 +14196,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -13964,6 +14457,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14013,6 +14508,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14092,6 +14589,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14187,6 +14686,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14422,6 +14923,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14501,6 +15004,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0
@@ -14565,6 +15070,8 @@ MonoBehaviour:
   stage: {fileID: 1957851012}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
   autoFire: 0
   bombSpawner: 0
   LRBombs: 0

@@ -22,6 +22,8 @@ public class BulletSpawner : MonoBehaviour
     private GameObject spawnedBullet;
     public BossActions bossActions;
 
+    public Vector3 aimedOffset;
+    public float angle;
     public bool autoFire;
     public bool bombSpawner;
     public bool LRBombs;
@@ -43,6 +45,13 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (bulletType == BulletType.Aimed)
+        {
+            Vector3 playerDirection = (playerMovement.transform.position + aimedOffset - transform.position).normalized;
+            angle = Mathf.Rad2Deg * Mathf.Atan2(playerDirection.y, playerDirection.x);
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
+
         if (playerMovement.rotating)
         {
             return;
@@ -137,7 +146,7 @@ public class BulletSpawner : MonoBehaviour
             //Normal Bullet
             else
             {
-                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, transform);
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
                 spawnedBullet.GetComponent<Bullet>().speed = speed;
                 spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                 spawnedBullet.GetComponent<Bullet>().damage = damage;

@@ -119,6 +119,7 @@ public class BossActions : MonoBehaviour
     {
         attackTimer = 0;
         spawners[attack].Fire();
+        Debug.Log(spawners[attack].gameObject);
         attackCooldown = spawners[attack].cooldown;
 
         BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
