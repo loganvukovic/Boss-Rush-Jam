@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour
     public bool LRBombs;
     public bool isBox = false;
     public bool destroyOnHit;
+    public bool keepMovingOnBossMove;
     public int spot;
     public GameObject bombBox;
     public GameObject spawn;
@@ -69,13 +70,18 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(bossActions.healing)
+        {
+            Destroy(gameObject);
+        }
+
         if (isBomb)
         {
             spawnPoint = new Vector3(spawner.transform.position.x, spawner.transform.position.y + (spot * 2), spawner.transform.position.z);
         }
         else spawnPoint = spawner.transform.position;
 
-        if (playerMovement.rotating || bossActions.rotating)
+        if (playerMovement.rotating || (bossActions.rotating && !keepMovingOnBossMove))
             return;
 
         if (timer > bulletLife)

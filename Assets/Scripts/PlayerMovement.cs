@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     public float flickerDuration;
     public MeshRenderer meshRenderer;
     public Image healthBar;
+    public bool canMove;
 
     void Start()
     {
@@ -61,9 +62,15 @@ public class PlayerMovement : MonoBehaviour
         timeElapsed = 0;
         curHealth = maxHealth;
         meshRenderer = GetComponent<MeshRenderer>();
+        canMove = true;
     }
     void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         curCombo = GetComponent<PlayerAttack>().curCombo;
         attacking = GetComponent<PlayerAttack>().attacking;
         isSlamming = GetComponent<PlayerAttack>().isSlamming;

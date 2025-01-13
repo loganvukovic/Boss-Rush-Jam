@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossActions : MonoBehaviour
@@ -28,6 +29,8 @@ public class BossActions : MonoBehaviour
     public string playerSide;
     public float attackTimer;
     public float attackCooldown;
+
+    public bool healing;
 
     // Start is called before the first frame update
     void Start()
@@ -62,6 +65,13 @@ public class BossActions : MonoBehaviour
                 }
             }
         }
+
+        if (GetComponentInChildren<BossScript>().healing)
+        {
+            healing = true;
+            return;
+        }
+        else healing = false;
 
         stageRotating = playerMovement.rotating;
 
@@ -129,6 +139,14 @@ public class BossActions : MonoBehaviour
             {
                 spawner.Fire();
             }
+        }
+    }
+
+    public void IncreaseSpeed(float speed)
+    {
+        foreach (BulletSpawner spawner in spawners)
+        {
+            spawner.cooldown = spawner.cooldown / speed;
         }
     }
 }

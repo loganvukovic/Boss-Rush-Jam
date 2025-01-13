@@ -30,6 +30,8 @@ public class BulletSpawner : MonoBehaviour
     public bool bombSpawner;
     public bool LRBombs;
     public bool gasterBlaster;
+    public bool stayOnBossRotate = false;
+    public bool keepMovingOnBossMove = false;
 
     public BulletSpawner[] linkedSpawners;
     public BulletSpawner[] followUps;
@@ -123,17 +125,23 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Bullet>().LRBombs = LRBombs;
+                spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
             //Laser
             else if (bulletType == BulletType.Laser)
             {
-                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, transform);
+                /*if (stayOnBossRotate)
+                {
+                    spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
+                }
+                else*/ spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, transform);
                 spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                 spawnedBullet.GetComponent<Bullet>().damage = damage;
                 spawnedBullet.GetComponent<Bullet>().destroyOnHit = false;
                 spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
             //Spear
             else if (bulletType == BulletType.Spear)
@@ -145,6 +153,7 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
             //Normal Bullet
             else
@@ -157,6 +166,7 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
         }
     }
