@@ -32,10 +32,13 @@ public class BossActions : MonoBehaviour
 
     public bool healing;
 
+    public string curSide;
+
     // Start is called before the first frame update
     void Start()
     {
         rotateTimer = 0;
+        curSide = "North";
     }
 
     // Update is called once per frame
@@ -119,6 +122,27 @@ public class BossActions : MonoBehaviour
 
     private void Rotate(float angle)
     {
+        if (curSide == "North")
+        {
+            if (angle == 90) curSide = "West";
+            else curSide = "East";
+        }
+        else if (curSide == "West")
+        {
+            if (angle == 90) curSide = "South";
+            else curSide = "North";
+        }
+        else if (curSide == "South")
+        {
+            if (angle == 90) curSide = "East";
+            else curSide = "West";
+        }
+        else if (curSide == "East")
+        {
+            if (angle == 90) curSide = "North";
+            else curSide = "South";
+        }
+
         rotateTimer = 0f;
         startRotation = transform.rotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
@@ -128,7 +152,7 @@ public class BossActions : MonoBehaviour
     private void PickAttack(int attack)
     {
         attackTimer = 0;
-        spawners[attack].Fire();
+        spawners[4].Fire();
         Debug.Log(spawners[attack].gameObject);
         attackCooldown = spawners[attack].cooldown;
 

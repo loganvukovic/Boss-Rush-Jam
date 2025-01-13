@@ -21,6 +21,7 @@ public class Bullet : MonoBehaviour
     public int spot;
     public GameObject bombBox;
     public GameObject spawn;
+    public GameObject spawnedBox;
     public Transform spawner;
     public PlayerMovement playerMovement;
     public BossActions bossActions;
@@ -38,7 +39,7 @@ public class Bullet : MonoBehaviour
                 {
                     if (spot != i)
                     {
-                        GameObject spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x, spawner.position.y + (i * 2), spawner.position.z), transform.rotation, transform);
+                        spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x, spawner.position.y + (i * 2), spawner.position.z), transform.rotation, transform);
                         spawnedBox.GetComponent<Bullet>().destroyOnHit = true;
                         spawnedBox.GetComponent<Bullet>().bulletLife = bulletLife;
                         spawnedBox.GetComponent<Bullet>().spawner = spawner;
@@ -54,7 +55,14 @@ public class Bullet : MonoBehaviour
                 {
                     if (spot != i)
                     {
-                        GameObject spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x + (i * 2), spawner.position.y, spawner.position.z), transform.rotation, transform);
+                        if (bossActions.curSide == "North" || bossActions.curSide == "South")
+                        {
+                            spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x + (i * 2), spawner.position.y, spawner.position.z), transform.rotation, transform);
+                        }
+                        else
+                        {
+                            spawnedBox = Instantiate(bombBox, new Vector3(transform.position.x, spawner.position.y, spawner.position.z + (i * 2)), transform.rotation, transform);
+                        }
                         spawnedBox.GetComponent<Bullet>().destroyOnHit = true;
                         spawnedBox.GetComponent<Bullet>().bulletLife = bulletLife;
                         spawnedBox.GetComponent<Bullet>().spawner = transform;

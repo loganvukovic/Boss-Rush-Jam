@@ -9393,9 +9393,11 @@ MonoBehaviour:
   accelerationSpeed: 4
   decelerationSpeed: 7
   canJump: 0
-  maxJumps: 1
+  maxJumps: 2
+  isJumping: 0
   remainingJumps: 0
   jumpSpeed: 8
+  jumpForceTime: 0
   groundCheck: {fileID: 2076214023}
   onPassable: 0
   rotating: 0
@@ -15375,6 +15377,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  curSide: 
 --- !u!1 &1960643335
 GameObject:
   m_ObjectHideFlags: 0

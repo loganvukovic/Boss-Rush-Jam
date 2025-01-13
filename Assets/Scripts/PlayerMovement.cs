@@ -20,8 +20,10 @@ public class PlayerMovement : MonoBehaviour
 
     public bool canJump;
     public int maxJumps;
+    public bool isJumping;
     public int remainingJumps;
     public float jumpSpeed;
+    public float jumpForceTime;
     public Transform groundCheck;
     public bool onPassable;
 
@@ -138,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (isGrounded())
+        /*if (isGrounded())
         {
             canJump = true;
             remainingJumps = maxJumps;
@@ -156,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
                 remainingJumps--;
             }
-        }
+        }*/
 
         if (attacking && isGrounded())
         {
@@ -183,7 +185,50 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isDashing)
+            return;
 
+        if (canJump && Input.GetKey(KeyCode.Space))
+        {
+            remainingJumps--;
+            isJumping = true;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && isJumping)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
+            if (jumpForceTime > 9f)
+            {
+                isJumping = false;
+                rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            }
+            else
+            {
+                jumpForceTime += .3f;
+            }
+        }
+
+        if (isJumping && !Input.GetKey(KeyCode.Space))
+        {
+            isJumping = false;
+            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        }
+
+        if (isGrounded() && !isJumping)
+        {
+            remainingJumps = maxJumps;
+            if (!Input.GetKey(KeyCode.Space))
+            {
+                canJump = true;
+                jumpForceTime = 0f;
+            }
+        }
+        else if (!isGrounded() && remainingJumps > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            canJump = true;
+            jumpForceTime = 0f;
+        }
+        else canJump = false;
     }
 
     public bool isGrounded()
