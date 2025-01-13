@@ -81,20 +81,23 @@ public class BossActions : MonoBehaviour
         if (canRotate)
         {
             rotateTimer += Time.deltaTime;
-
             if (rotateTimer > rotateCooldown)
             {
                 if (Random.Range(0f, 1f) < 0.5f)
                 {
                     Rotate(90);
                 }
-                else Rotate(-90);
+                else
+                {
+                    Rotate(-90);
+                }
             }
             if (rotating && timeElapsed < rotationDuration)
             {
                 timeElapsed += Time.deltaTime;
-                transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
-                if (transform.rotation == targetRotation)
+                transform.localRotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
+
+                if (Quaternion.Angle(transform.localRotation, targetRotation) < 0.1f)
                 {
                     timeElapsed = 0;
                     rotating = false;
@@ -103,11 +106,11 @@ public class BossActions : MonoBehaviour
         }
 
         //Round rotation to nearest multiple of 90
-        if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
+        /*if (!rotating && !stageRotating && tf.rotation.y % 90 != 0)
         {
             Debug.Log((tf.eulerAngles.y / 90f) * 90f);
             tf.rotation = Quaternion.Euler(0, Mathf.Round(tf.eulerAngles.y / 90f) * 90f, 0);
-        }
+        }*/
 
         if (stageRotating)
         {
@@ -145,7 +148,7 @@ public class BossActions : MonoBehaviour
         }
 
         rotateTimer = 0f;
-        startRotation = transform.rotation;
+        startRotation = transform.localRotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
         rotating = true;
     }
