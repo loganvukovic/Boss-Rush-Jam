@@ -99,7 +99,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage)
+        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating)
         {
             other.GetComponentInParent<PlayerMovement>().curHealth -= damage;
             other.GetComponentInParent<PlayerMovement>().tookDamage = true;
