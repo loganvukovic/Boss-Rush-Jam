@@ -55,7 +55,8 @@ public class Bullet : MonoBehaviour
                 {
                     if (spot != i)
                     {
-                        if (bossActions.curSide == "North" || bossActions.curSide == "South")
+                        if ((bossActions.curSide == "North" || bossActions.curSide == "South") && (playerMovement.curSide == "North" || playerMovement.curSide == "South")
+                            || (bossActions.curSide == "West" || bossActions.curSide == "East") && (playerMovement.curSide == "West" || playerMovement.curSide == "East"))
                         {
                             spawnedBox = Instantiate(bombBox, new Vector3(spawner.position.x + (i * 2), spawner.position.y, spawner.position.z), transform.rotation, transform);
                         }
