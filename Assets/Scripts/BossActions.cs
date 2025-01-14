@@ -20,6 +20,7 @@ public class BossActions : MonoBehaviour
     private Quaternion startRotation;
     private Quaternion targetRotation;
 
+    public int phase1Range;
     public BulletSpawner[] spawners;
     public int sideDependentSpawners = 0;
     public BulletSpawner[] northSpawners;
@@ -33,6 +34,7 @@ public class BossActions : MonoBehaviour
     public bool healing;
 
     public string curSide;
+    public int curPhase;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,7 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        curPhase = GetComponentInChildren<BossScript>().curPhase;
         playerSide = playerMovement.curSide;
 
         if (sideDependentSpawners > 0)
@@ -120,7 +123,14 @@ public class BossActions : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer > attackCooldown)
         {
-            PickAttack(Random.Range(0, spawners.Length));
+            if (curPhase == 1)
+            {
+                PickAttack(Random.Range(0, phase1Range));
+            }
+            else
+            {
+                PickAttack(Random.Range(0, spawners.Length));
+            }
         }
     }
 
