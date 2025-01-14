@@ -56,7 +56,7 @@ public class BossScript : MonoBehaviour
         }
         healing = false;
         GetComponent<Collider>().enabled = true;
-        curPhase = 2;
+        curPhase++;
         GetComponentInParent<BossActions>().IncreaseSpeed(phase2Speed);
         playerMovement.canMove = true;
     }

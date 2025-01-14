@@ -49,6 +49,11 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (cooldown < 1)
+        {
+            cooldown = 1;
+        }
+
         if (bulletType == BulletType.Aimed)
         {
             Vector3 playerDirection = (playerMovement.transform.position + aimedOffset - transform.position).normalized;

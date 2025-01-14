@@ -112,7 +112,7 @@ public class Bullet : MonoBehaviour
 
         return new Vector3(x + spawnPoint.x, y + spawnPoint.y, z + spawnPoint.z);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating)
         {
