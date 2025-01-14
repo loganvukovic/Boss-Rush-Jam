@@ -124,12 +124,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (rotating && timeElapsed < rotationDuration)
         {
+            rb.mass = 0f;
             timeElapsed += Time.deltaTime;
             stage.transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
             if (stage.transform.rotation == targetRotation)
             {
                 timeElapsed = 0;
                 rotating = false;
+                rb.mass = 10f;
             }
             rb.velocity = new Vector3(0, 0, 0);
             return;
@@ -187,6 +189,12 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isDashing)
             return;
+
+        if (rotating)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
 
         if (canJump && Input.GetKey(KeyCode.Space))
         {
