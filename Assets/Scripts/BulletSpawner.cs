@@ -100,7 +100,7 @@ public class BulletSpawner : MonoBehaviour
                 {
                     justFired = false;
                     followUpTimer = 0;
-                    if (spawnedBullet.GetComponent<Animator>() != null)
+                    if (spawnedBullet != null)
                     {
                         spawnedBullet.GetComponent<Animator>().Play("SpearExtend");
                     }

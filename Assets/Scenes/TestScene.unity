@@ -454,7 +454,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -558,7 +558,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -890,7 +890,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -2104,7 +2104,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -2176,7 +2176,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -2246,7 +2246,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -2477,7 +2477,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -3228,7 +3228,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -3298,7 +3298,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -3856,7 +3856,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -4190,7 +4190,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -4712,7 +4712,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -4837,7 +4837,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -5365,7 +5365,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -5650,7 +5650,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -5898,7 +5898,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -6403,7 +6403,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -6473,7 +6473,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -6683,7 +6683,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -6891,7 +6891,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7107,7 +7107,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7195,7 +7195,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7350,7 +7350,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7457,7 +7457,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7512,7 +7512,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7652,7 +7652,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7741,7 +7741,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -7989,7 +7989,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -8692,7 +8692,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -8847,7 +8847,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -9112,7 +9112,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -9512,7 +9512,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -9583,7 +9583,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -9899,7 +9899,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10024,7 +10024,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 5
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10110,7 +10110,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 6
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10186,7 +10186,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10242,7 +10242,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10541,7 +10541,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10596,7 +10596,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -10998,7 +10998,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -11154,7 +11154,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -11608,7 +11608,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -12343,7 +12343,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -12766,7 +12766,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -13047,7 +13047,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -13328,7 +13328,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -13862,7 +13862,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -14144,7 +14144,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -14217,7 +14217,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -14429,7 +14429,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -14499,7 +14499,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -15529,7 +15529,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -15969,7 +15969,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -16113,7 +16113,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 7
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -16339,7 +16339,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 2
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -16654,7 +16654,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 8
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -16870,7 +16870,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -17118,7 +17118,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -17401,7 +17401,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -17793,7 +17793,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -18081,7 +18081,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -18329,7 +18329,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -18416,7 +18416,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -19114,7 +19114,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -19263,7 +19263,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 4
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -19911,7 +19911,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -20123,7 +20123,7 @@ MonoBehaviour:
   firingRate: 4
   cooldown: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
@@ -20995,9 +20995,9 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 10
+  cooldown: 14
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
-  stage: {fileID: 1957851012}
+  stage: {fileID: 356460844}
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
   aimedOffset: {x: 0, y: 0, z: 0}
