@@ -156,7 +156,7 @@ public class BossActions : MonoBehaviour
     private void PickAttack(int attack)
     {
         attackTimer = 0;
-        spawners[4].Fire();
+        spawners[attack].Fire();
         Debug.Log(spawners[attack].gameObject);
         attackCooldown = spawners[attack].cooldown;
 

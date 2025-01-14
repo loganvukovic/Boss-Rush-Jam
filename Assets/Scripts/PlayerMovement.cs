@@ -200,7 +200,7 @@ public class PlayerMovement : MonoBehaviour
             if (jumpForceTime > 9f)
             {
                 isJumping = false;
-                rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+                rb.velocity = new Vector3(rb.velocity.x, 2f, rb.velocity.z);
             }
             else
             {
@@ -208,10 +208,10 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (isJumping && !Input.GetKey(KeyCode.Space))
+        if (isJumping && (!Input.GetKey(KeyCode.Space) || isSlamming))
         {
             isJumping = false;
-            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x, 2f, rb.velocity.z);
         }
 
         if (isGrounded() && !isJumping)
@@ -223,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
                 jumpForceTime = 0f;
             }
         }
-        else if (!isGrounded() && remainingJumps > 0 && !Input.GetKey(KeyCode.Space))
+        else if (!isGrounded() && remainingJumps > 0 && !Input.GetKey(KeyCode.Space) && !isSlamming)
         {
             canJump = true;
             jumpForceTime = 0f;

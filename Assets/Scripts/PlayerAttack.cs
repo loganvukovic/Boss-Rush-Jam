@@ -80,6 +80,11 @@ public class PlayerAttack : MonoBehaviour
             hitboxes[3].SetActive(false);
         }
 
+        if(isSlamming)
+        {
+            rb.velocity = new Vector3(0, -1 * slamSpeed, 0);
+        }
+
         if (rotating)
             return;
 

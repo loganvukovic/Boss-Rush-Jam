@@ -5,6 +5,7 @@ using UnityEngine;
 public class PassablePlatform : MonoBehaviour
 {
     public Transform playerTransform;
+    public bool isPassing;
 
     // Start is called before the first frame update
     void Start()
@@ -19,31 +20,41 @@ public class PassablePlatform : MonoBehaviour
         {
             GetComponent<Collider>().enabled = false;
         }
-        else
+        else if (!isPassing)
         {
             GetComponent<Collider>().enabled = true;
         }
     }
 
-    private void OnColliderStay(Collider other)
+    private void OnCollisionStay(Collision other)
     {
-        Debug.Log("aaaaa");
-        if (other.GetComponentInParent<PlayerMovement>() != null)
+        if (other.collider.GetComponentInParent<PlayerMovement>() != null)
         {
-            other.GetComponentInParent<PlayerMovement>().onPassable = true;
+            other.collider.GetComponentInParent<PlayerMovement>().onPassable = true;
 
             if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
             {
-                GetComponent<Collider>().enabled = false;
+                StartCoroutine(Pass());
             }
         }
     }
 
-    private void OnColliderExit(Collider other)
+    private void OnCollisionExit(Collision other)
     {
-        if (other.tag == "Player")
+        if (other.collider.tag == "Player")
         {
-            other.GetComponent<PlayerMovement>().onPassable = false;
+            other.collider.GetComponentInParent<PlayerMovement>().onPassable = false;
         }
+    }
+
+    public IEnumerator Pass()
+    {
+        isPassing = true;
+        GetComponent<Collider>().enabled = false;
+        playerTransform.GetComponentInParent<PlayerMovement>().onPassable = false;
+        Vector3 velocity = playerTransform.GetComponentInParent<Rigidbody>().velocity;
+        playerTransform.GetComponentInParent<Rigidbody>().velocity = new Vector3(velocity.x, -6f, velocity.z);
+        yield return new WaitForSeconds(0.8f);
+        isPassing = false;
     }
 }
