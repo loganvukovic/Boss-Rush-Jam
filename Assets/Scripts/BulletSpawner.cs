@@ -77,34 +77,31 @@ public class BulletSpawner : MonoBehaviour
 
         if (justFired)
         {
+            followUpTimer += Time.deltaTime;
             if (followUps.Length > 0)
             {
-                followUpTimer += Time.deltaTime;
-
                 if (followUpTimer > followUpTime)
                 {
                     foreach (BulletSpawner spawner in followUps)
                     {
                         spawner.Fire();
                     }
-
-                    justFired = false;
-                    followUpTimer = 0;
                 }
             }
-            else if (bulletType == BulletType.Spear)
+            if (bulletType == BulletType.Spear)
             {
-                followUpTimer += Time.deltaTime;
-
                 if (followUpTimer > followUpTime)
                 {
-                    justFired = false;
-                    followUpTimer = 0;
                     if (spawnedBullet != null)
                     {
-                        spawnedBullet.GetComponent<Animator>().SetBool("Extend", true);
+                        spawnedBullet.GetComponent<Animator>().SetTrigger("Extend");
                     }
                 }
+            }
+            if (followUpTimer > followUpTime)
+            {
+                justFired = false;
+                followUpTimer = 0;
             }
         }
     }

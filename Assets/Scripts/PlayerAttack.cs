@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -29,8 +30,18 @@ public class PlayerAttack : MonoBehaviour
     public float shootCooldown;
     public BulletSpawner bulletSpawner;
 
+    public string curElement;
+    public float elementTimer;
+    public float elementDuration;
+
+    public Material noElement;
+    public Material waterMaterial;
+    public Image elementBar;
+
     void Start()
     {
+        curElement = "None";
+        
         foreach (GameObject hitbox in hitboxes)
         {
             if (hitbox != null)
@@ -43,6 +54,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        elementBar.fillAmount = elementTimer / elementDuration;
+
         attackTimer += Time.deltaTime;
         shootTimer += Time.deltaTime;
 
@@ -103,6 +116,15 @@ public class PlayerAttack : MonoBehaviour
             GroundSlam();
         }
 
+        if (curElement != null && elementTimer > 0)
+        {
+            elementTimer -= Time.deltaTime;
+        }
+        else if (elementTimer < 0)
+        {
+            Imbue("None");
+        }
+
     }
 
     private void Attack()
@@ -157,6 +179,40 @@ public class PlayerAttack : MonoBehaviour
             rb.velocity = new Vector3(0, -1 * slamSpeed, 0);
             isSlamming = true;
             hitboxes[3].SetActive(true);
+        }
+    }
+
+    public void Imbue(string element)
+    {
+        curElement = element;
+
+        if (element != "None")
+        {
+            elementTimer = elementDuration;
+        }
+        if (element == "None")
+        {
+            foreach (GameObject hitbox in hitboxes)
+            {
+                hitbox.GetComponent<Renderer>().material = noElement;
+            }
+        }
+        else if (element == "Water")
+        {
+            foreach (GameObject hitbox in hitboxes)
+            {
+                hitbox.GetComponent<Renderer>().material = waterMaterial;
+            }
+        }
+
+        if (element == "Water")
+        {
+            elementBar.enabled = true;
+            elementBar.color = new Color32(0, 0, 255, 255);
+        }
+        else
+        {
+            elementBar.enabled = false;
         }
     }
 }

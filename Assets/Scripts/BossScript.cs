@@ -11,6 +11,9 @@ public class BossScript : MonoBehaviour
     public bool healing;
     public float phase2Speed;
 
+    public bool elemental;
+    public string weakness;
+
     public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
@@ -34,7 +37,7 @@ public class BossScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerHB")
+        if (other.tag == "PlayerHB" && (!elemental || (elemental && weakness == other.GetComponentInParent<PlayerAttack>().curElement)))
         {
             float damage;
             if (other.GetComponent<AttackStats>() != null)
