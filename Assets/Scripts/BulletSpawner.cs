@@ -102,7 +102,7 @@ public class BulletSpawner : MonoBehaviour
                     followUpTimer = 0;
                     if (spawnedBullet != null)
                     {
-                        spawnedBullet.GetComponent<Animator>().Play("SpearExtend");
+                        spawnedBullet.GetComponent<Animator>().SetBool("Extend", true);
                     }
                 }
             }
