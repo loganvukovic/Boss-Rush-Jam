@@ -10,6 +10,7 @@ public class BossScript : MonoBehaviour
     public bool healAfterFirstPhase;
     public bool healing;
     public float phase2Speed;
+    public int damageFromBubble;
 
     public bool elemental;
     public string weakness;
@@ -44,6 +45,18 @@ public class BossScript : MonoBehaviour
                 damage = other.GetComponent<AttackStats>().damage;
             else damage = other.GetComponent<Bullet>().damage;
             curHealth -= damage;
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Bubble" && playerMovement.inBubble && !playerMovement.rotating)
+        {
+            if (other.GetComponent<Bullet>().element == weakness)
+            {
+                curHealth -= damageFromBubble;
+                Destroy(other.gameObject);
+            }
         }
     }
 

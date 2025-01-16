@@ -18,6 +18,9 @@ public class Bullet : MonoBehaviour
     public bool isBox = false;
     public bool destroyOnHit;
     public bool keepMovingOnBossMove;
+    public bool playerInBubble = false;
+    public bool floatInBubble;
+    public string element;
     public int spot;
     public GameObject bombBox;
     public GameObject spawn;
@@ -96,7 +99,7 @@ public class Bullet : MonoBehaviour
         if (timer > bulletLife)
             Destroy(this.gameObject);
         timer += Time.deltaTime;
-        if (!isBox)
+        if (!isBox && !playerInBubble)
         {
             transform.position = Movement(timer);
         }
@@ -114,7 +117,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating)
+        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating && (tag == "Bullet" || tag == "Destroyable"))
         {
             other.GetComponentInParent<PlayerMovement>().curHealth -= damage;
             other.GetComponentInParent<PlayerMovement>().tookDamage = true;
@@ -123,9 +126,22 @@ public class Bullet : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-        if (other.tag == "PlayerHB" && this.tag == "Destroyable")
+        if (other.tag == "PlayerHB" && tag == "Destroyable")
         {
             Destroy(this.gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(playerInBubble)
+        {
+            playerMovement.inBubble = false;
+
+            if(floatInBubble)
+            {
+                playerMovement.floating = false;
+            }
         }
     }
 }

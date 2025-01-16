@@ -580,6 +580,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
+  damageFromBubble: 0
   elemental: 1
   weakness: Electric
   playerMovement: {fileID: 1319437050}
@@ -1475,7 +1476,7 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
-  phase1Range: 1
+  phase1Range: 2
   spawners:
   - {fileID: 832372814}
   - {fileID: 1941405314}
@@ -1633,6 +1634,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
+  damageFromBubble: 30
   elemental: 1
   weakness: Water
   playerMovement: {fileID: 1319437050}
@@ -2026,6 +2028,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
+  damageFromBubble: 0
   elemental: 1
   weakness: Grass
   playerMovement: {fileID: 1319437050}
@@ -2653,6 +2656,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
+  damageFromBubble: 0
   elemental: 1
   weakness: Fire
   playerMovement: {fileID: 1319437050}
@@ -3229,6 +3233,7 @@ MonoBehaviour:
   groundCheck: {fileID: 2076214023}
   onPassable: 0
   rotating: 0
+  canRotate: 0
   rotationDuration: 1
   curSide: 
   attacking: 0
@@ -3246,6 +3251,8 @@ MonoBehaviour:
   meshRenderer: {fileID: 0}
   healthBar: {fileID: 1819335679}
   canMove: 0
+  inBubble: 0
+  floating: 0
 --- !u!136 &1319437051
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4896,8 +4903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletType: 0
-  speed: 4
-  bulletLife: 4.5
+  speed: 0
+  bulletLife: 15
   damage: 10
   timer: 0
   firingRate: 6

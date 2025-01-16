@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public float accelerationSpeed;
     public float decelerationSpeed;
     private float horizontalInput;
+    private float verticalInput;
 
     public bool canJump;
     public int maxJumps;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion startRotation;
     private Quaternion targetRotation;
     [HideInInspector] public bool rotating;
+    public bool canRotate;
     public float rotationDuration;
     private float timeElapsed;
     public string curSide;
@@ -58,6 +60,9 @@ public class PlayerMovement : MonoBehaviour
     public Image healthBar;
     public bool canMove;
 
+    public bool inBubble;
+    public bool floating;
+
     void Start()
     {
         curSide = "North";
@@ -65,6 +70,8 @@ public class PlayerMovement : MonoBehaviour
         curHealth = maxHealth;
         meshRenderer = GetComponent<MeshRenderer>();
         canMove = true;
+        canRotate = true;
+        inBubble = false;
     }
     void Update()
     {
@@ -114,7 +121,7 @@ public class PlayerMovement : MonoBehaviour
             else meshRenderer.enabled = true;
         }
 
-        if (!rotating)
+        if (!rotating && canRotate)
         {
             if (Input.GetKeyDown(KeyCode.Q))
                 Rotate(90);
@@ -161,6 +168,14 @@ public class PlayerMovement : MonoBehaviour
                 remainingJumps--;
             }
         }*/
+
+        if (floating)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
+            rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, maxSpeed * verticalInput, 0);
+            return;
+        }
 
         if (attacking && isGrounded())
         {
@@ -299,22 +314,31 @@ public class PlayerMovement : MonoBehaviour
         }
     }*/
 
-    /*private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Bullet" && !tookDamage)
+        if (other.tag == "Bubble" && !rotating && !inBubble)
         {
-            curHealth -= other.GetComponent<Bullet>().damage;
-            tookDamage = true;
-            if (other.GetComponent<Bullet>().destroyOnHit)
-            {
-                Destroy(other.gameObject);
-            }
+            StartCoroutine(EnterBubble(other));
         }
-        if (other.tag == "Destroyable" && !tookDamage)
+    }
+
+    public IEnumerator EnterBubble(Collider bubble)
+    {
+        canRotate = false;
+        bubble.GetComponent<Bullet>().bulletLife = 999999f;
+        inBubble = true;
+        Vector3 bubblePos = new Vector3(bubble.transform.position.x, bubble.transform.position.y - 1.1f, transform.position.z);
+        while (transform.position != bubblePos)
         {
-            curHealth -= 5;
-            tookDamage = true;
-            Destroy(other.gameObject);
+            transform.position = Vector3.MoveTowards(transform.position, bubblePos, 1f);
+            yield return new WaitForSeconds(0.01f);
         }
-    }*/
+        canRotate = true;
+        bubble.transform.parent = transform;
+        bubble.GetComponent<Bullet>().playerInBubble = true;
+        if (bubble.GetComponent<Bullet>().floatInBubble)
+        {
+            floating = true;
+        }
+    }
 }

@@ -23,6 +23,7 @@ public class ElementPuddle : MonoBehaviour
             if (other.GetComponentInParent<PlayerMovement>().isGrounded())
             {
                 other.GetComponentInParent<PlayerAttack>().Imbue(element);
+                Destroy(gameObject);
             }
         }
     }

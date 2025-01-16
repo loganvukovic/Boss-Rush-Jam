@@ -171,7 +171,7 @@ public class BossActions : MonoBehaviour
         attackCooldown = spawners[attack].cooldown;
 
         BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
-        if(linkedSpawners.Length != 0)
+        if (linkedSpawners.Length != 0)
         {
             foreach (BulletSpawner spawner in linkedSpawners)
             {
@@ -179,7 +179,6 @@ public class BossActions : MonoBehaviour
             }
         }
     }
-
     public void IncreaseSpeed(float speed)
     {
         foreach (BulletSpawner spawner in spawners)
