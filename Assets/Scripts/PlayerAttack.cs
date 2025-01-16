@@ -36,6 +36,9 @@ public class PlayerAttack : MonoBehaviour
 
     public Material noElement;
     public Material waterMaterial;
+    public Material fireMaterial;
+    public Material grassMaterial;
+    public Material electricMaterial;
     public Image elementBar;
 
     void Start()
@@ -190,6 +193,7 @@ public class PlayerAttack : MonoBehaviour
         {
             elementTimer = elementDuration;
         }
+
         if (element == "None")
         {
             foreach (GameObject hitbox in hitboxes)
@@ -204,11 +208,47 @@ public class PlayerAttack : MonoBehaviour
                 hitbox.GetComponent<Renderer>().material = waterMaterial;
             }
         }
+        else if (element == "Fire")
+        {
+            foreach (GameObject hitbox in hitboxes)
+            {
+                hitbox.GetComponent<Renderer>().material = fireMaterial;
+            }
+        }
+        else if (element == "Grass")
+        {
+            foreach (GameObject hitbox in hitboxes)
+            {
+                hitbox.GetComponent<Renderer>().material = grassMaterial;
+            }
+        }
+        else if (element == "Electric")
+        {
+            foreach (GameObject hitbox in hitboxes)
+            {
+                hitbox.GetComponent<Renderer>().material = electricMaterial;
+            }
+        }
 
         if (element == "Water")
         {
             elementBar.enabled = true;
             elementBar.color = new Color32(0, 0, 255, 255);
+        }
+        else if (element == "Fire")
+        {
+            elementBar.enabled = true;
+            elementBar.color = new Color32(255, 0, 0, 255);
+        }
+        else if (element == "Grass")
+        {
+            elementBar.enabled = true;
+            elementBar.color = new Color32(0, 255, 0, 255);
+        }
+        else if (element == "Electric")
+        {
+            elementBar.enabled = true;
+            elementBar.color = new Color32(255, 255, 0, 255);
         }
         else
         {
