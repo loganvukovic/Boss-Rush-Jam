@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear}
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning}
     public BulletType bulletType;
 
     public float speed;
@@ -38,6 +38,8 @@ public class BulletSpawner : MonoBehaviour
     public float followUpTimer;
     public float followUpTime;
     public bool justFired;
+    public BulletSpawner lightningConnector1;
+    public BulletSpawner lightningConnector2;
 
 
     // Start is called before the first frame update
@@ -60,6 +62,15 @@ public class BulletSpawner : MonoBehaviour
             angle = Mathf.Rad2Deg * Mathf.Atan2(playerDirection.y, playerDirection.x);
             transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
+
+        /*if (bulletType == BulletType.Lightning)
+        {
+            Vector3 lightningDirection = (lightningConnector2.transform.position - lightningConnector1.transform.position).normalized;
+            Debug.Log(angle);
+            angle = Mathf.Rad2Deg * Mathf.Atan2(lightningDirection.y, lightningDirection.x);
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+            transform.position = lightningConnector1.transform.position;
+        }*/
 
         if (playerMovement.rotating)
         {
@@ -133,7 +144,7 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
             //Laser
-            else if (bulletType == BulletType.Laser)
+            else if (bulletType == BulletType.Laser || bulletType == BulletType.Lightning)
             {
                 /*if (stayOnBossRotate)
                 {
