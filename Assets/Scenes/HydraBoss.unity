@@ -1548,7 +1548,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
-  damageFromBubble: 0
+  damageFromBubble: 30
   elemental: 1
   weakness: Electric
   playerMovement: {fileID: 1319437050}
@@ -1881,6 +1881,38 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+--- !u!1 &330084471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 330084472}
+  m_Layer: 0
+  m_Name: LeafShields
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &330084472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330084471}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1007143171}
+  m_Father: {fileID: 746191525}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356460843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,6 +3965,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 177644295}
+  - {fileID: 330084472}
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &767437926
@@ -4598,7 +4631,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
-  damageFromBubble: 0
+  damageFromBubble: 30
   elemental: 1
   weakness: Grass
   playerMovement: {fileID: 1319437050}
@@ -5387,6 +5420,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004978312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1007143169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007143171}
+  - component: {fileID: 1007143170}
+  m_Layer: 0
+  m_Name: BubbleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1007143170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007143169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 0
+  speed: 0
+  bulletLife: 15
+  damage: 10
+  timer: 0
+  firingRate: 6
+  cooldown: 5
+  bullet: {fileID: 1512310168047667362, guid: e55318ccb6cbece49988dfd6e2515fa4, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 1319437050}
+  bossActions: {fileID: 493662651}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 2.5
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!4 &1007143171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007143169}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7, y: 10.47, z: -4.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 330084472}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1026127609
 GameObject:
   m_ObjectHideFlags: 0
@@ -5998,7 +6104,7 @@ MonoBehaviour:
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
-  damageFromBubble: 0
+  damageFromBubble: 30
   elemental: 1
   weakness: Fire
   playerMovement: {fileID: 1319437050}
@@ -10447,11 +10553,12 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
-  phase1Range: 3
+  phase1Range: 4
   spawners:
   - {fileID: 375321877}
   - {fileID: 394228944}
   - {fileID: 1941573184}
+  - {fileID: 1007143170}
   sideDependentSpawners: 0
   northSpawners: []
   westSpawners: []
