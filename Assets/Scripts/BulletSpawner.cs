@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning}
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle}
     public BulletType bulletType;
 
     public float speed;
@@ -32,6 +32,7 @@ public class BulletSpawner : MonoBehaviour
     public bool gasterBlaster;
     public bool stayOnBossRotate = false;
     public bool keepMovingOnBossMove = false;
+    public int bulletsInCircle;
 
     public BulletSpawner[] linkedSpawners;
     public BulletSpawner[] followUps;
@@ -170,6 +171,32 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Bullet>().spawner = transform;
                 spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
+            }
+            else if (bulletType == BulletType.Circle)
+            {
+                float angleIncrement = 360f / bulletsInCircle;
+                Quaternion bulletRotation;
+                for (int i = 0; i < bulletsInCircle; i++)
+                {
+                    float angle = angleIncrement * i;
+                    if (playerMovement.curSide == "West" || playerMovement.curSide == "East")
+                    {
+                        bulletRotation = Quaternion.Euler(0f, 0f, angle);
+                    }
+                    else
+                    {
+                        bulletRotation = Quaternion.Euler(0f, 90f, angle);
+                    }
+                    //bulletRotation = Quaternion.Euler(0f, 0f, angle);
+                    spawnedBullet = Instantiate(bullet, transform.position, bulletRotation, transform);
+                    spawnedBullet.GetComponent<Bullet>().speed = speed;
+                    spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
+                    spawnedBullet.GetComponent<Bullet>().damage = damage;
+                    spawnedBullet.GetComponent<Bullet>().destroyOnHit = true;
+                    spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
+                    spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
+                    spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                }
             }
             //Normal Bullet
             else
