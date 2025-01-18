@@ -21,6 +21,8 @@ public class Bullet : MonoBehaviour
     public bool playerInBubble = false;
     public bool floatInBubble;
     public string element;
+    public bool destroyableByElement;
+    public string weakness;
     public int spot;
     public GameObject bombBox;
     public GameObject spawn;
@@ -126,9 +128,16 @@ public class Bullet : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-        if (other.tag == "PlayerHB" && tag == "Destroyable")
+        if (other.tag == "PlayerHB")
         {
-            Destroy(this.gameObject);
+            if (tag == "Destroyable")
+            {
+                Destroy(this.gameObject);
+            }
+            else if (destroyableByElement && weakness == other.GetComponentInParent<PlayerAttack>().curElement)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 
