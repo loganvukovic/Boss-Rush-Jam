@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
     public GameObject stage;
+    public Animator animator;
     public LayerMask groundLayer;
 
     private float curSpeed;
@@ -215,6 +216,7 @@ public class PlayerMovement : MonoBehaviour
         {
             remainingJumps--;
             isJumping = true;
+            animator.SetTrigger("Jump");
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping)
@@ -252,6 +254,11 @@ public class PlayerMovement : MonoBehaviour
             jumpForceTime = 0f;
         }
         else canJump = false;
+
+        //animtor stuff
+        animator.SetBool("Grounded", isGrounded());
+        animator.SetFloat("Speed", horizontalInput);
+
     }
 
     public bool isGrounded()
