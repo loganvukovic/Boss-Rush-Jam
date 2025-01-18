@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject[] hitboxes;
+    public Animator animator;
 
     public Rigidbody rb;
 
@@ -57,7 +58,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        elementBar.fillAmount = elementTimer / elementDuration;
+        //elementBar.fillAmount = elementTimer / elementDuration;
 
         attackTimer += Time.deltaTime;
         shootTimer += Time.deltaTime;
@@ -137,12 +138,14 @@ public class PlayerAttack : MonoBehaviour
             hitboxes[4].SetActive(true);
             attackTimer = 0f;
             attacking = true;
+            animator.SetInteger("AtkDirection", 1);
         }
         else if (Input.GetAxis("Vertical") < 0 && !isGrounded)
         {
             hitboxes[5].SetActive(true);
             attackTimer = 0f;
             attacking = true;
+            animator.SetInteger("AtkDirection", 3);
         }
 
         else if (curCombo == 0 || !isGrounded)
@@ -167,6 +170,11 @@ public class PlayerAttack : MonoBehaviour
             attackTimer = 0f;
             attacking = true;
             curCombo = 3;
+        }
+
+        if(attacking == true)
+        {
+            animator.SetTrigger("Attack");
         }
     }
 
