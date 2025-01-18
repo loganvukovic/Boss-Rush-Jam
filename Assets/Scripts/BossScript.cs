@@ -16,6 +16,7 @@ public class BossScript : MonoBehaviour
     public string weakness;
 
     public PlayerMovement playerMovement;
+    public Renderer lightning;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,11 @@ public class BossScript : MonoBehaviour
             {
                 curHealth -= damageFromBubble;
                 Destroy(other.gameObject);
+
+                if (other.GetComponent<Bullet>().element == "Electric")
+                {
+                    StartCoroutine(StaticLightning());
+                }
             }
         }
     }
@@ -75,5 +81,12 @@ public class BossScript : MonoBehaviour
         curPhase++;
         GetComponentInParent<BossActions>().IncreaseSpeed(phase2Speed);
         playerMovement.canMove = true;
+    }
+
+    IEnumerator StaticLightning()
+    {
+        lightning.enabled = true;
+        yield return new WaitForSeconds(0.3f);
+        lightning.enabled = false;
     }
 }
