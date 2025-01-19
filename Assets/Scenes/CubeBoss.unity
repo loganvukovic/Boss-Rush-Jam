@@ -770,8 +770,8 @@ Transform:
   m_GameObject: {fileID: 54077462}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 1.9535255}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.76, z: 2.22}
+  m_LocalScale: {x: 2.66, y: 2, z: 0.36}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1319437054}
@@ -4789,7 +4789,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7042523, y: -0.06347231, z: 0.7042523, w: -0.06347236}
   m_LocalPosition: {x: 0, y: -1, z: 1.0585275}
-  m_LocalScale: {x: 1.66, y: 1, z: 1}
+  m_LocalScale: {x: 4.14, y: 1.49, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1319437054}
@@ -8645,6 +8645,7 @@ MonoBehaviour:
   elemental: 0
   weakness: 
   playerMovement: {fileID: 1319437050}
+  lightning: {fileID: 0}
 --- !u!1 &924631366
 GameObject:
   m_ObjectHideFlags: 0
@@ -11942,8 +11943,8 @@ Transform:
   m_GameObject: {fileID: 1249421282}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: -0.046474457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.65, z: -0.046474457}
+  m_LocalScale: {x: 2.66, y: 2, z: 0.36}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1319437054}
@@ -12506,6 +12507,9 @@ MonoBehaviour:
   rb: {fileID: 1319437055}
   stage: {fileID: 356460843}
   animator: {fileID: 1715639685}
+  meshes:
+  - {fileID: 1898951289}
+  - {fileID: 1463089144}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -12690,13 +12694,13 @@ MonoBehaviour:
   animator: {fileID: 1715639685}
   rb: {fileID: 1319437055}
   attackTimer: 0
-  attackCooldown: 0.3
-  comboTimer: 0.5
+  attackCooldown: 0.6
+  comboTimer: 1
   attacking: 0
   curCombo: 0
-  combo1Length: 0.2
-  combo2Length: 0.2
-  combo3Length: 0.3
+  combo1Length: 0.6
+  combo2Length: 0.6
+  combo3Length: 0.9
   isGrounded: 0
   isDashing: 0
   isSlamming: 0
@@ -13997,6 +14001,11 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+--- !u!23 &1463089144 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 128138794071362040, guid: 5d65a80d09db4134cafefa0c55bfb619, type: 3}
+  m_PrefabInstance: {fileID: 1507387583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1469352071
 GameObject:
   m_ObjectHideFlags: 0
@@ -14295,6 +14304,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d65a80d09db4134cafefa0c55bfb619, type: 3}
       propertyPath: m_Name
       value: knight05
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d65a80d09db4134cafefa0c55bfb619, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16277,7 +16290,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7037321, y: -0.069001496, z: 0.7037321, w: -0.0690015}
   m_LocalPosition: {x: 0, y: -1, z: 1.0585275}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.65, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1319437054}
@@ -19167,6 +19180,11 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+--- !u!137 &1898951289 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3395162931349095928, guid: 5d65a80d09db4134cafefa0c55bfb619, type: 3}
+  m_PrefabInstance: {fileID: 1507387583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1912232744
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public GameObject stage;
     public Animator animator;
+    public Renderer[] meshes;
     public LayerMask groundLayer;
 
     private float curSpeed;
@@ -109,17 +110,29 @@ public class PlayerMovement : MonoBehaviour
             tookDamage = false;
             damageTimer = 0f;
             flickerTimer = 0f;
-            meshRenderer.enabled = true;
+            foreach(Renderer mesh in meshes)
+            {
+                mesh.enabled = true;
+            }
         }
 
         if (tookDamage && flickerTimer >= flickerDuration)
         {
             flickerTimer = 0f;
-            if (meshRenderer.enabled)
+            if (meshes[0].enabled)
             {
-                meshRenderer.enabled = false;
+                foreach (Renderer mesh in meshes)
+                {
+                    mesh.enabled = false;
+                }
             }
-            else meshRenderer.enabled = true;
+            else
+            {
+                foreach (Renderer mesh in meshes)
+                {
+                    mesh.enabled = true;
+                }
+            }
         }
 
         if (!rotating && canRotate)
@@ -295,6 +308,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
+        animator.SetTrigger("Dash");
         canDash = false;
         isDashing = true;
         rb.velocity = new Vector3(-transform.localScale.x * dashingPower, 0f, 0f);

@@ -58,7 +58,10 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        //elementBar.fillAmount = elementTimer / elementDuration;
+        if (elementBar != null)
+        {
+            elementBar.fillAmount = elementTimer / elementDuration;
+        }
 
         attackTimer += Time.deltaTime;
         shootTimer += Time.deltaTime;
@@ -138,22 +141,33 @@ public class PlayerAttack : MonoBehaviour
             hitboxes[4].SetActive(true);
             attackTimer = 0f;
             attacking = true;
-            animator.SetInteger("AtkDirection", 1);
+            animator.SetTrigger("UAir");
+            //animator.SetInteger("AtkDirection", 1);
         }
         else if (Input.GetAxis("Vertical") < 0 && !isGrounded)
         {
             hitboxes[5].SetActive(true);
             attackTimer = 0f;
             attacking = true;
-            animator.SetInteger("AtkDirection", 3);
+            animator.SetTrigger("DAir");
+            //animator.SetInteger("AtkDirection", 3);
         }
 
-        else if (curCombo == 0 || !isGrounded)
+        else if (curCombo == 0 && isGrounded)
         {
             hitboxes[0].SetActive(true);
             attackTimer = 0f;
             attacking = true;
             curCombo = 1;
+            animator.SetTrigger("Attack1");
+        }
+        else if (!isGrounded)
+        {
+            hitboxes[0].SetActive(true);
+            attackTimer = 0f;
+            attacking = true;
+            curCombo = 1;
+            animator.SetTrigger("FAir");
         }
 
         else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
@@ -162,6 +176,7 @@ public class PlayerAttack : MonoBehaviour
             attackTimer = 0f;
             attacking = true;
             curCombo = 2;
+            animator.SetTrigger("Attack2");
         }
 
         else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
@@ -170,12 +185,13 @@ public class PlayerAttack : MonoBehaviour
             attackTimer = 0f;
             attacking = true;
             curCombo = 3;
+            animator.SetTrigger("Attack3");
         }
 
-        if(attacking == true)
+        /*if(attacking == true)
         {
             animator.SetTrigger("Attack");
-        }
+        }*/
     }
 
     private void Shoot()
