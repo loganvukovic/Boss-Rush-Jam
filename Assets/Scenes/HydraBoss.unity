@@ -1531,6 +1531,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1819335679}
     - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: axe
+      value: 
+      objectReference: {fileID: 1668523699}
+    - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: elementBar
       value: 
       objectReference: {fileID: 1516284446}
@@ -1866,7 +1870,7 @@ MonoBehaviour:
   rotationDuration: 1
   phase1Range: 3
   spawners:
-  - {fileID: 1466751416}
+  - {fileID: 506316700}
   - {fileID: 1466751416}
   - {fileID: 638186852}
   sideDependentSpawners: 0
@@ -7628,7 +7632,7 @@ GameObject:
   - component: {fileID: 1466751417}
   - component: {fileID: 1466751416}
   m_Layer: 0
-  m_Name: ThunderTell
+  m_Name: ThunderTell 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8730,6 +8734,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651760968}
   m_CullTransparentMesh: 1
+--- !u!23 &1668523699 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8236495550356158508, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+  m_PrefabInstance: {fileID: 276817019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1675420650
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerAttack : MonoBehaviour
 {
     public Collider[] hitboxes;
+    public Renderer axe;
     public Animator animator;
 
     public Rigidbody rb;
@@ -41,6 +42,8 @@ public class PlayerAttack : MonoBehaviour
     public Material grassMaterial;
     public Material electricMaterial;
     public Image elementBar;
+    public bool touchingPuddle;
+    public bool imbuing;
 
     void Start()
     {
@@ -81,9 +84,13 @@ public class PlayerAttack : MonoBehaviour
             hitboxes[2].enabled = false;
         }
 
-        if (attackTimer > attackCooldown && shootTimer > attackCooldown)
+        if (attackTimer > attackCooldown && shootTimer > attackCooldown && !imbuing)
         {
             attacking = false;
+        }
+        else if (imbuing)
+        {
+            attacking = true;
         }
 
         if (attackTimer > comboTimer)
@@ -136,15 +143,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        if (Input.GetAxis("Vertical") > 0)
-        {
-            hitboxes[4].enabled = true;
-            attackTimer = 0f;
-            attacking = true;
-            animator.SetTrigger("UAir");
-            //animator.SetInteger("AtkDirection", 1);
-        }
-        else if (Input.GetAxis("Vertical") < 0 && !isGrounded)
+        if (Input.GetAxis("Vertical") < 0 && !isGrounded)
         {
             hitboxes[5].enabled = true;
             attackTimer = 0f;
@@ -152,40 +151,51 @@ public class PlayerAttack : MonoBehaviour
             animator.SetTrigger("DAir");
             //animator.SetInteger("AtkDirection", 3);
         }
+        else if ((Input.GetAxis("Vertical") < 0 && !touchingPuddle) || Input.GetAxis("Vertical") >= 0)
+        {
+            if (Input.GetAxis("Vertical") > 0)
+            {
+                hitboxes[4].enabled = true;
+                attackTimer = 0f;
+                attacking = true;
+                animator.SetTrigger("UAir");
+                //animator.SetInteger("AtkDirection", 1);
+            }
 
-        else if (curCombo == 0 && isGrounded)
-        {
-            hitboxes[0].enabled = true;
-            attackTimer = 0f;
-            attacking = true;
-            curCombo = 1;
-            animator.SetTrigger("Attack1");
-        }
-        else if (!isGrounded)
-        {
-            hitboxes[0].enabled = true;
-            attackTimer = 0f;
-            attacking = true;
-            curCombo = 1;
-            animator.SetTrigger("FAir");
-        }
+            else if (curCombo == 0 && isGrounded)
+            {
+                hitboxes[0].enabled = true;
+                attackTimer = 0f;
+                attacking = true;
+                curCombo = 1;
+                animator.SetTrigger("Attack1");
+            }
+            else if (!isGrounded)
+            {
+                hitboxes[0].enabled = true;
+                attackTimer = 0f;
+                attacking = true;
+                curCombo = 1;
+                animator.SetTrigger("FAir");
+            }
 
-        else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
-        {
-            hitboxes[1].enabled = true;
-            attackTimer = 0f;
-            attacking = true;
-            curCombo = 2;
-            animator.SetTrigger("Attack2");
-        }
+            else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
+            {
+                hitboxes[1].enabled = true;
+                attackTimer = 0f;
+                attacking = true;
+                curCombo = 2;
+                animator.SetTrigger("Attack2");
+            }
 
-        else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
-        {
-            hitboxes[2].enabled = true;
-            attackTimer = 0f;
-            attacking = true;
-            curCombo = 3;
-            animator.SetTrigger("Attack3");
+            else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
+            {
+                hitboxes[2].enabled = true;
+                attackTimer = 0f;
+                attacking = true;
+                curCombo = 3;
+                animator.SetTrigger("Attack3");
+            }
         }
 
         /*if(attacking == true)
@@ -220,38 +230,27 @@ public class PlayerAttack : MonoBehaviour
 
         if (element == "None")
         {
-            foreach (Collider hitbox in hitboxes)
-            {
-                hitbox.GetComponent<Renderer>().material = noElement;
-            }
+            axe.material = noElement;
         }
         else if (element == "Water")
         {
-            foreach (Collider hitbox in hitboxes)
-            {
-                hitbox.GetComponent<Renderer>().material = waterMaterial;
-            }
+            animator.SetTrigger("Absorb");
+            axe.material = waterMaterial;
         }
         else if (element == "Fire")
         {
-            foreach (Collider hitbox in hitboxes)
-            {
-                hitbox.GetComponent<Renderer>().material = fireMaterial;
-            }
+            animator.SetTrigger("Absorb");
+            axe.material = fireMaterial;
         }
         else if (element == "Grass")
         {
-            foreach (Collider hitbox in hitboxes)
-            {
-                hitbox.GetComponent<Renderer>().material = grassMaterial;
-            }
+            animator.SetTrigger("Absorb");
+            axe.material = grassMaterial;
         }
         else if (element == "Electric")
         {
-            foreach (Collider hitbox in hitboxes)
-            {
-                hitbox.GetComponent<Renderer>().material = electricMaterial;
-            }
+            animator.SetTrigger("Absorb");
+            axe.material = electricMaterial;
         }
 
         if (element == "Water")

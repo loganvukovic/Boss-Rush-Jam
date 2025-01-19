@@ -8,23 +8,43 @@ public class ElementPuddle : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
     void OnTriggerStay(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            other.GetComponentInParent<PlayerAttack>().touchingPuddle = true;
+        }
         if (other.tag == "Player" && Input.GetKey(KeyCode.K) && (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
         {
             if (other.GetComponentInParent<PlayerMovement>().isGrounded())
             {
-                other.GetComponentInParent<PlayerAttack>().Imbue(element);
-                Destroy(gameObject);
+                StartCoroutine(Imbue(other));
             }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.GetComponentInParent<PlayerAttack>().touchingPuddle = false;
+        }
+    }
+
+    IEnumerator Imbue(Collider other)
+    {
+        other.GetComponentInParent<PlayerAttack>().Imbue(element);
+        other.GetComponentInParent<PlayerAttack>().imbuing = true;
+        yield return new WaitForSeconds(1f);
+        other.GetComponentInParent<PlayerAttack>().imbuing = false;
+        Destroy(gameObject);
     }
 }
