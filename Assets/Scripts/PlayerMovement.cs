@@ -191,7 +191,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (attacking && isGrounded())
+        if (attacking)
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
@@ -206,7 +206,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector3(0, rb.velocity.y, 0);
             }
-            else
+            else if (!attacking)
             {
                 horizontalInput = Input.GetAxis("Horizontal");
                 rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);
@@ -225,7 +225,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (canJump && Input.GetKey(KeyCode.Space))
+        if (canJump && Input.GetKey(KeyCode.Space) && !GetComponent<PlayerAttack>().attacking)
         {
             remainingJumps--;
             isJumping = true;
@@ -246,7 +246,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (isJumping && (!Input.GetKey(KeyCode.Space) || isSlamming))
+        if (isJumping && (!Input.GetKey(KeyCode.Space) || isSlamming || GetComponent<PlayerAttack>().attacking))
         {
             isJumping = false;
             rb.velocity = new Vector3(rb.velocity.x, 2f, rb.velocity.z);
