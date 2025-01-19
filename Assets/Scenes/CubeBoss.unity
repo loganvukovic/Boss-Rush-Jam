@@ -8200,7 +8200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 500
+  maxHealth: 300
   curPhase: 0
   healAfterFirstPhase: 1
   healing: 0
