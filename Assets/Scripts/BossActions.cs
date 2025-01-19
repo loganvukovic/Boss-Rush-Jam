@@ -20,6 +20,7 @@ public class BossActions : MonoBehaviour
     private Quaternion startRotation;
     private Quaternion targetRotation;
 
+    private int previousAttack = -1;
     public int phase1Range;
     public BulletSpawner[] spawners;
     public int sideDependentSpawners = 0;
@@ -39,6 +40,7 @@ public class BossActions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        previousAttack = -1;
         rotateTimer = 0;
         curSide = "North";
     }
@@ -165,17 +167,21 @@ public class BossActions : MonoBehaviour
 
     private void PickAttack(int attack)
     {
-        attackTimer = 0;
-        spawners[attack].Fire();
-        Debug.Log(spawners[attack].gameObject);
-        attackCooldown = spawners[attack].cooldown;
-
-        BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
-        if (linkedSpawners.Length != 0)
+        if(attack != previousAttack)
         {
-            foreach (BulletSpawner spawner in linkedSpawners)
+            previousAttack = attack;
+            attackTimer = 0;
+            spawners[attack].Fire();
+            Debug.Log(spawners[attack].gameObject);
+            attackCooldown = spawners[attack].cooldown;
+
+            BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
+            if (linkedSpawners.Length != 0)
             {
-                spawner.Fire();
+                foreach (BulletSpawner spawner in linkedSpawners)
+                {
+                    spawner.Fire();
+                }
             }
         }
     }
