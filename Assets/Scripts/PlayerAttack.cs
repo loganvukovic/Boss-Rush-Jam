@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public GameObject[] hitboxes;
+    public Collider[] hitboxes;
     public Animator animator;
 
     public Rigidbody rb;
@@ -46,11 +46,11 @@ public class PlayerAttack : MonoBehaviour
     {
         curElement = "None";
         
-        foreach (GameObject hitbox in hitboxes)
+        foreach (Collider hitbox in hitboxes)
         {
             if (hitbox != null)
             {
-                hitbox.SetActive(false);
+                hitbox.enabled = false;
             }
         }
 
@@ -68,17 +68,17 @@ public class PlayerAttack : MonoBehaviour
 
         if (attackTimer > combo1Length)
         {
-            hitboxes[0].SetActive(false);
-            hitboxes[4].SetActive(false);
-            hitboxes[5].SetActive(false);
+            hitboxes[0].enabled = false;
+            hitboxes[4].enabled = false;
+            hitboxes[5].enabled = false;
         }
         if (attackTimer > combo2Length)
         {
-            hitboxes[1].SetActive(false);
+            hitboxes[1].enabled = false;
         }
         if (attackTimer > combo3Length)
         {
-            hitboxes[2].SetActive(false);
+            hitboxes[2].enabled = false;
         }
 
         if (attackTimer > attackCooldown && shootTimer > attackCooldown)
@@ -97,7 +97,7 @@ public class PlayerAttack : MonoBehaviour
         if (isGrounded)
         {
             isSlamming = false;
-            hitboxes[3].SetActive(false);
+            hitboxes[3].enabled = false;
         }
 
         if(isSlamming)
@@ -115,7 +115,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.J) && !attacking && shootTimer > shootCooldown && !isDashing && !isSlamming)
         {
-            Shoot();
+            //Shoot();
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxis("Vertical") < 0)
@@ -138,7 +138,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetAxis("Vertical") > 0)
         {
-            hitboxes[4].SetActive(true);
+            hitboxes[4].enabled = true;
             attackTimer = 0f;
             attacking = true;
             animator.SetTrigger("UAir");
@@ -146,7 +146,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (Input.GetAxis("Vertical") < 0 && !isGrounded)
         {
-            hitboxes[5].SetActive(true);
+            hitboxes[5].enabled = true;
             attackTimer = 0f;
             attacking = true;
             animator.SetTrigger("DAir");
@@ -155,7 +155,7 @@ public class PlayerAttack : MonoBehaviour
 
         else if (curCombo == 0 && isGrounded)
         {
-            hitboxes[0].SetActive(true);
+            hitboxes[0].enabled = true;
             attackTimer = 0f;
             attacking = true;
             curCombo = 1;
@@ -163,7 +163,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (!isGrounded)
         {
-            hitboxes[0].SetActive(true);
+            hitboxes[0].enabled = true;
             attackTimer = 0f;
             attacking = true;
             curCombo = 1;
@@ -172,7 +172,7 @@ public class PlayerAttack : MonoBehaviour
 
         else if (curCombo == 1 && attackTimer < comboTimer && isGrounded)
         {
-            hitboxes[1].SetActive(true);
+            hitboxes[1].enabled = true;
             attackTimer = 0f;
             attacking = true;
             curCombo = 2;
@@ -181,7 +181,7 @@ public class PlayerAttack : MonoBehaviour
 
         else if (curCombo == 2 && attackTimer < comboTimer && isGrounded)
         {
-            hitboxes[2].SetActive(true);
+            hitboxes[2].enabled = true;
             attackTimer = 0f;
             attacking = true;
             curCombo = 3;
@@ -205,7 +205,7 @@ public class PlayerAttack : MonoBehaviour
         {
             rb.velocity = new Vector3(0, -1 * slamSpeed, 0);
             isSlamming = true;
-            hitboxes[3].SetActive(true);
+            hitboxes[3].enabled = true;
         }
     }
 
@@ -220,35 +220,35 @@ public class PlayerAttack : MonoBehaviour
 
         if (element == "None")
         {
-            foreach (GameObject hitbox in hitboxes)
+            foreach (Collider hitbox in hitboxes)
             {
                 hitbox.GetComponent<Renderer>().material = noElement;
             }
         }
         else if (element == "Water")
         {
-            foreach (GameObject hitbox in hitboxes)
+            foreach (Collider hitbox in hitboxes)
             {
                 hitbox.GetComponent<Renderer>().material = waterMaterial;
             }
         }
         else if (element == "Fire")
         {
-            foreach (GameObject hitbox in hitboxes)
+            foreach (Collider hitbox in hitboxes)
             {
                 hitbox.GetComponent<Renderer>().material = fireMaterial;
             }
         }
         else if (element == "Grass")
         {
-            foreach (GameObject hitbox in hitboxes)
+            foreach (Collider hitbox in hitboxes)
             {
                 hitbox.GetComponent<Renderer>().material = grassMaterial;
             }
         }
         else if (element == "Electric")
         {
-            foreach (GameObject hitbox in hitboxes)
+            foreach (Collider hitbox in hitboxes)
             {
                 hitbox.GetComponent<Renderer>().material = electricMaterial;
             }
