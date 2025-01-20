@@ -7,6 +7,7 @@ public class BossActions : MonoBehaviour
 {
     public Transform tf;
     public PlayerMovement playerMovement;
+    public GameObject stage;
 
     public bool canRotate;
     public bool rotating;
@@ -19,6 +20,14 @@ public class BossActions : MonoBehaviour
 
     private Quaternion startRotation;
     private Quaternion targetRotation;
+
+    public bool canClone;
+    public Vector3[] spawnPoints;
+    public float cloneTimer;
+    public float cloneCooldown;
+    public string spawnSide;
+    public string[] sides;
+    public GameObject[] fakePuppets;
 
     private int previousAttack = -1;
     public int phase1Range;
@@ -43,6 +52,11 @@ public class BossActions : MonoBehaviour
         previousAttack = -1;
         rotateTimer = 0;
         curSide = "North";
+
+        if(canClone)
+        {
+            ChooseSpot(0);
+        }
     }
 
     // Update is called once per frame
@@ -122,6 +136,15 @@ public class BossActions : MonoBehaviour
             return;
         }
 
+        if(canClone)
+        {
+            cloneTimer += Time.deltaTime;
+            if (cloneTimer > cloneCooldown)
+            {
+                ChooseSpot(Random.Range(0, spawnPoints.Length));
+            }
+        }
+
         attackTimer += Time.deltaTime;
         if (attackTimer > attackCooldown)
         {
@@ -163,6 +186,33 @@ public class BossActions : MonoBehaviour
         startRotation = transform.localRotation;
         targetRotation = startRotation * Quaternion.Euler(0, angle, 0);
         rotating = true;
+    }
+
+    private void ChooseSpot(int spot)
+    {
+        Debug.Log(spot);
+        cloneTimer = 0f;
+        transform.position = spawnPoints[spot];
+        spawnSide = sides[spot];
+        CreateClones(spot);
+    }
+
+    private void CreateClones(int spot)
+    {
+        GameObject spawnedClone;
+        int curPuppet = 0;
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            if (i != spot)
+            {
+                spawnedClone = fakePuppets[curPuppet];
+                curPuppet++;
+                CloneScript cloneScript = spawnedClone.GetComponent<CloneScript>();
+                cloneScript.side = sides[i];
+                cloneScript.spawnPoint = spawnPoints[i];
+                cloneScript.UpdatePosition();
+            }
+        }
     }
 
     private void PickAttack(int attack)
