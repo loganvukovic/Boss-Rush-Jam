@@ -14,6 +14,7 @@ public class BossScript : MonoBehaviour
 
     public bool elemental;
     public string weakness;
+    public bool invincible;
 
     public PlayerMovement playerMovement;
     public BossActions bossActions;
@@ -35,12 +36,30 @@ public class BossScript : MonoBehaviour
             {
                 StartCoroutine(Heal());
             }
+            else transform.parent.gameObject.SetActive(false);
+        }
+
+        if (invincible)
+        {
+            bool attackable = true;
+            foreach (GameObject puppet in bossActions.fakePuppets)
+            {
+                if (puppet.activeSelf)
+                {
+                    attackable = false; 
+                    break;
+                }
+            }
+            if (attackable)
+            {
+                invincible = false;
+            }
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerHB" && (!elemental || (elemental && weakness == other.GetComponentInParent<PlayerAttack>().curElement)))
+        if (other.tag == "PlayerHB" && (!elemental || (elemental && weakness == other.GetComponentInParent<PlayerAttack>().curElement)) && !invincible)
         {
             float damage;
             if (other.GetComponent<AttackStats>() != null)
