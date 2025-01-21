@@ -28,6 +28,7 @@ public class BossActions : MonoBehaviour
     public string spawnSide;
     public string[] sides;
     public GameObject[] fakePuppets;
+    public GameObject empty;
 
     private int previousAttack = -1;
     public int phase1Range;
@@ -245,11 +246,13 @@ public class BossActions : MonoBehaviour
 
     public IEnumerator UpdatePosition(int spot)
     {
-        while (transform.position != spawnPoints[spot])
+        GameObject tempObject = Instantiate(empty, spawnPoints[spot], transform.rotation, stage.transform);
+        while (transform.position != tempObject.transform.position)
         {
-            transform.position = Vector3.MoveTowards(transform.position, spawnPoints[spot], 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
             yield return new WaitForSeconds(0.01f);
         }
-        transform.position = spawnPoints[spot];
+        transform.position = tempObject.transform.position;
+        Destroy(tempObject);
     }
 }
