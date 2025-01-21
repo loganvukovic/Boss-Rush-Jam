@@ -24,8 +24,10 @@ public class BossActions : MonoBehaviour
 
     public bool canClone;
     public GameObject[] spawnPoints;
-    public float cloneTimer;
-    public float cloneCooldown;
+    //public float cloneTimer;
+    //public float cloneCooldown;
+    public int hitCounter;
+    public int reqHits;
     public string spawnSide;
     public string[] sides;
     public GameObject[] fakePuppets;
@@ -143,8 +145,7 @@ public class BossActions : MonoBehaviour
 
         if(canClone)
         {
-            cloneTimer += Time.deltaTime;
-            if (cloneTimer > cloneCooldown)
+            if (hitCounter >= reqHits)
             {
                 ChooseSpot(Random.Range(0, spawnPoints.Length));
             }
@@ -198,7 +199,7 @@ public class BossActions : MonoBehaviour
         if (spot != prevSpot)
         {
             prevSpot = spot;
-            cloneTimer = 0f;
+            hitCounter = 0;
             StartCoroutine(UpdatePosition(spot));
             spawnSide = sides[spot];
             CreateClones(spot);

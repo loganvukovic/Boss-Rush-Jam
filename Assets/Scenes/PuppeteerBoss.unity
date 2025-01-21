@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 75
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -916,6 +916,7 @@ MonoBehaviour:
   elemental: 0
   weakness: 
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
   lightning: {fileID: 1323843737}
 --- !u!1 &731962826
 GameObject:
@@ -2262,7 +2263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 75
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -2271,6 +2272,7 @@ MonoBehaviour:
   elemental: 0
   weakness: 
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
   lightning: {fileID: 1323843737}
 --- !u!1 &1469352071
 GameObject:
@@ -3911,7 +3913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 75
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -3920,6 +3922,7 @@ MonoBehaviour:
   elemental: 0
   weakness: 
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
   lightning: {fileID: 1323843737}
 --- !u!1 &2093772115
 GameObject:
@@ -4283,8 +4286,8 @@ MonoBehaviour:
   - {fileID: 95857441}
   - {fileID: 1787498077}
   - {fileID: 448775830}
-  cloneTimer: 0
-  cloneCooldown: 3
+  hitCounter: 0
+  reqHits: 10
   spawnSide: North
   sides:
   - North
@@ -4298,6 +4301,7 @@ MonoBehaviour:
   empty: {fileID: 4606388854812501616, guid: 7afd98c095624084f9fa21a8c3c45d28, type: 3}
   isRotating: 0
   curSpots: 0
+  prevSpot: 0
   phase1Range: 1
   spawners:
   - {fileID: 2088267190}
@@ -4334,6 +4338,7 @@ MonoBehaviour:
   elemental: 0
   weakness: 
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
   lightning: {fileID: 1323843737}
 --- !u!4 &7875929978260168532
 Transform:

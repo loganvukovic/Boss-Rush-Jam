@@ -16,6 +16,7 @@ public class BossScript : MonoBehaviour
     public string weakness;
 
     public PlayerMovement playerMovement;
+    public BossActions bossActions;
     public Renderer lightning;
 
     // Start is called before the first frame update
@@ -46,6 +47,10 @@ public class BossScript : MonoBehaviour
                 damage = other.GetComponent<AttackStats>().damage;
             else damage = other.GetComponent<Bullet>().damage;
             curHealth -= damage;
+            if (bossActions != null)
+            {
+                bossActions.hitCounter++;
+            }
         }
     }
 
