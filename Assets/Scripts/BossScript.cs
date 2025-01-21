@@ -18,6 +18,7 @@ public class BossScript : MonoBehaviour
 
     public PlayerMovement playerMovement;
     public BossActions bossActions;
+    public GameObject healthBar;
     public Renderer lightning;
 
     // Start is called before the first frame update
@@ -53,6 +54,7 @@ public class BossScript : MonoBehaviour
             if (attackable)
             {
                 invincible = false;
+                healthBar.SetActive(true);
             }
         }
     }

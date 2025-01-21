@@ -23,5 +23,10 @@ public class BossHealthBar : MonoBehaviour
         curHealth = activeBoss.curHealth;
 
         healthBar.fillAmount = curHealth / maxHealth;
+
+        if (!activeBoss.transform.parent.gameObject.activeSelf)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

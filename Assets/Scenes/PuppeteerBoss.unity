@@ -1068,6 +1068,7 @@ MonoBehaviour:
   invincible: 0
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 7518884777301099928}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &706531779
 GameObject:
@@ -2691,6 +2692,7 @@ MonoBehaviour:
   invincible: 0
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 7518884777301099928}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &1469352071
 GameObject:
@@ -4586,6 +4588,7 @@ MonoBehaviour:
   invincible: 0
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 7518884777301099928}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &2093772115
 GameObject:
@@ -5078,6 +5081,7 @@ MonoBehaviour:
   invincible: 1
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 7518884777301099928}
+  healthBar: {fileID: 1499616735}
   lightning: {fileID: 1323843737}
 --- !u!4 &7875929978260168532
 Transform:
