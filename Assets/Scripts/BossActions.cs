@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class BossActions : MonoBehaviour
 {
@@ -22,13 +23,16 @@ public class BossActions : MonoBehaviour
     private Quaternion targetRotation;
 
     public bool canClone;
-    public Vector3[] spawnPoints;
+    public GameObject[] spawnPoints;
     public float cloneTimer;
     public float cloneCooldown;
     public string spawnSide;
     public string[] sides;
     public GameObject[] fakePuppets;
     public GameObject empty;
+    public bool isRotating;
+    public bool curSpots;
+    public int prevSpot;
 
     private int previousAttack = -1;
     public int phase1Range;
@@ -191,11 +195,15 @@ public class BossActions : MonoBehaviour
 
     private void ChooseSpot(int spot)
     {
-        Debug.Log(spot);
-        cloneTimer = 0f;
-        StartCoroutine(UpdatePosition(spot));
-        spawnSide = sides[spot];
-        CreateClones(spot);
+        if (spot != prevSpot)
+        {
+            prevSpot = spot;
+            cloneTimer = 0f;
+            StartCoroutine(UpdatePosition(spot));
+            spawnSide = sides[spot];
+            CreateClones(spot);
+        }
+        else ChooseSpot(Random.Range(0, spawnPoints.Length));
     }
 
     private void CreateClones(int spot)
@@ -210,7 +218,7 @@ public class BossActions : MonoBehaviour
                 curPuppet++;
                 CloneScript cloneScript = spawnedClone.GetComponent<CloneScript>();
                 cloneScript.side = sides[i];
-                cloneScript.spawnPoint = spawnPoints[i];
+                cloneScript.spawnPoint = spawnPoints[i].transform.position;
                 StartCoroutine(cloneScript.UpdatePosition());
             }
         }
@@ -246,7 +254,7 @@ public class BossActions : MonoBehaviour
 
     public IEnumerator UpdatePosition(int spot)
     {
-        GameObject tempObject = Instantiate(empty, spawnPoints[spot], transform.rotation, stage.transform);
+        GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
@@ -254,5 +262,12 @@ public class BossActions : MonoBehaviour
         }
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
+        //loat westRNG = Random.Range(0f, 1f);
+        //float eastRNG = Random.Range(0f, 1f);
+        foreach (GameObject spawn in spawnPoints)
+        {
+            spawn.GetComponent<PuppetSpawn>().SwitchSpots();
+        }
+        
     }
 }
