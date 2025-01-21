@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CloneScript : MonoBehaviour
@@ -20,8 +21,13 @@ public class CloneScript : MonoBehaviour
         
     }
 
-    public void UpdatePosition()
+    public IEnumerator UpdatePosition()
     {
+        while (transform.position != spawnPoint)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, spawnPoint, 0.1f);
+            yield return new WaitForSeconds(0.01f);
+        }
         transform.position = spawnPoint;
     }
 }

@@ -192,7 +192,7 @@ public class BossActions : MonoBehaviour
     {
         Debug.Log(spot);
         cloneTimer = 0f;
-        transform.position = spawnPoints[spot];
+        StartCoroutine(UpdatePosition(spot));
         spawnSide = sides[spot];
         CreateClones(spot);
     }
@@ -210,7 +210,7 @@ public class BossActions : MonoBehaviour
                 CloneScript cloneScript = spawnedClone.GetComponent<CloneScript>();
                 cloneScript.side = sides[i];
                 cloneScript.spawnPoint = spawnPoints[i];
-                cloneScript.UpdatePosition();
+                StartCoroutine(cloneScript.UpdatePosition());
             }
         }
     }
@@ -241,5 +241,15 @@ public class BossActions : MonoBehaviour
         {
             spawner.cooldown = spawner.cooldown / speed;
         }
+    }
+
+    public IEnumerator UpdatePosition(int spot)
+    {
+        while (transform.position != spawnPoints[spot])
+        {
+            transform.position = Vector3.MoveTowards(transform.position, spawnPoints[spot], 0.1f);
+            yield return new WaitForSeconds(0.01f);
+        }
+        transform.position = spawnPoints[spot];
     }
 }
