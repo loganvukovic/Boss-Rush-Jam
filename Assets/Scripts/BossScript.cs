@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossScript : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class BossScript : MonoBehaviour
     public bool healing;
     public float phase2Speed;
     public int damageFromBubble;
+    public bool deathLeadsToScene;
+    public int sceneToLoad;
+    public float timeBeforeLoad;
+    public BlackoutSquare blackoutSquare;
 
     public bool elemental;
     public string weakness;
@@ -37,7 +42,15 @@ public class BossScript : MonoBehaviour
             {
                 StartCoroutine(Heal());
             }
-            else transform.parent.gameObject.SetActive(false);
+            else
+            {
+                //transform.parent.gameObject.SetActive(false);
+
+                if(deathLeadsToScene)
+                {
+                    StartCoroutine(LoadScene());
+                }
+            }
         }
 
         if (invincible)
@@ -114,5 +127,14 @@ public class BossScript : MonoBehaviour
         lightning.enabled = true;
         yield return new WaitForSeconds(0.3f);
         lightning.enabled = false;
+    }
+
+    IEnumerator LoadScene()
+    {
+        //animator.SetTrigger("Die");
+        yield return new WaitForSeconds(timeBeforeLoad);
+        StartCoroutine(blackoutSquare.FadeBlackOutSquare());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
