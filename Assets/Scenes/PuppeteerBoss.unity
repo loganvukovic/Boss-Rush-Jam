@@ -508,6 +508,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 356460843}
     - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: hitbox
+      value: 
+      objectReference: {fileID: 620723596}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1819335679}
@@ -990,6 +994,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549559259}
   m_CullTransparentMesh: 1
+--- !u!136 &620723596 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 4769480267238200372, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+  m_PrefabInstance: {fileID: 276817019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &691515480
 GameObject:
   m_ObjectHideFlags: 0

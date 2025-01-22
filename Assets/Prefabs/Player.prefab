@@ -821,6 +821,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  hitbox: {fileID: 4769480267238200372}
   maxSpeed: 10
   accelerationSpeed: 4
   decelerationSpeed: 7
@@ -853,6 +854,7 @@ MonoBehaviour:
   canMove: 0
   inBubble: 0
   floating: 0
+  heldKeys: 0
 --- !u!54 &161858060241552197
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -899,6 +901,7 @@ MonoBehaviour:
   - {fileID: 1336713108874587428}
   - {fileID: 4935366586512482055}
   - {fileID: 3602711717929769020}
+  axe: {fileID: 0}
   animator: {fileID: 3982207867807458912}
   rb: {fileID: 161858060241552197}
   attackTimer: 0
@@ -925,6 +928,8 @@ MonoBehaviour:
   grassMaterial: {fileID: 2100000, guid: c8d71a1c07ddcdd4e80c1221baff0c5a, type: 2}
   electricMaterial: {fileID: 2100000, guid: bd1f232481933ed44b28b8608d3d85b1, type: 2}
   elementBar: {fileID: 0}
+  touchingPuddle: 0
+  imbuing: 0
 --- !u!1 &6969203953462381369
 GameObject:
   m_ObjectHideFlags: 0
