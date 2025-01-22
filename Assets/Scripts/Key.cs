@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackStats : MonoBehaviour
+public class Key : MonoBehaviour
 {
-    public float damage;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +16,12 @@ public class AttackStats : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Crate")
+        if (other.tag == "Player")
         {
-            Destroy(other.transform.parent.gameObject);
+            other.GetComponentInParent<PlayerMovement>().heldKeys++;
+            Destroy(gameObject);
         }
     }
 }

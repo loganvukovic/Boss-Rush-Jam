@@ -9,6 +9,9 @@ TagManager:
   - Destroyable
   - Puddle
   - Bubble
+  - Crate
+  - Key
+  - Entrance
   layers:
   - Default
   - TransparentFX

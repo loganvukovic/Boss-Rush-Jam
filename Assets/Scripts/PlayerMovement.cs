@@ -65,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
     public bool inBubble;
     public bool floating;
 
+    public int heldKeys = 0;
+
     void Start()
     {
         curSide = "North";
@@ -341,6 +343,11 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(EnterBubble(other));
         }
+        /*if (other.tag == "Key" && !rotating)
+        {
+            Destroy(other.gameObject);
+            heldKeys++;
+        }*/
     }
 
     public IEnumerator EnterBubble(Collider bubble)
