@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class BlackoutSquare : MonoBehaviour
 {
-
+    public bool blackFromStart;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (blackFromStart)
+        {
+            Color objectColor = GetComponent<UnityEngine.UI.Image>().color;
+            GetComponent<UnityEngine.UI.Image>().color = new Color(objectColor.r, objectColor.g, objectColor.b, 1);
+            StartCoroutine(FadeFromBlack());
+        }
     }
 
     // Update is called once per frame
@@ -39,6 +44,10 @@ public class BlackoutSquare : MonoBehaviour
 
     public IEnumerator FadeFromBlack(int fadeSpeed = 1)
     {
+        if (blackFromStart)
+        {
+            yield return new WaitForSeconds(1f);
+        }
         Color objectColor = GetComponent<UnityEngine.UI.Image>().color;
         float fadeAmount;
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LockedDoor : MonoBehaviour
 {
@@ -26,11 +27,18 @@ public class LockedDoor : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && sameScene)
+        if (other.tag == "Player")
         {
             if (!other.GetComponentInParent<PlayerMovement>().rotating && other.GetComponentInParent<PlayerMovement>().heldKeys >= 1)
             {
-                StartCoroutine(LoadRoom(other.transform.parent.gameObject));
+                if (sameScene)
+                {
+                    StartCoroutine(LoadRoom(other.transform.parent.gameObject));
+                }
+                else
+                {
+                    StartCoroutine(LoadScene());
+                }
             }
         }
     }
@@ -56,8 +64,10 @@ public class LockedDoor : MonoBehaviour
         transform.parent.gameObject.SetActive(false);
     }
 
-    void LoadScene(int sceneToLoad)
+    public IEnumerator LoadScene()
     {
-
+        StartCoroutine(blackoutSquare.FadeBlackOutSquare());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
