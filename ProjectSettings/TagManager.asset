@@ -12,6 +12,7 @@ TagManager:
   - Crate
   - Key
   - Entrance
+  - Slammable
   layers:
   - Default
   - TransparentFX

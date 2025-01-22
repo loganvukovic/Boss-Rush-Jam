@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public Renderer[] meshes;
     public LayerMask groundLayer;
+    public Collider hitbox;
 
     private float curSpeed;
     public float maxSpeed;
@@ -137,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (!rotating && canRotate)
+        if (!rotating && canRotate && !isDashing)
         {
             if (Input.GetKeyDown(KeyCode.Q))
                 Rotate(90);
@@ -148,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
         if (rotating && timeElapsed < rotationDuration)
         {
             rb.mass = 0f;
+            hitbox.enabled = false;
             timeElapsed += Time.deltaTime;
             stage.transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotationDuration);
             if (stage.transform.rotation == targetRotation)
@@ -155,6 +157,7 @@ public class PlayerMovement : MonoBehaviour
                 timeElapsed = 0;
                 rotating = false;
                 rb.mass = 10f;
+                hitbox.enabled = true;
             }
             rb.velocity = new Vector3(0, 0, 0);
             return;

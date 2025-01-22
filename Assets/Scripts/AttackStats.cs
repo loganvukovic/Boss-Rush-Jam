@@ -24,5 +24,9 @@ public class AttackStats : MonoBehaviour
         {
             Destroy(other.transform.parent.gameObject);
         }
+        if (other.tag == "Slammable" && GetComponentInParent<PlayerAttack>().isSlamming)
+        {
+            Destroy(other.transform.parent.gameObject);
+        }
     }
 }

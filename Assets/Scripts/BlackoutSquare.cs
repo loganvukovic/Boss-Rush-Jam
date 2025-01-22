@@ -33,8 +33,8 @@ public class BlackoutSquare : MonoBehaviour
             GetComponent<UnityEngine.UI.Image>().color = objectColor;
             yield return null;
         }
-        yield return new WaitForSeconds(1);
-        StartCoroutine(FadeFromBlack());
+        /*yield return new WaitForSeconds(1);
+        StartCoroutine(FadeFromBlack());*/
     }
 
     public IEnumerator FadeFromBlack(int fadeSpeed = 1)
