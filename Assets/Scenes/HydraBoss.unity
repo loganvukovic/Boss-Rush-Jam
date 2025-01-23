@@ -173,6 +173,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -246,6 +247,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -319,6 +321,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -498,6 +501,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -572,6 +576,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -632,6 +637,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: d0e7e3c3d4cf00940ae787002bba4d9a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -841,6 +847,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: d0e7e3c3d4cf00940ae787002bba4d9a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -990,6 +997,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1063,6 +1071,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1217,6 +1226,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 4
+  fireAtStart: 0
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -1307,6 +1317,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1395,6 +1406,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1559,6 +1571,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1617,6 +1630,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: d0e7e3c3d4cf00940ae787002bba4d9a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1807,9 +1821,16 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  deathLeadsToScene: 0
+  sceneToLoad: 0
+  timeBeforeLoad: 0
+  blackoutSquare: {fileID: 0}
   elemental: 1
   weakness: Electric
+  invincible: 0
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 0}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &313671235
 GameObject:
@@ -1862,6 +1883,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -1975,6 +1997,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2118,6 +2141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
+  stage: {fileID: 0}
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -2125,6 +2149,17 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
   phase1Range: 3
   spawners:
   - {fileID: 506316700}
@@ -2141,6 +2176,7 @@ MonoBehaviour:
   healing: 0
   curSide: 
   curPhase: 0
+  fakeBoss: 0
 --- !u!1 &327269916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2228,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2320,6 +2357,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2408,6 +2446,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2481,6 +2520,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 6459cd3fc8034da4eb767f9d8802d0e2, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2539,6 +2579,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2628,6 +2669,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2701,6 +2743,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2879,6 +2922,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -2953,6 +2997,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 6
+  fireAtStart: 0
   bullet: {fileID: 1511879925641870609, guid: cccfaddcfdd20ed4ba6f0a9432f26afb, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3026,6 +3071,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3099,6 +3145,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3187,6 +3234,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3260,6 +3308,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3661,6 +3710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
+  stage: {fileID: 0}
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -3668,6 +3718,17 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
   phase1Range: 3
   spawners:
   - {fileID: 832372814}
@@ -3684,6 +3745,7 @@ MonoBehaviour:
   healing: 0
   curSide: 
   curPhase: 0
+  fakeBoss: 0
 --- !u!1 &506316699
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,6 +3782,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3814,6 +3877,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3887,6 +3951,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -3960,6 +4025,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4033,6 +4099,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4098,6 +4165,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4186,6 +4254,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4296,6 +4365,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: 4363de63f8bd3854f9d0882b86edb714, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4401,6 +4471,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4543,6 +4614,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4616,6 +4688,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4724,6 +4797,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4881,6 +4955,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -4954,6 +5029,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5061,6 +5137,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5120,9 +5197,16 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  deathLeadsToScene: 0
+  sceneToLoad: 0
+  timeBeforeLoad: 0
+  blackoutSquare: {fileID: 0}
   elemental: 1
   weakness: Water
+  invincible: 0
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 0}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!4 &767437929
 Transform:
@@ -5196,6 +5280,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a94521ca9747e404488ff0907aace600, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -5269,6 +5354,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5371,6 +5457,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5446,6 +5533,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: d0e7e3c3d4cf00940ae787002bba4d9a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5504,6 +5592,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 6
+  fireAtStart: 0
   bullet: {fileID: 1511879925641870609, guid: cccfaddcfdd20ed4ba6f0a9432f26afb, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5593,6 +5682,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5666,6 +5756,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -5761,9 +5852,16 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  deathLeadsToScene: 0
+  sceneToLoad: 0
+  timeBeforeLoad: 0
+  blackoutSquare: {fileID: 0}
   elemental: 1
   weakness: Grass
+  invincible: 0
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 0}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &894904452
 GameObject:
@@ -5816,6 +5914,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5889,6 +5988,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -5968,6 +6068,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6201,6 +6302,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6223,6 +6325,95 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+--- !u!1 &958043987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958043988}
+  - component: {fileID: 958043991}
+  - component: {fileID: 958043990}
+  - component: {fileID: 958043989}
+  m_Layer: 5
+  m_Name: BlackoutSquare
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &958043988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958043987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1205898363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &958043989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958043987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfe61f26ee57d048a0789ad0c20642e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blackFromStart: 1
+--- !u!114 &958043990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958043987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &958043991
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958043987}
+  m_CullTransparentMesh: 1
 --- !u!1 &961181087
 GameObject:
   m_ObjectHideFlags: 0
@@ -6274,6 +6465,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6347,6 +6539,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6405,6 +6598,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 6459cd3fc8034da4eb767f9d8802d0e2, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6493,6 +6687,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6776,6 +6971,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: e55318ccb6cbece49988dfd6e2515fa4, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6865,6 +7061,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -6938,6 +7135,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7011,6 +7209,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7119,6 +7318,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 4
+  fireAtStart: 0
   bullet: {fileID: 2044000814006185524, guid: b59afabcb3ae0494ba04f49f7f9eec65, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -7410,6 +7610,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7468,6 +7669,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7556,6 +7758,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7691,6 +7894,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 7
+  fireAtStart: 0
   bullet: {fileID: 7861856096086425545, guid: 01633c8ca07352449a4dbd8291132a93, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -7802,9 +8006,16 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  deathLeadsToScene: 0
+  sceneToLoad: 0
+  timeBeforeLoad: 0
+  blackoutSquare: {fileID: 0}
   elemental: 1
   weakness: Fire
+  invincible: 0
   playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 0}
+  healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
 --- !u!1 &1127582505
 GameObject:
@@ -7857,6 +8068,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8050,6 +8262,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8156,6 +8369,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -8229,6 +8443,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8287,6 +8502,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 9
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8374,6 +8590,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: 104a66d6d8cacbf4fa172968ba51f956, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8462,6 +8679,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 8ab4ec5e76d6cfa45aa2f43a82d6e228, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8621,6 +8839,7 @@ RectTransform:
   - {fileID: 1499616736}
   - {fileID: 1651760969}
   - {fileID: 1516284445}
+  - {fileID: 958043988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8754,6 +8973,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -8827,6 +9047,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9014,6 +9235,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9087,6 +9309,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9145,6 +9368,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9239,6 +9463,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9312,6 +9537,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9370,6 +9596,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9483,6 +9710,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 771bd7a2ee6b2d44d959489eef481891, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9556,6 +9784,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -9720,6 +9949,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10001,6 +10231,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: c0d85a34601660449a7a7374db09be48, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 0}
@@ -10091,6 +10322,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10149,6 +10381,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10237,6 +10470,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10310,6 +10544,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10368,6 +10603,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10459,6 +10695,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 9b49895a17809a544bbe1ef7fbf5a60a, type: 3}
   stage: {fileID: 0}
   playerMovement: {fileID: 0}
@@ -10607,6 +10844,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10680,6 +10918,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10753,6 +10992,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10826,6 +11066,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10884,6 +11125,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 7
+  fireAtStart: 0
   bullet: {fileID: 1123768671257263849, guid: d751f25510deb6a4ebb3cd6a7a5d3973, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -10972,6 +11214,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11127,6 +11370,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11229,6 +11473,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: a9c4608a1efb84948978547070b50e7e, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11437,6 +11682,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11583,6 +11829,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 6
+  fireAtStart: 0
   bullet: {fileID: 1511879925641870609, guid: 963bcf3f8022bd54e9ecc9335e32cc5a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11656,6 +11903,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11729,6 +11977,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 10
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11819,6 +12068,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -11997,6 +12247,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12140,6 +12391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
+  stage: {fileID: 0}
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -12147,6 +12399,17 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
   phase1Range: 3
   spawners:
   - {fileID: 1730160959}
@@ -12163,6 +12426,7 @@ MonoBehaviour:
   healing: 0
   curSide: 
   curPhase: 0
+  fakeBoss: 0
 --- !u!1 &1778997056
 GameObject:
   m_ObjectHideFlags: 0
@@ -12214,6 +12478,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12287,6 +12552,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 771bd7a2ee6b2d44d959489eef481891, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12360,6 +12626,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12493,6 +12760,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12581,6 +12849,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12654,6 +12923,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12819,6 +13089,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -12892,6 +13163,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 4d99996f2ae3a394f8ca0608b2d5f232, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13001,6 +13273,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 8
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13074,6 +13347,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13147,6 +13421,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13220,6 +13495,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13293,6 +13569,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 6
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: a36186c8a0d5d724cbf6aace84da3a3a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13366,6 +13643,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13673,6 +13951,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13731,6 +14010,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -13889,6 +14169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
+  stage: {fileID: 0}
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -13896,6 +14177,17 @@ MonoBehaviour:
   rotateCooldown: 10
   timeElapsed: 0
   rotationDuration: 1
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
   phase1Range: 6
   spawners:
   - {fileID: 375321877}
@@ -13915,6 +14207,7 @@ MonoBehaviour:
   healing: 0
   curSide: 
   curPhase: 0
+  fakeBoss: 0
 --- !u!1 &2049459468
 GameObject:
   m_ObjectHideFlags: 0
@@ -14131,6 +14424,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 5
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 448769babc00d6548a0eff115e8ef859, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -14204,6 +14498,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 4
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -14517,6 +14812,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
@@ -14590,6 +14886,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 1
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}

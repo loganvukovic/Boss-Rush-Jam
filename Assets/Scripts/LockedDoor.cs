@@ -47,7 +47,7 @@ public class LockedDoor : MonoBehaviour
     {
         StartCoroutine(blackoutSquare.FadeBlackOutSquare());
         player.GetComponent<PlayerMovement>().heldKeys--;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         StartCoroutine(blackoutSquare.FadeFromBlack());
         stage.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         player.transform.position = new Vector3(5.67f, 6.04f, 7);
@@ -60,7 +60,7 @@ public class LockedDoor : MonoBehaviour
         {
             obj.SetActive(true);
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.7f);
         transform.parent.gameObject.SetActive(false);
     }
 
