@@ -225,7 +225,7 @@ public class BossActions : MonoBehaviour
                 curPuppet++;
                 CloneScript cloneScript = spawnedClone.GetComponent<CloneScript>();
                 cloneScript.side = sides[i];
-                cloneScript.spawnPoint = spawnPoints[i].transform.position;
+                cloneScript.spawnPoint = spawnPoints[i];
                 StartCoroutine(cloneScript.UpdatePosition());
             }
         }
