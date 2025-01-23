@@ -52,6 +52,7 @@ public class BossActions : MonoBehaviour
 
     public string curSide;
     public int curPhase;
+    public bool fakeBoss;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +70,11 @@ public class BossActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (fakeBoss)
+        {
+            return;
+        }
+
         curPhase = GetComponentInChildren<BossScript>().curPhase;
         playerSide = playerMovement.curSide;
 

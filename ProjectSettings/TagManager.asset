@@ -13,6 +13,7 @@ TagManager:
   - Key
   - Entrance
   - Slammable
+  - Elemental
   layers:
   - Default
   - TransparentFX

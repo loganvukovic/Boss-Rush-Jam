@@ -14,6 +14,7 @@ public class BulletSpawner : MonoBehaviour
     public float timer;
     public float firingRate;
     public float cooldown;
+    public bool fireAtStart;
 
     public GameObject bullet;
     public Transform stage;
@@ -47,6 +48,10 @@ public class BulletSpawner : MonoBehaviour
     void Start()
     {
         justFired = false;
+        if (fireAtStart)
+        {
+            Fire();
+        }
     }
 
     // Update is called once per frame
