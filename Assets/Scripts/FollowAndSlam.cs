@@ -38,7 +38,7 @@ public class FollowAndSlam : MonoBehaviour
         else if (playerMovement.curSide != cloneScript.side)
         {
             StopAllCoroutines();
-            transform.position = cloneScript.spawnPoint.transform.position;
+            StartCoroutine(ReturnToStart());
             isSlamming = false;
         }
     }
@@ -69,6 +69,14 @@ public class FollowAndSlam : MonoBehaviour
         isSlamming = false;
     }
 
+    public IEnumerator ReturnToStart()
+    {
+        while (transform.position != cloneScript.spawnPoint.transform.position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, cloneScript.spawnPoint.transform.position, raiseSpeed * Time.deltaTime);
+            yield return null;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
