@@ -229,6 +229,21 @@ public class BossActions : MonoBehaviour
                 StartCoroutine(cloneScript.UpdatePosition());
             }
         }
+        RandomizeSpawnOrder();
+    }
+
+    private void RandomizeSpawnOrder()
+    {
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            GameObject tempSpawn = spawnPoints[i];
+            string tempSide = sides[i];
+            int r = Random.Range(i, spawnPoints.Length);
+            spawnPoints[i] = spawnPoints[r];
+            spawnPoints[r] = tempSpawn;
+            sides[i] = sides[r];
+            sides[r] = tempSide;
+        }
     }
 
     private void PickAttack(int attack)

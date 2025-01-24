@@ -35,7 +35,7 @@ public class FollowAndSlam : MonoBehaviour
                 StartCoroutine(SlamAfterDelay());
             }
         }
-        else if (playerMovement.curSide != cloneScript.side)
+        else /*if (playerMovement.curSide != cloneScript.side)*/
         {
             StopAllCoroutines();
             StartCoroutine(ReturnToStart());
