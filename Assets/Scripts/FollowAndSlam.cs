@@ -25,7 +25,7 @@ public class FollowAndSlam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating)
+        if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating && !GetComponent<CloneScript>().moving)
         {
             if(!isSlamming && !GetComponent<CloneScript>().moving)
             {

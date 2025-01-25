@@ -11,6 +11,7 @@ public class CloneScript : MonoBehaviour
     public GameObject empty;
     public Transform stage;
     public bool moving;
+    public GameObject[] spawnPoints;
 
     // Start is called before the first frame update
     void Start()

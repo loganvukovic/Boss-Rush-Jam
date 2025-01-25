@@ -226,14 +226,14 @@ public class BossActions : MonoBehaviour
                 curPuppet++;
                 CloneScript cloneScript = spawnedClone.GetComponent<CloneScript>();
                 cloneScript.side = sides[i];
-                cloneScript.spawnPoint = spawnPoints[i];
+                cloneScript.spawnPoint = cloneScript.spawnPoints[i];
                 StartCoroutine(cloneScript.UpdatePosition());
             }
         }
-        RandomizeSpawnOrder();
+        RandomizeSpawnOrder(fakePuppets);
     }
 
-    private void RandomizeSpawnOrder()
+    private void RandomizeSpawnOrder(GameObject[] puppets)
     {
         for (int i = 0; i < spawnPoints.Length; i++)
         {
@@ -244,6 +244,14 @@ public class BossActions : MonoBehaviour
             spawnPoints[r] = tempSpawn;
             sides[i] = sides[r];
             sides[r] = tempSide;
+
+            foreach (GameObject puppet in puppets)
+            {
+                CloneScript cloneScript = puppet.GetComponent<CloneScript>();
+                GameObject tempCloneSpawn = cloneScript.spawnPoints[i];
+                cloneScript.spawnPoints[i] = cloneScript.spawnPoints[r];
+                cloneScript.spawnPoints[r] = tempCloneSpawn;
+            }
         }
     }
 
