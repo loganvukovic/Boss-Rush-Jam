@@ -19,7 +19,7 @@ public class SpiderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cloneScript.side == "East")
+        if (cloneScript.side == "East" || cloneScript.side == "South")
         {
             movingUpDown = true;
         }
