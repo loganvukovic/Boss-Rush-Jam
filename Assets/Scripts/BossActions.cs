@@ -286,7 +286,7 @@ public class BossActions : MonoBehaviour
     public IEnumerator UpdatePosition(int spot)
     {
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
-        transform.rotation = CalcNewAngle(spot);
+        transform.localRotation = CalcNewAngle(spot);
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);

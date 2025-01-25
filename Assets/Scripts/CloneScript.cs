@@ -29,7 +29,7 @@ public class CloneScript : MonoBehaviour
     {
         moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoint.transform.position, transform.rotation, stage.transform);
-        transform.rotation = CalcNewAngle();
+        transform.localRotation = CalcNewAngle();
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
