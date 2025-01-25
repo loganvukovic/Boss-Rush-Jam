@@ -661,6 +661,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2901332794433771022, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
   m_PrefabInstance: {fileID: 276817019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263544638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263544639}
+  - component: {fileID: 263544640}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263544639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263544638}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1775215309}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!114 &263544640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263544638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1001 &276817019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -784,6 +858,82 @@ Transform:
   - {fileID: 1086557175}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &366377916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366377917}
+  - component: {fileID: 366377918}
+  m_Layer: 0
+  m_Name: SlashTell (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366377917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366377916}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.5468328, w: 0.8372418}
+  m_LocalPosition: {x: -2.602, y: 1.472, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2053029477}
+  m_Father: {fileID: 1726843920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 66.3}
+--- !u!114 &366377918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366377916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 5
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps:
+  - {fileID: 2053029478}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &371452117
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +1054,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371452117}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &379680486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379680488}
+  - component: {fileID: 379680487}
+  m_Layer: 0
+  m_Name: SlashTell2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &379680487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379680486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 3
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners:
+  - {fileID: 1401025512}
+  - {fileID: 1619561628}
+  followUps:
+  - {fileID: 1805661186}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!4 &379680488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379680486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.6000014, w: 0.79999894}
+  m_LocalPosition: {x: 0.723, y: -2.109, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1805661187}
+  m_Father: {fileID: 845795438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 73.74}
 --- !u!1 &390947530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1959,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817254103}
   m_CullTransparentMesh: 1
+--- !u!1 &845795437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 845795438}
+  m_Layer: 0
+  m_Name: Slashes2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &845795438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845795437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 379680488}
+  - {fileID: 1401025511}
+  - {fileID: 1619561627}
+  m_Father: {fileID: 1184172406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889815404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,6 +2161,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899843508}
   m_CullTransparentMesh: 1
+--- !u!1 &971757798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971757799}
+  - component: {fileID: 971757800}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &971757799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971757798}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1401025511}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!114 &971757800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971757798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &998113572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2639,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048823197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1053550667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053550668}
+  - component: {fileID: 1053550669}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1053550668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053550667}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619561627}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!114 &1053550669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053550667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &1086557174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +3019,80 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+--- !u!1 &1182610192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182610194}
+  - component: {fileID: 1182610193}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1182610193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182610192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!4 &1182610194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182610192}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1629956950}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1001 &1184172405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2635,7 +3119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2643,7 +3127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.83
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2675,7 +3159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       propertyPath: m_Name
-      value: FakePuppet (1)
+      value: SwordPuppet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2683,7 +3167,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1447970643}
-    m_AddedComponents: []
+    - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1726843920}
+    - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 845795438}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1184172412}
   m_SourcePrefab: {fileID: 100100000, guid: c563a03746ab764478d40a8690c023ef, type: 3}
 --- !u!4 &1184172406 stripped
 Transform:
@@ -2695,6 +3188,55 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
   m_PrefabInstance: {fileID: 1184172405}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1184172412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184172407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fe4796e17926c43a859ab8749e0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tf: {fileID: 0}
+  playerMovement: {fileID: 217045719}
+  stage: {fileID: 356460843}
+  canRotate: 0
+  rotating: 0
+  stageRotating: 0
+  rotateTimer: 0
+  rotateCooldown: 0
+  timeElapsed: 0
+  rotationDuration: 0
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
+  phase1Range: 2
+  spawners:
+  - {fileID: 1629956949}
+  - {fileID: 379680487}
+  sideDependentSpawners: 0
+  northSpawners: []
+  westSpawners: []
+  southSpawners: []
+  eastSpawners: []
+  playerSide: 
+  attackTimer: 0
+  attackCooldown: 3
+  healing: 0
+  curSide: 
+  curPhase: 0
+  fakeBoss: 0
 --- !u!1 &1205898359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,6 +3504,82 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7867019157072429234, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
   m_PrefabInstance: {fileID: 1323843735}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1401025510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401025511}
+  - component: {fileID: 1401025512}
+  m_Layer: 0
+  m_Name: SlashTell (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401025511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401025510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.5613613, w: 0.82757086}
+  m_LocalPosition: {x: -1.315, y: -0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 971757799}
+  m_Father: {fileID: 845795438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -68.3}
+--- !u!114 &1401025512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401025510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 5
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps:
+  - {fileID: 971757800}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &1447970642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3639,6 +4257,160 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606856494}
   m_CullTransparentMesh: 1
+--- !u!1 &1619561626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619561627}
+  - component: {fileID: 1619561628}
+  m_Layer: 0
+  m_Name: SlashTell (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619561627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619561626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.73135376, w: 0.6819983}
+  m_LocalPosition: {x: -2.636, y: 0.983, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1053550668}
+  m_Father: {fileID: 845795438}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -94}
+--- !u!114 &1619561628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619561626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 5
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps:
+  - {fileID: 1053550669}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!1 &1629956948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629956950}
+  - component: {fileID: 1629956949}
+  m_Layer: 0
+  m_Name: SlashTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1629956949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629956948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 3
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners:
+  - {fileID: 1775215310}
+  - {fileID: 366377918}
+  followUps:
+  - {fileID: 1182610193}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!4 &1629956950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629956948}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.25612065, w: 0.9666448}
+  m_LocalPosition: {x: -0.836, y: -0.44500017, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1182610194}
+  m_Father: {fileID: 1726843920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.68}
 --- !u!1 &1651760968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3886,6 +4658,12 @@ MonoBehaviour:
   resumeDelay: 2
   raiseSpeed: 5
   contactDamage: 10
+  collider: {fileID: 1686398107}
+--- !u!65 &1686398107 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5968660808430252785, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+  m_PrefabInstance: {fileID: 1686398102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1688122001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,6 +4769,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688122001}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1726843919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726843920}
+  m_Layer: 0
+  m_Name: Slashes1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726843920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726843919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1629956950}
+  - {fileID: 1775215309}
+  - {fileID: 366377917}
+  m_Father: {fileID: 1184172406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753079220
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4908,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753079220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1775215308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1775215309}
+  - component: {fileID: 1775215310}
+  m_Layer: 0
+  m_Name: SlashTell (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1775215309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775215308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.6307435, w: 0.7759914}
+  m_LocalPosition: {x: 0.786, y: 0.479, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 263544639}
+  m_Father: {fileID: 1726843920}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -78.21}
+--- !u!114 &1775215310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775215308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 5
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps:
+  - {fileID: 263544640}
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &1787498077
 GameObject:
   m_ObjectHideFlags: 0
@@ -4141,6 +5029,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   altSpawn: {fileID: 2019431932}
+--- !u!1 &1805661185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805661187}
+  - component: {fileID: 1805661186}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1805661186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805661185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+--- !u!4 &1805661187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805661185}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379680488}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
 --- !u!1 &1819335677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4828,6 +5790,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2053029476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053029477}
+  - component: {fileID: 2053029478}
+  m_Layer: 0
+  m_Name: Slash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053029477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053029476}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 366377917}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -30}
+--- !u!114 &2053029478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053029476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 3
+  speed: 4
+  bulletLife: 0.3
+  damage: 5
+  timer: 0
+  firingRate: 4
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: 38111ae202c10db4fbb7fe325058e732, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 1184172412}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 1
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &2088267188
 GameObject:
   m_ObjectHideFlags: 0

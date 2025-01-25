@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
@@ -277,6 +278,7 @@ public class BossActions : MonoBehaviour
     public IEnumerator UpdatePosition(int spot)
     {
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
+        transform.rotation = CalcNewAngle(spot);
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
@@ -291,5 +293,28 @@ public class BossActions : MonoBehaviour
             spawn.GetComponent<PuppetSpawn>().SwitchSpots();
         }
         
+    }
+    public Quaternion CalcNewAngle(int spot)
+    {
+        string side = sides[spot];
+        Quaternion angle;
+        if (side == "North")
+        {
+            angle = Quaternion.Euler(0, 0, 0);
+        }
+        else if (side == "South")
+        {
+            angle = Quaternion.Euler(0, 180, 0);
+        }
+        else if (side == "West")
+        {
+            angle = Quaternion.Euler(0, 90, 0);
+        }
+        else
+        {
+            angle = Quaternion.Euler(0, 270, 0);
+        }
+
+        return angle;
     }
 }

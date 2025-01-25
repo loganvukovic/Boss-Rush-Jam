@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6172605684317154504}
   - component: {fileID: -3714029015492296607}
   m_Layer: 0
-  m_Name: Lightning
+  m_Name: Slash
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.35, y: 0.12, z: 0}
-  m_LocalScale: {x: 1.5, y: 40, z: 1.5}
+  m_LocalScale: {x: 0.3, y: 40, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bd1f232481933ed44b28b8608d3d85b1, type: 2}
+  - {fileID: 2100000, guid: 5eec694b2fbaf134281ec0556ebdf863, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

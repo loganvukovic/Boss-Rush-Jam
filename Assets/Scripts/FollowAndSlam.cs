@@ -14,11 +14,12 @@ public class FollowAndSlam : MonoBehaviour
     public float resumeDelay;
     public float raiseSpeed;
     public float contactDamage;
+    public Collider collider;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        collider.enabled = false;
     }
 
     // Update is called once per frame
@@ -55,11 +56,13 @@ public class FollowAndSlam : MonoBehaviour
         Vector3 originalPosition = cloneScript.spawnPoint.transform.position;
         Vector3 targetPosition = new Vector3(playerMovement.transform.position.x, transform.position.y - 3, playerMovement.transform.position.z);
         yield return new WaitForSeconds(slamDelay);
+        collider.enabled = true;
         while (transform.position != targetPosition)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, fallSpeed * Time.deltaTime);
             yield return null;
         }
+        collider.enabled = false;
         yield return new WaitForSeconds(resumeDelay);
         while (transform.position != originalPosition)
         {

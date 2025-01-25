@@ -28,6 +28,7 @@ public class CloneScript : MonoBehaviour
     {
         moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoint.transform.position, transform.rotation, stage.transform);
+        transform.rotation = CalcNewAngle();
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
@@ -36,5 +37,28 @@ public class CloneScript : MonoBehaviour
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
         moving = false;
+    }
+
+    public Quaternion CalcNewAngle()
+    {
+        Quaternion angle;
+        if (side == "North")
+        {
+            angle = Quaternion.Euler(0, 0, 0);
+        }
+        else if (side == "South")
+        {
+            angle = Quaternion.Euler(0, 180, 0);
+        }
+        else if (side == "West")
+        {
+            angle = Quaternion.Euler(0, 90, 0);
+        }
+        else
+        {
+            angle = Quaternion.Euler(0, 270, 0);
+        }
+
+        return angle;
     }
 }
