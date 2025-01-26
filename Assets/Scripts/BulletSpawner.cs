@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle}
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle, Cone}
     public BulletType bulletType;
 
     public float speed;
@@ -34,6 +35,8 @@ public class BulletSpawner : MonoBehaviour
     public bool stayOnBossRotate = false;
     public bool keepMovingOnBossMove = false;
     public int bulletsInCircle;
+    public int coneAngle;
+    public int coneBulletCount;
 
     public BulletSpawner[] linkedSpawners;
     public BulletSpawner[] followUps;
@@ -203,6 +206,34 @@ public class BulletSpawner : MonoBehaviour
                     spawnedBullet.GetComponent<Bullet>().spawner = transform;
                 }
             }
+            else if (bulletType == BulletType.Cone)
+            {
+                float startAngle = transform.eulerAngles.z - (coneAngle / 2);
+                float angleIncrement = coneAngle / (coneBulletCount - 1);
+                for (int i = 0; i < coneBulletCount; i++)
+                {
+                    float angle = startAngle + (angleIncrement * i);
+                    Quaternion bulletRotation;
+                    if (((playerMovement.curSide == "West" || playerMovement.curSide == "East") && (GetComponentInParent<CloneScript>().side == "West" || GetComponentInParent<CloneScript>().side == "East"))
+                        || ((playerMovement.curSide == "North" || playerMovement.curSide == "South") && (GetComponentInParent<CloneScript>().side == "North" || GetComponentInParent<CloneScript>().side == "South")))
+                    {
+                        bulletRotation = Quaternion.Euler(0f, 0f, angle);
+                    }
+                    else
+                    {
+                        bulletRotation = Quaternion.Euler(0f, 90f, angle);
+                    }
+                    spawnedBullet = Instantiate(bullet, transform.position, bulletRotation, transform);
+                    spawnedBullet.GetComponent<Bullet>().speed = speed;
+                    spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
+                    spawnedBullet.GetComponent<Bullet>().damage = damage;
+                    spawnedBullet.GetComponent<Bullet>().destroyOnHit = true;
+                    spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
+                    spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
+                    spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                }
+                StartCoroutine(DetachSpawner());
+            }
             //Normal Bullet
             else
             {
@@ -217,5 +248,14 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Bullet>().keepMovingOnBossMove = keepMovingOnBossMove;
             }
         }
+    }
+
+    IEnumerator DetachSpawner()
+    {
+        Transform spawner = transform.parent;
+        transform.parent = null;
+        yield return new WaitForSeconds(bulletLife);
+        transform.position = spawner.position;
+        transform.parent = spawner;
     }
 }

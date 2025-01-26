@@ -773,6 +773,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -983,6 +985,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1111,6 +1115,82 @@ Transform:
   - {fileID: 1755926089}
   m_Father: {fileID: 1086557175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &325501250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325501251}
+  - component: {fileID: 325501252}
+  m_Layer: 0
+  m_Name: BulletSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325501251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325501250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.37250197, w: 0.92803144}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1561263253}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 43.74}
+--- !u!114 &325501252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325501250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 7
+  speed: 10
+  bulletLife: 3
+  damage: 5
+  timer: 0
+  firingRate: 5
+  cooldown: 5
+  fireAtStart: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 1
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  coneAngle: 60
+  coneBulletCount: 5
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
 --- !u!1 &356460843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1298,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 2053029478}
@@ -1398,6 +1480,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 1401025512}
   - {fileID: 1619561628}
@@ -2281,6 +2365,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2524,6 +2610,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 1
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2782,6 +2870,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3081,6 +3171,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3260,6 +3352,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3647,6 +3741,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3706,6 +3802,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4272,6 +4370,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 971757800}
@@ -4743,6 +4843,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 768363885}
@@ -4861,6 +4963,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 691515481}
+    - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 325501251}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
@@ -4960,6 +5065,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5245,6 +5352,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1053550669}
@@ -5305,6 +5414,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 1775215310}
   - {fileID: 366377918}
@@ -6128,6 +6239,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 263544640}
@@ -6233,6 +6346,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7181,6 +7296,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7255,6 +7372,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
