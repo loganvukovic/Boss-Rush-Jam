@@ -38,10 +38,6 @@ public class CloneScript : MonoBehaviour
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
         moving = false;
-        foreach (GameObject spawn in spawnPoints)
-        {
-            spawn.GetComponent<PuppetSpawn>().SwitchSpots();
-        }
     }
 
     public Quaternion CalcNewAngle()

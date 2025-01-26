@@ -223,7 +223,7 @@ public class BulletSpawner : MonoBehaviour
                     {
                         bulletRotation = Quaternion.Euler(0f, 90f, angle);
                     }
-                    spawnedBullet = Instantiate(bullet, transform.position, bulletRotation, transform);
+                    spawnedBullet = Instantiate(bullet, transform.position, bulletRotation, stage.transform);
                     spawnedBullet.GetComponent<Bullet>().speed = speed;
                     spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                     spawnedBullet.GetComponent<Bullet>().damage = damage;
@@ -231,8 +231,10 @@ public class BulletSpawner : MonoBehaviour
                     spawnedBullet.GetComponent<Bullet>().playerMovement = playerMovement;
                     spawnedBullet.GetComponent<Bullet>().bossActions = bossActions;
                     spawnedBullet.GetComponent<Bullet>().spawner = transform;
+                    spawnedBullet.GetComponent<Bullet>().inCone = true;
+                    spawnedBullet.GetComponent<Bullet>().throwPoint = GetComponentInParent<CloneScript>().spawnPoint.GetComponent<PuppetSpawn>().throwPoints[i].transform;
                 }
-                StartCoroutine(DetachSpawner());
+                //StartCoroutine(DetachSpawner());
             }
             //Normal Bullet
             else
@@ -253,9 +255,11 @@ public class BulletSpawner : MonoBehaviour
     IEnumerator DetachSpawner()
     {
         Transform spawner = transform.parent;
-        transform.parent = null;
+        Quaternion angle = transform.rotation;
+        transform.parent = stage.transform;
         yield return new WaitForSeconds(bulletLife);
         transform.position = spawner.position;
         transform.parent = spawner;
+        transform.rotation = angle;
     }
 }

@@ -154,6 +154,17 @@ public class BossActions : MonoBehaviour
         {
             if (hitCounter >= reqHits)
             {
+                foreach (GameObject spawn in spawnPoints)
+                {
+                    spawn.GetComponent<PuppetSpawn>().SwitchSpots();
+                }
+                foreach (GameObject puppet in fakePuppets)
+                {
+                    foreach (GameObject spawn in puppet.GetComponent<CloneScript>().spawnPoints)
+                    {
+                        spawn.GetComponent<PuppetSpawn>().SwitchSpots();
+                    }
+                }
                 ChooseSpot(Random.Range(0, spawnPoints.Length));
             }
         }
@@ -295,12 +306,7 @@ public class BossActions : MonoBehaviour
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
         //loat westRNG = Random.Range(0f, 1f);
-        //float eastRNG = Random.Range(0f, 1f);
-        foreach (GameObject spawn in spawnPoints)
-        {
-            spawn.GetComponent<PuppetSpawn>().SwitchSpots();
-        }
-        
+        //float eastRNG = Random.Range(0f, 1f);      
     }
     public Quaternion CalcNewAngle(int spot)
     {

@@ -9,6 +9,7 @@ public class SpiderScript : MonoBehaviour
     public bool movingUpDown;
     public bool movingPositive;
     public float moveSpeed;
+    public string direction;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,41 @@ public class SpiderScript : MonoBehaviour
             movingUpDown = true;
         }
         else movingUpDown = false;
+
+        direction = GetComponent<CloneScript>().spawnPoint.GetComponent<PuppetSpawn>().spiderDirection;
+
+        if (direction == "Up")
+        {
+            if (movingPositive)
+            {
+                transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 0);
+            }
+            else transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 180, 180);
+        }
+        else if (direction == "Down")
+        {
+            if (movingPositive)
+            {
+                transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 180);
+            }
+            else transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 180, 180);
+        }
+        else if (direction == "Left")
+        {
+            if (movingPositive)
+            {
+                transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, -90);
+            }
+            else transform.rotation = Quaternion.Euler(180, transform.eulerAngles.y, -90);
+        }
+        else if (direction == "Right")
+        {
+            if (movingPositive)
+            {
+                transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 90);
+            }
+            else transform.rotation = Quaternion.Euler(180, transform.eulerAngles.y, 90);
+        }
 
         if (!cloneScript.moving && !playerMovement.rotating && (!movingUpDown && (transform.position.x > 10 || transform.position.z > 10))
             || (movingUpDown && (transform.position.y > 17)))

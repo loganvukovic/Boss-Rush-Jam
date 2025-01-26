@@ -30,6 +30,8 @@ public class Bullet : MonoBehaviour
     public Transform spawner;
     public PlayerMovement playerMovement;
     public BossActions bossActions;
+    public bool inCone;
+    public Transform throwPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -109,13 +111,20 @@ public class Bullet : MonoBehaviour
 
     private Vector3 Movement(float timer)
     {
-        float x, y, z;
+        if (inCone)
+        {
+            return Vector3.MoveTowards(transform.position, throwPoint.position, speed * Time.deltaTime);
+        }
+        else
+        {
+            float x, y, z;
 
             x = timer * speed * transform.right.x;
             y = timer * speed * transform.right.y;
             z = timer * speed * transform.right.z;
 
-        return new Vector3(x + spawnPoint.x, y + spawnPoint.y, z + spawnPoint.z);
+            return new Vector3(x + spawnPoint.x, y + spawnPoint.y, z + spawnPoint.z);
+        }
     }
     private void OnTriggerStay(Collider other)
     {

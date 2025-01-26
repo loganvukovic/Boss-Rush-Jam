@@ -6,6 +6,8 @@ public class PuppetSpawn : MonoBehaviour
 {
     public Transform altSpawn;
     private Vector3 tempPosition;
+    public string spiderDirection;
+    public GameObject[] throwPoints;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,9 @@ public class PuppetSpawn : MonoBehaviour
             tempPosition = transform.position;
             transform.position = altSpawn.position;
             altSpawn.position = tempPosition;
+            GameObject[] tempThrowPoints = throwPoints;
+            throwPoints = altSpawn.GetComponent<PuppetSpawn>().throwPoints;
+            altSpawn.GetComponent<PuppetSpawn>().throwPoints = tempThrowPoints;
         }
     }
 }
