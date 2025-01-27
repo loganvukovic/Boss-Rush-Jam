@@ -5,7 +5,7 @@ using UnityEngine.VFX;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle, Cone}
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle, Cone, Mouse}
     public BulletType bulletType;
 
     public float speed;
@@ -235,6 +235,14 @@ public class BulletSpawner : MonoBehaviour
                     spawnedBullet.GetComponent<Bullet>().throwPoint = GetComponentInParent<CloneScript>().spawnPoint.GetComponent<PuppetSpawn>().throwPoints[i].transform;
                 }
                 //StartCoroutine(DetachSpawner());
+            }
+            else if (bulletType == BulletType.Mouse)
+            {
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
+                spawnedBullet.GetComponent<MouseScript>().speed = speed;
+                spawnedBullet.GetComponent<MouseScript>().chasingTime = bulletLife;
+                spawnedBullet.GetComponent<MouseScript>().bossActions = bossActions;
+                spawnedBullet.GetComponent<MouseScript>().playerMovement = playerMovement;
             }
             //Normal Bullet
             else
