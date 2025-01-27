@@ -6,6 +6,7 @@ public class MouseScript : MonoBehaviour
 {
     public PlayerMovement playerMovement; 
     public BossActions bossActions;
+    public GameObject explosion;
     public float speed;
     public float chasingTime;
     public float stillTime;
@@ -35,12 +36,14 @@ public class MouseScript : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(stillTime);
-        Explode();
+        StartCoroutine(Explode());
     }
 
-    public void Explode()
+    public IEnumerator Explode()
     {
-        //Create explosion here
+        GameObject spawnedExplosion = Instantiate(explosion, transform.position, transform.rotation, transform);
+        yield return new WaitForSeconds(0.7f);
+        Destroy(spawnedExplosion);
         Destroy(gameObject);
     }
 }
