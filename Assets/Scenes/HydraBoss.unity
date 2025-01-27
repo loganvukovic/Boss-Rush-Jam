@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragExport02
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
