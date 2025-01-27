@@ -36,6 +36,7 @@ public class BossActions : MonoBehaviour
     public bool isRotating;
     public bool curSpots;
     public int prevSpot;
+    public bool moving;
 
     private int previousAttack = -1;
     public int phase1Range;
@@ -296,6 +297,7 @@ public class BossActions : MonoBehaviour
 
     public IEnumerator UpdatePosition(int spot)
     {
+        moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
         transform.localRotation = CalcNewAngle(spot);
         while (transform.position != tempObject.transform.position)
@@ -303,6 +305,7 @@ public class BossActions : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
             yield return new WaitForSeconds(0.01f);
         }
+        moving = false;
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
         //loat westRNG = Random.Range(0f, 1f);

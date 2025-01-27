@@ -5,7 +5,7 @@ using UnityEngine.VFX;
 
 public class BulletSpawner : MonoBehaviour
 {
-    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle, Cone, Mouse}
+    public enum BulletType {Normal, Aimed, Bomb, Laser, Spear, Lightning, Circle, Cone, Mouse, Tripwire}
     public BulletType bulletType;
 
     public float speed;
@@ -45,6 +45,7 @@ public class BulletSpawner : MonoBehaviour
     public bool justFired;
     public BulletSpawner lightningConnector1;
     public BulletSpawner lightningConnector2;
+    public BulletSpawner tripwireSpawner;
 
 
     // Start is called before the first frame update
@@ -243,6 +244,14 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<MouseScript>().chasingTime = bulletLife;
                 spawnedBullet.GetComponent<MouseScript>().bossActions = bossActions;
                 spawnedBullet.GetComponent<MouseScript>().playerMovement = playerMovement;
+            }
+            else if (bulletType == BulletType.Tripwire)
+            {
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
+                spawnedBullet.GetComponent<Tripwire>().life = bulletLife;
+                spawnedBullet.GetComponent<Tripwire>().playerMovement = playerMovement;
+                spawnedBullet.GetComponent<Tripwire>().bossActions = bossActions;
+                spawnedBullet.GetComponent<Tripwire>().linkedSpawner = tripwireSpawner;
             }
             //Normal Bullet
             else

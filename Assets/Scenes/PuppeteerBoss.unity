@@ -981,6 +981,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &215549042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1194,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1001 &276817019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,6 +1392,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &329744155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1541,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &371452117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1726,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &379680488
 Transform:
   m_ObjectHideFlags: 0
@@ -2342,6 +2347,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1686285992}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &583622741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583622742}
+  m_Layer: 0
+  m_Name: Tripwires
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583622742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583622741}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1100309597}
+  m_Father: {fileID: 7875929978260168532}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &620723596 stripped
 CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 4769480267238200372, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
@@ -2708,6 +2745,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &768363886
 Transform:
   m_ObjectHideFlags: 0
@@ -3058,6 +3096,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &896361253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3433,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &998113572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3726,6 +3766,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1048823197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,6 +3948,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1086557174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3942,6 +3984,84 @@ Transform:
   - {fileID: 1141645152}
   m_Father: {fileID: 356460844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1100309595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100309597}
+  - component: {fileID: 1100309596}
+  m_Layer: 0
+  m_Name: TripwireTell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1100309596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100309595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 9
+  speed: 4
+  bulletLife: 15
+  damage: 10
+  timer: 0
+  firingRate: 4
+  cooldown: 3
+  fireAtStart: 0
+  bullet: {fileID: 3051894099085196225, guid: a32f3338c6a6fe542aa405ca3ca4f92c, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 1
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 1.3
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 1695302403}
+--- !u!4 &1100309597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100309595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.5, w: 0.8660254}
+  m_LocalPosition: {x: 0.932, y: 1.974, z: 0}
+  m_LocalScale: {x: 0.8888891, y: 0.8888891, z: 0.8888891}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1695302404}
+  m_Father: {fileID: 583622742}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -60}
 --- !u!1 &1111697952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4298,6 +4418,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1182610192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4359,6 +4480,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1182610194
 Transform:
   m_ObjectHideFlags: 0
@@ -4522,6 +4644,7 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 2
   spawners:
   - {fileID: 1629956949}
@@ -5124,6 +5247,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1403856374
 GameObject:
   m_ObjectHideFlags: 0
@@ -5771,6 +5895,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1532647462
 Transform:
   m_ObjectHideFlags: 0
@@ -5996,6 +6121,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1578267647
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,6 +6452,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1629447476
 GameObject:
   m_ObjectHideFlags: 0
@@ -6421,6 +6548,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1629956950
 Transform:
   m_ObjectHideFlags: 0
@@ -6853,6 +6981,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688122001}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1695302402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695302404}
+  - component: {fileID: 1695302403}
+  m_Layer: 0
+  m_Name: BulletSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1695302403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695302402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 0
+  speed: 30
+  bulletLife: 5
+  damage: 5
+  timer: 0
+  firingRate: 1
+  cooldown: 0
+  fireAtStart: 0
+  bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
+--- !u!4 &1695302404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695302402}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.70907867, w: -0.70512944}
+  m_LocalPosition: {x: 0.036638696, y: 6.559898, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1100309597}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1695562509
 GameObject:
   m_ObjectHideFlags: 0
@@ -7320,6 +7525,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1787498077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7428,6 +7634,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1805661187
 Transform:
   m_ObjectHideFlags: 0
@@ -8027,6 +8234,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1975382443
 GameObject:
   m_ObjectHideFlags: 0
@@ -8622,6 +8830,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &2088267188
 GameObject:
   m_ObjectHideFlags: 0
@@ -8698,6 +8907,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &2088974946
 GameObject:
   m_ObjectHideFlags: 0
@@ -9266,10 +9476,11 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 2
   spawners:
   - {fileID: 2088267190}
-  - {fileID: 2088267190}
+  - {fileID: 1100309596}
   sideDependentSpawners: 0
   northSpawners: []
   westSpawners: []
@@ -9327,6 +9538,7 @@ Transform:
   m_Children:
   - {fileID: 5494753734272387094}
   - {fileID: 2088267189}
+  - {fileID: 583622742}
   m_Father: {fileID: 1863183074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8677255853352081777
