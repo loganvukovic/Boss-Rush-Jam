@@ -189,6 +189,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -196,6 +198,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &8790262
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +266,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -270,6 +275,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &32966490
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +343,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -344,6 +352,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &44403377
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +526,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1460908774}
@@ -525,6 +536,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &86366349
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +604,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 905207122}
@@ -601,6 +615,76 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
+--- !u!1001 &102927264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.9233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.9233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.73
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
+      propertyPath: m_Name
+      value: DragExport02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74b8b539bd34d124e990cd52a7de23a3, type: 3}
 --- !u!1 &120117798
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +737,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 8
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -660,6 +746,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &120117800
 Transform:
   m_ObjectHideFlags: 0
@@ -863,6 +950,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 8
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 2060337673}
@@ -871,6 +960,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &166679146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1103,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1020,6 +1112,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &172755840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1180,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1094,6 +1189,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &177644294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1338,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1249,6 +1347,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &209152003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1432,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1340,6 +1441,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 1466751416}
   lightningConnector2: {fileID: 1434242112}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &209759057
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,6 +1524,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1429,6 +1533,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &213753807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1692,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1594,6 +1701,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &244207598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1754,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 8
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1653,6 +1763,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &244207600
 Transform:
   m_ObjectHideFlags: 0
@@ -1899,6 +2010,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -1906,6 +2019,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &313881920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,6 +2127,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2020,6 +2136,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &316469450
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,6 +2277,7 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 3
   spawners:
   - {fileID: 506316700}
@@ -2244,6 +2362,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2251,6 +2371,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &330084471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2494,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2380,6 +2503,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &358286647
 Transform:
   m_ObjectHideFlags: 0
@@ -2462,6 +2586,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2469,6 +2595,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &374792953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2663,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2543,6 +2672,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &375321876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2725,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 244207599}
@@ -2603,6 +2735,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &375321878
 Transform:
   m_ObjectHideFlags: 0
@@ -2685,6 +2818,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2692,6 +2827,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &382295259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,6 +2895,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -2766,6 +2904,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &390947530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,6 +3077,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 120117799}
@@ -2946,6 +3087,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &394228945
 Transform:
   m_ObjectHideFlags: 0
@@ -3013,6 +3155,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3020,6 +3164,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &428091935
 Transform:
   m_ObjectHideFlags: 0
@@ -3087,6 +3232,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3094,6 +3241,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &437320837
 Transform:
   m_ObjectHideFlags: 0
@@ -3161,6 +3309,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3168,6 +3318,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &446479099
 Transform:
   m_ObjectHideFlags: 0
@@ -3250,6 +3401,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3257,6 +3410,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &469159413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,6 +3478,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3331,6 +3487,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &473088233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3729,6 +3886,7 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 3
   spawners:
   - {fileID: 832372814}
@@ -3798,6 +3956,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 437320836}
   - {fileID: 961181089}
@@ -3810,6 +3970,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &506316701
 Transform:
   m_ObjectHideFlags: 0
@@ -3893,6 +4054,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3900,6 +4063,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &578131245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3967,6 +4131,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -3974,6 +4140,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &591995597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,6 +4208,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4048,6 +4217,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &602295754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,6 +4285,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 898822197}
@@ -4129,6 +4301,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &610317147
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,6 +4354,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4188,6 +4363,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &610317149
 Transform:
   m_ObjectHideFlags: 0
@@ -4270,6 +4446,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4277,6 +4455,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &624607557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,6 +4560,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4388,6 +4569,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &642022003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,6 +4669,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4494,6 +4678,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 506316700}
   lightningConnector2: {fileID: 437320836}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &688517419
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,6 +4815,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4637,6 +4824,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &706669829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +4892,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4711,6 +4901,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &724274155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4813,6 +5004,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 86366351}
@@ -4829,6 +5022,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &731962826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,6 +5165,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -4978,6 +5174,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &738909934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5045,6 +5242,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5052,6 +5251,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &746191524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5153,6 +5353,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5160,6 +5362,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &767437926
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,6 +5499,8 @@ MonoBehaviour:
   stayOnBossRotate: 1
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5303,6 +5508,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &768363886
 Transform:
   m_ObjectHideFlags: 0
@@ -5370,6 +5576,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 1617302149}
   - {fileID: 172755842}
@@ -5390,6 +5598,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &832372815
 Transform:
   m_ObjectHideFlags: 0
@@ -5473,6 +5682,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1566709018}
@@ -5482,6 +5693,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &843205257
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,6 +5761,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 8
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5556,6 +5770,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &862261264
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,6 +5823,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 428091934}
   followUps: []
@@ -5616,6 +5833,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &862261266
 Transform:
   m_ObjectHideFlags: 0
@@ -5698,6 +5916,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5705,6 +5925,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &889815404
 GameObject:
   m_ObjectHideFlags: 0
@@ -5772,6 +5993,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 1
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5779,6 +6002,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &893383918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5930,6 +6154,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -5937,6 +6163,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &898822195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6004,6 +6231,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1410447137}
@@ -6017,6 +6246,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &905207120
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6314,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1109332802}
@@ -6093,6 +6325,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &919699684
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,6 +6551,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6325,6 +6560,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &958043987
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,6 +6717,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6488,6 +6726,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &961406400
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,6 +6794,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6562,6 +6803,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &985328028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6614,6 +6856,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6621,6 +6865,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &985328030
 Transform:
   m_ObjectHideFlags: 0
@@ -6703,6 +6948,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6710,6 +6957,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &998113572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6987,6 +7235,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -6994,6 +7244,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1007143171
 Transform:
   m_ObjectHideFlags: 0
@@ -7077,6 +7328,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7084,6 +7337,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1022151533
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,6 +7405,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7158,6 +7414,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1026127609
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,6 +7482,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 843205259}
@@ -7233,6 +7492,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1026671002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,6 +7594,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7341,6 +7603,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1035921654
 GameObject:
   m_ObjectHideFlags: 0
@@ -7626,6 +7889,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7633,6 +7898,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1086121389
 GameObject:
   m_ObjectHideFlags: 0
@@ -7685,6 +7951,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -7692,6 +7960,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1086121391
 Transform:
   m_ObjectHideFlags: 0
@@ -7774,6 +8043,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 833829817}
@@ -7783,6 +8054,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1111697952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7910,6 +8182,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1644437726}
@@ -7918,6 +8192,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1114519199
 Transform:
   m_ObjectHideFlags: 0
@@ -8084,6 +8359,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8091,6 +8368,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1127777172
 GameObject:
   m_ObjectHideFlags: 0
@@ -8278,6 +8556,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8285,6 +8565,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1146793006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,6 +8666,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8392,6 +8675,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1147135955
 GameObject:
   m_ObjectHideFlags: 0
@@ -8459,6 +8743,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8466,6 +8752,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1161949931
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,6 +8805,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 734855366}
   - {fileID: 1626359024}
@@ -8539,6 +8828,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1161949933
 Transform:
   m_ObjectHideFlags: 0
@@ -8606,6 +8896,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8613,6 +8905,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1167587361
 Transform:
   m_ObjectHideFlags: 0
@@ -8695,6 +8988,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8702,6 +8997,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1202958071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8989,6 +9285,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -8996,6 +9294,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1237711525
 GameObject:
   m_ObjectHideFlags: 0
@@ -9063,6 +9362,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9070,6 +9371,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1287212560
 GameObject:
   m_ObjectHideFlags: 0
@@ -9251,6 +9553,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9258,6 +9562,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1337557636
 GameObject:
   m_ObjectHideFlags: 0
@@ -9325,6 +9630,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9332,6 +9639,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1410447136
 GameObject:
   m_ObjectHideFlags: 0
@@ -9384,6 +9692,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1869927126}
@@ -9397,6 +9707,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1410447138
 Transform:
   m_ObjectHideFlags: 0
@@ -9479,6 +9790,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9486,6 +9799,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1427674312
 GameObject:
   m_ObjectHideFlags: 0
@@ -9553,6 +9867,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9560,6 +9876,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1434242111
 GameObject:
   m_ObjectHideFlags: 0
@@ -9612,6 +9929,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9619,6 +9938,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1434242113
 Transform:
   m_ObjectHideFlags: 0
@@ -9726,6 +10046,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9733,6 +10055,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1460908775
 Transform:
   m_ObjectHideFlags: 0
@@ -9800,6 +10123,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 1434242112}
   - {fileID: 1682107445}
@@ -9813,6 +10138,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1466751417
 Transform:
   m_ObjectHideFlags: 0
@@ -9965,6 +10291,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -9972,6 +10300,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1499616735
 GameObject:
   m_ObjectHideFlags: 0
@@ -10247,6 +10576,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 768363885}
@@ -10255,6 +10586,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1532647462
 Transform:
   m_ObjectHideFlags: 0
@@ -10338,6 +10670,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10345,6 +10679,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 1466751416}
   lightningConnector2: {fileID: 1434242112}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1540660828
 GameObject:
   m_ObjectHideFlags: 0
@@ -10397,6 +10732,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10404,6 +10741,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1540660830
 Transform:
   m_ObjectHideFlags: 0
@@ -10486,6 +10824,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10493,6 +10833,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1566586672
 GameObject:
   m_ObjectHideFlags: 0
@@ -10560,6 +10901,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10567,6 +10910,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1566709017
 GameObject:
   m_ObjectHideFlags: 0
@@ -10619,6 +10963,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 591995599}
@@ -10629,6 +10975,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1566709019
 Transform:
   m_ObjectHideFlags: 0
@@ -10711,6 +11058,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10718,6 +11067,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1606856494
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,6 +11210,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10867,6 +11219,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1621704524
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,6 +11287,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -10941,6 +11296,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1626359022
 GameObject:
   m_ObjectHideFlags: 0
@@ -11008,6 +11364,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11015,6 +11373,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1635609223
 GameObject:
   m_ObjectHideFlags: 0
@@ -11082,6 +11441,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11089,6 +11450,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1644437725
 GameObject:
   m_ObjectHideFlags: 0
@@ -11141,6 +11503,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11148,6 +11512,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1644437727
 Transform:
   m_ObjectHideFlags: 0
@@ -11230,6 +11595,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11237,6 +11604,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1651760968
 GameObject:
   m_ObjectHideFlags: 0
@@ -11386,6 +11754,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11393,6 +11763,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1677489433
 GameObject:
   m_ObjectHideFlags: 0
@@ -11489,6 +11860,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11496,6 +11869,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1682107446
 Transform:
   m_ObjectHideFlags: 0
@@ -11698,6 +12072,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps:
   - {fileID: 1798303581}
@@ -11706,6 +12082,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1703321419
 GameObject:
   m_ObjectHideFlags: 0
@@ -11845,6 +12222,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11852,6 +12231,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1718518787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11919,6 +12299,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -11926,6 +12308,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1730160957
 GameObject:
   m_ObjectHideFlags: 0
@@ -11993,6 +12376,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 377420521}
   - {fileID: 949093511}
@@ -12017,6 +12402,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1731370567
 GameObject:
   m_ObjectHideFlags: 0
@@ -12084,6 +12470,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12091,6 +12479,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1753079220
 GameObject:
   m_ObjectHideFlags: 0
@@ -12263,6 +12652,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12270,6 +12661,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1772660457
 GameObject:
   m_ObjectHideFlags: 0
@@ -12410,6 +12802,7 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 3
   spawners:
   - {fileID: 1730160959}
@@ -12494,6 +12887,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12501,6 +12896,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1798303579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12568,6 +12964,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12575,6 +12973,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1807459354
 GameObject:
   m_ObjectHideFlags: 0
@@ -12642,6 +13041,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12649,6 +13050,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1819335677
 GameObject:
   m_ObjectHideFlags: 0
@@ -12776,6 +13178,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12783,6 +13187,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 1682107445}
   lightningConnector2: {fileID: 1466751416}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &1835805884
 Transform:
   m_ObjectHideFlags: 0
@@ -12865,6 +13270,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12872,6 +13279,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1843258741
 GameObject:
   m_ObjectHideFlags: 0
@@ -12939,6 +13347,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -12946,6 +13356,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1857363980
 GameObject:
   m_ObjectHideFlags: 0
@@ -13105,6 +13516,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13112,6 +13525,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1859050803
 GameObject:
   m_ObjectHideFlags: 0
@@ -13179,6 +13593,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13186,6 +13602,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1863183073
 GameObject:
   m_ObjectHideFlags: 0
@@ -13289,6 +13706,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13296,6 +13715,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1870657810
 GameObject:
   m_ObjectHideFlags: 0
@@ -13363,6 +13783,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13370,6 +13792,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1897064156
 GameObject:
   m_ObjectHideFlags: 0
@@ -13437,6 +13860,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13444,6 +13869,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1915521076
 GameObject:
   m_ObjectHideFlags: 0
@@ -13511,6 +13937,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13518,6 +13946,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1941405312
 GameObject:
   m_ObjectHideFlags: 0
@@ -13585,6 +14014,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13592,6 +14023,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1941573182
 GameObject:
   m_ObjectHideFlags: 0
@@ -13659,6 +14091,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners:
   - {fileID: 1026127611}
   followUps:
@@ -13668,6 +14102,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &1949290181
 GameObject:
   m_ObjectHideFlags: 0
@@ -13967,6 +14402,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -13974,6 +14411,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &2022905622
 GameObject:
   m_ObjectHideFlags: 0
@@ -14026,6 +14464,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -14033,6 +14473,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &2022905624
 Transform:
   m_ObjectHideFlags: 0
@@ -14188,6 +14629,7 @@ MonoBehaviour:
   isRotating: 0
   curSpots: 0
   prevSpot: 0
+  moving: 0
   phase1Range: 6
   spawners:
   - {fileID: 375321877}
@@ -14440,6 +14882,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -14447,6 +14891,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &2060337674
 Transform:
   m_ObjectHideFlags: 0
@@ -14514,6 +14959,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -14521,6 +14968,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 961181089}
   lightningConnector2: {fileID: 506316700}
+  tripwireSpawner: {fileID: 0}
 --- !u!4 &2081951263
 Transform:
   m_ObjectHideFlags: 0
@@ -14828,6 +15276,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -14835,6 +15285,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &2130781470
 GameObject:
   m_ObjectHideFlags: 0
@@ -14902,6 +15353,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -14909,6 +15362,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &2141363049
 GameObject:
   m_ObjectHideFlags: 0
@@ -14961,3 +15415,4 @@ SceneRoots:
   - {fileID: 1205898363}
   - {fileID: 1469352074}
   - {fileID: 1287212561}
+  - {fileID: 102927264}
