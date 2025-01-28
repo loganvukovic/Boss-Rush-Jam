@@ -1233,6 +1233,51 @@ Transform:
   - {fileID: 843205258}
   m_Father: {fileID: 746191525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &181316875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181316877}
+  - component: {fileID: 181316876}
+  m_Layer: 0
+  m_Name: BossManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &181316876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181316875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11990b6497de9446b0689d75a1784da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hydraDeaths: 0
+--- !u!4 &181316877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181316875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.869377, y: 9.172932, z: -27.00387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &193977232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,12 +1975,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 0
+  isHydra: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -1947,6 +1994,10 @@ MonoBehaviour:
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 0}
+  puppetHitbox: {fileID: 0}
+  elementToGive: Water
+  hydraManager: {fileID: 181316876}
 --- !u!1 &313671235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2314,7 @@ MonoBehaviour:
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 0}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -2296,6 +2348,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
@@ -3872,6 +3925,7 @@ MonoBehaviour:
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 0}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -3905,6 +3959,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
@@ -5398,12 +5453,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 0
+  isHydra: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -5415,6 +5472,10 @@ MonoBehaviour:
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 0}
+  puppetHitbox: {fileID: 0}
+  elementToGive: Fire
+  hydraManager: {fileID: 181316876}
 --- !u!4 &767437929
 Transform:
   m_ObjectHideFlags: 0
@@ -6074,12 +6135,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 0
+  isHydra: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -6091,6 +6154,10 @@ MonoBehaviour:
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 0}
+  puppetHitbox: {fileID: 0}
+  elementToGive: Electric
+  hydraManager: {fileID: 181316876}
 --- !u!1 &894904452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8279,12 +8346,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 100
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 0
+  isHydra: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -8296,6 +8365,10 @@ MonoBehaviour:
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 0}
+  puppetHitbox: {fileID: 0}
+  elementToGive: Grass
+  hydraManager: {fileID: 181316876}
 --- !u!1 &1127582505
 GameObject:
   m_ObjectHideFlags: 0
@@ -12788,6 +12861,7 @@ MonoBehaviour:
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 0}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -12821,6 +12895,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
@@ -14615,6 +14690,7 @@ MonoBehaviour:
   tf: {fileID: 1957851012}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 0}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -14651,6 +14727,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
@@ -15420,3 +15497,4 @@ SceneRoots:
   - {fileID: 1469352074}
   - {fileID: 1287212561}
   - {fileID: 102927264}
+  - {fileID: 181316877}

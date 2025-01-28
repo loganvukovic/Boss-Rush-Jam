@@ -13,6 +13,7 @@ public class BossScript : MonoBehaviour
     public float phase2Speed;
     public int damageFromBubble;
     public bool isPuppet;
+    public bool isHydra;
     public bool deathLeadsToScene;
     public int sceneToLoad;
     public float timeBeforeLoad;
@@ -28,6 +29,8 @@ public class BossScript : MonoBehaviour
     public Renderer lightning;
     public Renderer puppetRenderer;
     public Collider puppetHitbox;
+    public string elementToGive;
+    public HydraManager hydraManager;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +59,10 @@ public class BossScript : MonoBehaviour
                 else if (isPuppet)
                 {
                     StartCoroutine(PuppetDeath());
+                }
+                else if (isHydra)
+                {
+                    StartCoroutine(HydraDeath());
                 }
             }
         }
@@ -92,6 +99,10 @@ public class BossScript : MonoBehaviour
             {
                 bossActions.hitCounter++;
             }
+        }
+        else if (other.tag == "PlayerHB" && GetComponentInParent<BossActions>().dying)
+        {
+            other.GetComponentInParent<PlayerAttack>().Imbue(elementToGive);
         }
     }
 
@@ -155,5 +166,14 @@ public class BossScript : MonoBehaviour
         yield return null;
         GetComponentInParent<BossActions>().enabled = false;
         if (GetComponentInParent<FollowAndSlam>() != null) GetComponentInParent<FollowAndSlam>().enabled = false;
+    }
+
+    IEnumerator HydraDeath()
+    {
+        //Hydra droop/death animation here
+        GetComponentInParent<BossActions>().dying = true;
+        hydraManager.hydraDeaths++;
+        yield return null;
+        GetComponentInParent<BossActions>().enabled = false;
     }
 }

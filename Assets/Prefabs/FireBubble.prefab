@@ -130,7 +130,7 @@ MonoBehaviour:
   destroyOnHit: 0
   keepMovingOnBossMove: 0
   playerInBubble: 0
-  floatInBubble: 0
+  floatInBubble: 1
   element: Fire
   destroyableByElement: 0
   weakness: 
@@ -141,6 +141,8 @@ MonoBehaviour:
   spawner: {fileID: 0}
   playerMovement: {fileID: 0}
   bossActions: {fileID: 0}
+  inCone: 0
+  throwPoint: {fileID: 0}
 --- !u!95 &3635971192452373693
 Animator:
   serializedVersion: 5
