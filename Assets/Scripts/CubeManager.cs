@@ -8,6 +8,7 @@ public class CubeManager : MonoBehaviour
     public GameObject[] spawners;
     public BulletSpawner spearSpawner;
     public Animator animator;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,9 @@ public class CubeManager : MonoBehaviour
         }
         yield return new WaitForSeconds(5f);
         animator.SetTrigger("Rise");
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
+        audioSource.Play();
+        yield return new WaitForSeconds(1f);
         bossActions.enabled = true;
         foreach (var spawner in spawners)
         {
