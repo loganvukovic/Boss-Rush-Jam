@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HydraBoss.unity
     guid: 6a94bd011a582cc4eb246f7c9a27ce5c
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: d5adc3f537434e14582b6436193b5a95
   m_configObjects: {}

@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotationDuration;
     private float timeElapsed;
     public string curSide;
+    public int rotationInvert = 1;
 
     public bool attacking;
     private int curCombo;
@@ -82,6 +83,11 @@ public class PlayerMovement : MonoBehaviour
         inBubble = false;
         Time.timeScale = 1f;
         if (gameOverScreen != null) gameOverScreen.SetActive(false);
+        if (PlayerPrefs.HasKey("RotationDirection"))
+        {
+            rotationInvert = PlayerPrefs.GetInt("RotationDirection");
+        }
+        else rotationInvert = 1;
     }
     void Update()
     {
@@ -90,6 +96,10 @@ public class PlayerMovement : MonoBehaviour
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
             gameOvered = true;
+        }
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            InvertRotation();
         }
 
         if (!canMove)
@@ -152,10 +162,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (!rotating && canRotate && !isDashing)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
-                Rotate(90);
             if (Input.GetKeyDown(KeyCode.E))
-                Rotate(-90);
+                Rotate(90 * rotationInvert);
+            if (Input.GetKeyDown(KeyCode.Q))
+                Rotate(-90 * rotationInvert);
         }
 
         if (rotating && timeElapsed < rotationDuration)
@@ -383,5 +393,12 @@ public class PlayerMovement : MonoBehaviour
         {
             floating = true;
         }
+    }
+
+    public void InvertRotation()
+    {
+        if (rotationInvert == 1) rotationInvert = -1;
+        else rotationInvert = 1;
+        PlayerPrefs.SetInt("RotationDirection", rotationInvert);
     }
 }
