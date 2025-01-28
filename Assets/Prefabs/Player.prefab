@@ -535,6 +535,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 0
   cooldown: 0
+  fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 0a275ffaa1ab9084d987764733dfaccb, type: 3}
   stage: {fileID: 0}
   playerMovement: {fileID: 8127577409306176760}
@@ -550,6 +551,8 @@ MonoBehaviour:
   stayOnBossRotate: 0
   keepMovingOnBossMove: 0
   bulletsInCircle: 0
+  coneAngle: 0
+  coneBulletCount: 0
   linkedSpawners: []
   followUps: []
   followUpTimer: 0
@@ -557,6 +560,7 @@ MonoBehaviour:
   justFired: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &6205960618031061676
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +855,7 @@ MonoBehaviour:
   flickerDuration: 0.1
   meshRenderer: {fileID: 0}
   healthBar: {fileID: 0}
+  gameOverScreen: {fileID: 0}
   canMove: 0
   inBubble: 0
   floating: 0
@@ -908,6 +913,9 @@ MonoBehaviour:
   attackCooldown: 0.6
   comboTimer: 1
   attacking: 0
+  buffering: 0
+  bufferTimer: 0
+  bufferTime: 0.2
   curCombo: 0
   combo1Length: 0.6
   combo2Length: 0.6

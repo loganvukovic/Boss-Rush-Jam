@@ -16,6 +16,9 @@ public class PlayerAttack : MonoBehaviour
     public float attackCooldown;
     public float comboTimer;
     public bool attacking;
+    public bool buffering;
+    public float bufferTimer;
+    public float bufferTime;
 
     public int curCombo;
     public float combo1Length;
@@ -69,6 +72,15 @@ public class PlayerAttack : MonoBehaviour
         attackTimer += Time.deltaTime;
         shootTimer += Time.deltaTime;
 
+        if(buffering)
+        {
+            bufferTimer += Time.deltaTime;
+            if (bufferTimer > bufferTime)
+            {
+                buffering = false;
+            }
+        }
+
         if (attackTimer > combo1Length)
         {
             hitboxes[0].enabled = false;
@@ -115,9 +127,14 @@ public class PlayerAttack : MonoBehaviour
         if (rotating)
             return;
 
-        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
+        if ((Input.GetKeyDown(KeyCode.K) || buffering) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
         {
             Attack();
+        }
+        else if (Input.GetKeyDown(KeyCode.K) && !isDashing && !isSlamming)
+        {
+            buffering = true;
+            bufferTimer = 0f;
         }
 
         if (Input.GetKeyDown(KeyCode.J) && !attacking && shootTimer > shootCooldown && !isDashing && !isSlamming)
