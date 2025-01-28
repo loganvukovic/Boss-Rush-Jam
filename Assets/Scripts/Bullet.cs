@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
 
     public float timer = 0f;
     private Vector3 spawnPoint;
+    public bool remainOnDeath;
     public bool isBomb;
     public bool LRBombs;
     public bool isBox = false;
@@ -86,7 +87,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(bossActions.healing || bossActions.dying)
+        if((bossActions.healing || bossActions.dying) && !remainOnDeath)
         {
             Destroy(gameObject);
         }

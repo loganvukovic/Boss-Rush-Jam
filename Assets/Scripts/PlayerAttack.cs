@@ -136,7 +136,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (elementTimer < 0)
         {
-            Imbue("None");
+            Imbue("None", false);
         }
 
     }
@@ -219,7 +219,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    public void Imbue(string element)
+    public void Imbue(string element, bool playAnimation)
     {
         curElement = element;
 
@@ -234,22 +234,22 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (element == "Water")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = waterMaterial;
         }
         else if (element == "Fire")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = fireMaterial;
         }
         else if (element == "Grass")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = grassMaterial;
         }
         else if (element == "Electric")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = electricMaterial;
         }
 

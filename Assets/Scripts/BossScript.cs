@@ -102,7 +102,7 @@ public class BossScript : MonoBehaviour
         }
         else if (other.tag == "PlayerHB" && GetComponentInParent<BossActions>().dying)
         {
-            other.GetComponentInParent<PlayerAttack>().Imbue(elementToGive);
+            other.GetComponentInParent<PlayerAttack>().Imbue(elementToGive, false);
         }
     }
 

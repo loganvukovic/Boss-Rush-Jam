@@ -41,7 +41,7 @@ public class ElementPuddle : MonoBehaviour
 
     IEnumerator Imbue(Collider other)
     {
-        other.GetComponentInParent<PlayerAttack>().Imbue(element);
+        other.GetComponentInParent<PlayerAttack>().Imbue(element, true);
         other.GetComponentInParent<PlayerAttack>().imbuing = true;
         yield return new WaitForSeconds(1f);
         other.GetComponentInParent<PlayerAttack>().imbuing = false;

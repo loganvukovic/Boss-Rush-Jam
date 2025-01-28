@@ -124,6 +124,7 @@ MonoBehaviour:
   speed: 0
   damage: 5
   timer: 0
+  remainOnDeath: 1
   isBomb: 0
   LRBombs: 0
   isBox: 0
