@@ -6765,7 +6765,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1371988435}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Retry
+        m_MethodName: RetryButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10352,6 +10352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1916652a987256d41b20602877fe395a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackOutSquare: {fileID: 958043989}
+  gameOverScreen: {fileID: 939868214}
 --- !u!4 &1371988436
 Transform:
   m_ObjectHideFlags: 0

@@ -69,6 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
     public int heldKeys = 0;
 
+    private bool gameOvered;
+
     void Start()
     {
         curSide = "North";
@@ -83,10 +85,11 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        if (curHealth <= 0 && gameOverScreen != null)
+        if (curHealth <= 0 && gameOverScreen != null && !gameOvered)
         {
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
+            gameOvered = true;
         }
 
         if (!canMove)
