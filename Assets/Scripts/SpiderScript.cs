@@ -10,6 +10,7 @@ public class SpiderScript : MonoBehaviour
     public bool movingPositive;
     public float moveSpeed;
     public string direction;
+    public PuppetManager puppetManager;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,11 @@ public class SpiderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!puppetManager.fightStarted)
+        {
+            return;
+        }
+
         if (cloneScript.side == "East" || cloneScript.side == "South")
         {
             movingUpDown = true;

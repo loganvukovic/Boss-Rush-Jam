@@ -64,6 +64,7 @@ public class BossActions : MonoBehaviour
         previousAttack = -1;
         rotateTimer = 0;
         curSide = "North";
+        prevSpot = -1;
 
         if(canClone)
         {
@@ -215,7 +216,7 @@ public class BossActions : MonoBehaviour
         rotating = true;
     }
 
-    private void ChooseSpot(int spot)
+    public void ChooseSpot(int spot)
     {
         if (spot != prevSpot)
         {

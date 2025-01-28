@@ -15,6 +15,7 @@ public class FollowAndSlam : MonoBehaviour
     public float raiseSpeed;
     public float contactDamage;
     public Collider hitbox;
+    public PuppetManager puppetManager;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,11 @@ public class FollowAndSlam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!puppetManager.fightStarted)
+        {
+            return;
+        }
+
         if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating && !GetComponent<CloneScript>().moving)
         {
             if(!isSlamming && !GetComponent<CloneScript>().moving)
