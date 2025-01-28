@@ -12,6 +12,7 @@ public class BossScript : MonoBehaviour
     public bool healing;
     public float phase2Speed;
     public int damageFromBubble;
+    public bool isPuppet;
     public bool deathLeadsToScene;
     public int sceneToLoad;
     public float timeBeforeLoad;
@@ -25,6 +26,8 @@ public class BossScript : MonoBehaviour
     public BossActions bossActions;
     public GameObject healthBar;
     public Renderer lightning;
+    public Renderer puppetRenderer;
+    public Collider puppetHitbox;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,10 @@ public class BossScript : MonoBehaviour
                 {
                     StartCoroutine(LoadScene());
                 }
+                else if (isPuppet)
+                {
+                    StartCoroutine(PuppetDeath());
+                }
             }
         }
 
@@ -58,7 +65,7 @@ public class BossScript : MonoBehaviour
             bool attackable = true;
             foreach (GameObject puppet in bossActions.fakePuppets)
             {
-                if (puppet.activeSelf)
+                if (!puppet.GetComponent<BossActions>().dying)
                 {
                     attackable = false; 
                     break;
@@ -138,5 +145,15 @@ public class BossScript : MonoBehaviour
         StartCoroutine(blackoutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneToLoad);
+    }
+
+    IEnumerator PuppetDeath()
+    {
+        //Clone ragdoll stuff here
+        puppetRenderer.enabled = false;
+        GetComponentInParent<BossActions>().dying = true;
+        yield return null;
+        GetComponentInParent<BossActions>().enabled = false;
+        if (GetComponentInParent<FollowAndSlam>() != null) GetComponentInParent<FollowAndSlam>().enabled = false;
     }
 }

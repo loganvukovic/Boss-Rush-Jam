@@ -10,6 +10,7 @@ public class BossActions : MonoBehaviour
     public Transform tf;
     public PlayerMovement playerMovement;
     public GameObject stage;
+    public bool wontShoot;
 
     public bool canRotate;
     public bool rotating;
@@ -172,7 +173,7 @@ public class BossActions : MonoBehaviour
         }
 
         attackTimer += Time.deltaTime;
-        if (attackTimer > attackCooldown)
+        if (attackTimer > attackCooldown && !wontShoot)
         {
             if (curPhase == 1)
             {

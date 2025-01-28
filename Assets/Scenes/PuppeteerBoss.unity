@@ -239,7 +239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &59280667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2457,6 +2457,7 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -2468,6 +2469,8 @@ MonoBehaviour:
   bossActions: {fileID: 7518884777301099928}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 1561263262}
+  puppetHitbox: {fileID: 0}
 --- !u!1 &706531779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4626,6 +4629,7 @@ MonoBehaviour:
   tf: {fileID: 0}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 356460843}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -4658,9 +4662,15 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
+--- !u!23 &1184172415 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9080632432236638245, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+  m_PrefabInstance: {fileID: 1184172405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1205898359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5450,6 +5460,7 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -5461,6 +5472,8 @@ MonoBehaviour:
   bossActions: {fileID: 7518884777301099928}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 1184172415}
+  puppetHitbox: {fileID: 0}
 --- !u!1 &1469352071
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,6 +6029,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1561263259}
+    - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1561263264}
   m_SourcePrefab: {fileID: 100100000, guid: c563a03746ab764478d40a8690c023ef, type: 3}
 --- !u!4 &1561263253 stripped
 Transform:
@@ -6045,6 +6061,61 @@ MonoBehaviour:
   movingPositive: 0
   moveSpeed: 5
   direction: 
+--- !u!23 &1561263262 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9080632432236638245, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+  m_PrefabInstance: {fileID: 1561263252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1561263264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561263254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fe4796e17926c43a859ab8749e0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tf: {fileID: 0}
+  playerMovement: {fileID: 217045719}
+  stage: {fileID: 356460843}
+  wontShoot: 1
+  canRotate: 0
+  rotating: 0
+  stageRotating: 0
+  rotateTimer: 0
+  rotateCooldown: 0
+  timeElapsed: 0
+  rotationDuration: 0
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
+  moving: 0
+  phase1Range: 0
+  spawners: []
+  sideDependentSpawners: 0
+  northSpawners: []
+  westSpawners: []
+  southSpawners: []
+  eastSpawners: []
+  playerSide: 
+  attackTimer: 0
+  attackCooldown: 0
+  healing: 0
+  dying: 0
+  curSide: 
+  curPhase: 0
+  fakeBoss: 0
 --- !u!1 &1576214752
 GameObject:
   m_ObjectHideFlags: 0
@@ -6827,6 +6898,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1686398106}
+    - targetCorrespondingSourceObject: {fileID: 5748156603140967907, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686398110}
   m_SourcePrefab: {fileID: 100100000, guid: c563a03746ab764478d40a8690c023ef, type: 3}
 --- !u!4 &1686398103 stripped
 Transform:
@@ -6876,6 +6950,61 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 5968660808430252785, guid: c563a03746ab764478d40a8690c023ef, type: 3}
   m_PrefabInstance: {fileID: 1686398102}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1686398108 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9080632432236638245, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+  m_PrefabInstance: {fileID: 1686398102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1686398110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686398104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fe4796e17926c43a859ab8749e0c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tf: {fileID: 0}
+  playerMovement: {fileID: 217045719}
+  stage: {fileID: 356460843}
+  wontShoot: 1
+  canRotate: 0
+  rotating: 0
+  stageRotating: 0
+  rotateTimer: 0
+  rotateCooldown: 0
+  timeElapsed: 0
+  rotationDuration: 0
+  canClone: 0
+  spawnPoints: []
+  hitCounter: 0
+  reqHits: 0
+  spawnSide: 
+  sides: []
+  fakePuppets: []
+  empty: {fileID: 0}
+  isRotating: 0
+  curSpots: 0
+  prevSpot: 0
+  moving: 0
+  phase1Range: 0
+  spawners: []
+  sideDependentSpawners: 0
+  northSpawners: []
+  westSpawners: []
+  southSpawners: []
+  eastSpawners: []
+  playerSide: 
+  attackTimer: 0
+  attackCooldown: 0
+  healing: 0
+  dying: 0
+  curSide: 
+  curPhase: 0
+  fakeBoss: 0
 --- !u!1 &1688122001
 GameObject:
   m_ObjectHideFlags: 0
@@ -8981,6 +9110,7 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
+  isPuppet: 1
   deathLeadsToScene: 0
   sceneToLoad: 0
   timeBeforeLoad: 0
@@ -8992,6 +9122,8 @@ MonoBehaviour:
   bossActions: {fileID: 7518884777301099928}
   healthBar: {fileID: 0}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 1686398108}
+  puppetHitbox: {fileID: 1686398107}
 --- !u!1 &2089828858
 GameObject:
   m_ObjectHideFlags: 0
@@ -9447,6 +9579,7 @@ MonoBehaviour:
   tf: {fileID: 0}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 356460843}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -9490,6 +9623,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 3
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 0
@@ -9512,10 +9646,11 @@ MonoBehaviour:
   healing: 0
   phase2Speed: 0
   damageFromBubble: 30
-  deathLeadsToScene: 0
-  sceneToLoad: 0
-  timeBeforeLoad: 0
-  blackoutSquare: {fileID: 0}
+  isPuppet: 0
+  deathLeadsToScene: 1
+  sceneToLoad: 3
+  timeBeforeLoad: 7
+  blackoutSquare: {fileID: 59280668}
   elemental: 0
   weakness: 
   invincible: 1
@@ -9523,6 +9658,8 @@ MonoBehaviour:
   bossActions: {fileID: 7518884777301099928}
   healthBar: {fileID: 1499616735}
   lightning: {fileID: 1323843737}
+  puppetRenderer: {fileID: 0}
+  puppetHitbox: {fileID: 0}
 --- !u!4 &7875929978260168532
 Transform:
   m_ObjectHideFlags: 0
