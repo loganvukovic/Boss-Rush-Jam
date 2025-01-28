@@ -132,6 +132,8 @@ public class BossScript : MonoBehaviour
     IEnumerator LoadScene()
     {
         //animator.SetTrigger("Die");
+        bossActions.dying = true;
+        yield return null; bossActions.enabled = false;
         yield return new WaitForSeconds(timeBeforeLoad);
         StartCoroutine(blackoutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);

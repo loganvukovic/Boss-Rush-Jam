@@ -51,6 +51,7 @@ public class BossActions : MonoBehaviour
     public float attackCooldown;
 
     public bool healing;
+    public bool dying = false;
 
     public string curSide;
     public int curPhase;
