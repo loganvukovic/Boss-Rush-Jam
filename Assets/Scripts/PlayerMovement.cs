@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
     public float flickerDuration;
     public MeshRenderer meshRenderer;
     public Image healthBar;
+    public GameObject gameOverScreen;
     public bool canMove;
 
     public bool inBubble;
@@ -77,9 +78,17 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         canRotate = true;
         inBubble = false;
+        Time.timeScale = 1f;
+        if (gameOverScreen != null) gameOverScreen.SetActive(false);
     }
     void Update()
     {
+        if (curHealth <= 0 && gameOverScreen != null)
+        {
+            gameOverScreen.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
         if (!canMove)
         {
             return;
