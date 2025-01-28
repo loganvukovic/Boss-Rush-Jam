@@ -2049,6 +2049,7 @@ MonoBehaviour:
   tf: {fileID: 0}
   playerMovement: {fileID: 0}
   stage: {fileID: 0}
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -2079,6 +2080,7 @@ MonoBehaviour:
   attackTimer: 0
   attackCooldown: 0
   healing: 0
+  dying: 0
   curSide: 
   curPhase: 0
   fakeBoss: 1
@@ -2148,7 +2150,7 @@ MonoBehaviour:
   timer: 0
   firingRate: 5
   cooldown: 5
-  fireAtStart: 0
+  fireAtStart: 1
   bullet: {fileID: 1512310168047667362, guid: a36186c8a0d5d724cbf6aace84da3a3a, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 6486891358943912874}
