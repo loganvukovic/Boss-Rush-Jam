@@ -2753,7 +2753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dfe61f26ee57d048a0789ad0c20642e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackFromStart: 0
+  blackFromStart: 1
 --- !u!1 &1469352071
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,6 +4543,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1819335679}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: rotationInvert
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8310775603294931499, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: stage
       value: 
