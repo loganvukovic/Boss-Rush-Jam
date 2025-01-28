@@ -125,6 +125,7 @@ MonoBehaviour:
   speed: 0
   damage: 5
   timer: 0
+  remainOnDeath: 1
   isBomb: 0
   LRBombs: 0
   isBox: 0
@@ -142,6 +143,8 @@ MonoBehaviour:
   spawner: {fileID: 0}
   playerMovement: {fileID: 0}
   bossActions: {fileID: 0}
+  inCone: 0
+  throwPoint: {fileID: 0}
 --- !u!95 &3635971192452373693
 Animator:
   serializedVersion: 5

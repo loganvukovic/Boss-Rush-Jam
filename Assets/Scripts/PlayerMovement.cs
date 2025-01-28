@@ -61,12 +61,15 @@ public class PlayerMovement : MonoBehaviour
     public float flickerDuration;
     public MeshRenderer meshRenderer;
     public Image healthBar;
+    public GameObject gameOverScreen;
     public bool canMove;
 
     public bool inBubble;
     public bool floating;
 
     public int heldKeys = 0;
+
+    private bool gameOvered;
 
     void Start()
     {
@@ -77,9 +80,18 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         canRotate = true;
         inBubble = false;
+        Time.timeScale = 1f;
+        if (gameOverScreen != null) gameOverScreen.SetActive(false);
     }
     void Update()
     {
+        if (curHealth <= 0 && gameOverScreen != null && !gameOvered)
+        {
+            gameOverScreen.SetActive(true);
+            Time.timeScale = 0f;
+            gameOvered = true;
+        }
+
         if (!canMove)
         {
             return;

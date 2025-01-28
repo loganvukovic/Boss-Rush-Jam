@@ -126,11 +126,17 @@ MonoBehaviour:
   speed: 0
   damage: 5
   timer: 0
+  remainOnDeath: 1
   isBomb: 0
   LRBombs: 0
   isBox: 0
   destroyOnHit: 0
   keepMovingOnBossMove: 0
+  playerInBubble: 0
+  floatInBubble: 0
+  element: 
+  destroyableByElement: 0
+  weakness: 
   spot: 0
   bombBox: {fileID: 0}
   spawn: {fileID: 0}
@@ -138,6 +144,8 @@ MonoBehaviour:
   spawner: {fileID: 0}
   playerMovement: {fileID: 0}
   bossActions: {fileID: 0}
+  inCone: 0
+  throwPoint: {fileID: 0}
 --- !u!114 &372994612420428480
 MonoBehaviour:
   m_ObjectHideFlags: 0

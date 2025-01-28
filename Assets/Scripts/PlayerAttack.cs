@@ -16,6 +16,9 @@ public class PlayerAttack : MonoBehaviour
     public float attackCooldown;
     public float comboTimer;
     public bool attacking;
+    public bool buffering;
+    public float bufferTimer;
+    public float bufferTime;
 
     public int curCombo;
     public float combo1Length;
@@ -69,6 +72,15 @@ public class PlayerAttack : MonoBehaviour
         attackTimer += Time.deltaTime;
         shootTimer += Time.deltaTime;
 
+        if(buffering)
+        {
+            bufferTimer += Time.deltaTime;
+            if (bufferTimer > bufferTime)
+            {
+                buffering = false;
+            }
+        }
+
         if (attackTimer > combo1Length)
         {
             hitboxes[0].enabled = false;
@@ -115,9 +127,14 @@ public class PlayerAttack : MonoBehaviour
         if (rotating)
             return;
 
-        if (Input.GetKeyDown(KeyCode.K) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
+        if ((Input.GetKeyDown(KeyCode.K) || buffering) && !attacking && attackTimer > attackCooldown && !isDashing && !isSlamming)
         {
             Attack();
+        }
+        else if (Input.GetKeyDown(KeyCode.K) && !isDashing && !isSlamming)
+        {
+            buffering = true;
+            bufferTimer = 0f;
         }
 
         if (Input.GetKeyDown(KeyCode.J) && !attacking && shootTimer > shootCooldown && !isDashing && !isSlamming)
@@ -136,7 +153,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (elementTimer < 0)
         {
-            Imbue("None");
+            Imbue("None", false);
         }
 
     }
@@ -219,7 +236,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    public void Imbue(string element)
+    public void Imbue(string element, bool playAnimation)
     {
         curElement = element;
 
@@ -234,22 +251,22 @@ public class PlayerAttack : MonoBehaviour
         }
         else if (element == "Water")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = waterMaterial;
         }
         else if (element == "Fire")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = fireMaterial;
         }
         else if (element == "Grass")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = grassMaterial;
         }
         else if (element == "Electric")
         {
-            animator.SetTrigger("Absorb");
+            if (playAnimation) animator.SetTrigger("Absorb");
             axe.material = electricMaterial;
         }
 
