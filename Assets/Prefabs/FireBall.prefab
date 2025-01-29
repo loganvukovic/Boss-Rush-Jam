@@ -123,11 +123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c464de31ba030d0479a5ab8ef3c47ea6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.265
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c464de31ba030d0479a5ab8ef3c47ea6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.248
+      value: -0.008
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c464de31ba030d0479a5ab8ef3c47ea6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2525979213229417770, guid: 5540748e4164986499ae0e8875d16793, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2525979213229417770, guid: 5540748e4164986499ae0e8875d16793, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -234,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2525979213229417770, guid: 5540748e4164986499ae0e8875d16793, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4675040837701014952, guid: 5540748e4164986499ae0e8875d16793, type: 3}
       propertyPath: m_Name
