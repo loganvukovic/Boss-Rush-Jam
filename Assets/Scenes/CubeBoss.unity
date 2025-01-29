@@ -181,6 +181,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -273,6 +277,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -350,6 +358,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -427,6 +439,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -504,6 +520,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -616,6 +636,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -693,6 +717,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -770,6 +798,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -847,6 +879,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -909,6 +945,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1003,6 +1043,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1065,6 +1109,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1248,6 +1296,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1340,6 +1392,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1417,6 +1473,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1479,6 +1539,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1556,6 +1620,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1664,7 +1732,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1753,6 +1821,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1845,6 +1917,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1907,6 +1983,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -1999,6 +2079,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2231,6 +2315,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2308,6 +2396,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2385,6 +2477,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2449,6 +2545,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2527,6 +2627,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2639,6 +2743,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2717,6 +2825,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2794,6 +2906,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -2886,6 +3002,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3030,6 +3150,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3107,6 +3231,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3169,6 +3297,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3246,6 +3378,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3444,6 +3580,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3521,6 +3661,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3623,6 +3767,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3715,6 +3863,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3792,6 +3944,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3869,6 +4025,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -3989,6 +4149,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4066,6 +4230,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4131,6 +4299,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4224,6 +4396,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4286,6 +4462,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4483,6 +4663,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4560,6 +4744,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4637,6 +4825,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4699,6 +4891,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4791,6 +4987,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4868,6 +5068,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -4932,6 +5136,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5025,6 +5233,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5102,6 +5314,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5179,6 +5395,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5256,6 +5476,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5318,6 +5542,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5411,7 +5639,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96a7493feee30fa4d99804e70f3864c2, type: 2}
+  - {fileID: 2100000, guid: 9c13328962481e84e9a802797fe8a9ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5505,6 +5733,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5582,6 +5814,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5674,6 +5910,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5751,6 +5991,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -5815,6 +6059,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6076,6 +6324,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6138,6 +6390,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6215,6 +6471,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6292,6 +6552,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6384,6 +6648,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6446,6 +6714,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6523,6 +6795,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6615,6 +6891,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6692,6 +6972,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6769,6 +7053,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6846,6 +7134,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6923,6 +7215,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -6985,6 +7281,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7077,6 +7377,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7221,6 +7525,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7300,6 +7608,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7377,6 +7689,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7529,6 +7845,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7624,6 +7944,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7716,6 +8040,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7830,6 +8158,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7892,6 +8224,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -7984,6 +8320,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8048,6 +8388,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8144,6 +8488,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8327,6 +8675,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8404,6 +8756,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8481,6 +8837,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8558,6 +8918,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8620,6 +8984,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -8712,6 +9080,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9031,7 +9403,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9170,6 +9542,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9247,6 +9623,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9309,6 +9689,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9401,6 +9785,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9478,6 +9866,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9555,6 +9947,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9632,6 +10028,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9694,6 +10094,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9771,6 +10175,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9863,6 +10271,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -9925,6 +10337,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10017,6 +10433,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10095,7 +10515,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96a7493feee30fa4d99804e70f3864c2, type: 2}
+  - {fileID: 2100000, guid: 9c13328962481e84e9a802797fe8a9ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10199,6 +10619,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10278,6 +10702,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10340,6 +10768,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10432,6 +10864,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10510,7 +10946,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96a7493feee30fa4d99804e70f3864c2, type: 2}
+  - {fileID: 2100000, guid: 9c13328962481e84e9a802797fe8a9ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10614,6 +11050,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10676,6 +11116,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10753,6 +11197,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10851,6 +11299,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10930,6 +11382,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -10995,6 +11451,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11073,6 +11533,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11150,6 +11614,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11227,6 +11695,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11319,6 +11791,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11382,6 +11858,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11491,7 +11971,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11595,6 +12075,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11672,6 +12156,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11749,6 +12237,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11811,6 +12303,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11888,6 +12384,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -11983,6 +12483,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12311,6 +12815,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12403,6 +12911,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12467,6 +12979,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12560,6 +13076,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12622,6 +13142,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12714,6 +13238,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12858,6 +13386,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -12935,6 +13467,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13026,6 +13562,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13088,6 +13628,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13165,6 +13709,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13242,6 +13790,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13334,6 +13886,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13411,6 +13967,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13490,6 +14050,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13552,6 +14116,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13644,6 +14212,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13721,6 +14293,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13798,6 +14374,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13860,6 +14440,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -13937,6 +14521,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14014,6 +14602,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14108,6 +14700,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14185,6 +14781,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14298,6 +14898,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14443,6 +15047,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14614,6 +15222,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14677,6 +15289,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14755,6 +15371,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14832,6 +15452,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14924,6 +15548,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -14988,6 +15616,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15067,6 +15699,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15160,6 +15796,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15237,6 +15877,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15299,6 +15943,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15377,6 +16025,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15470,6 +16122,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15532,6 +16188,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15730,6 +16390,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15807,6 +16471,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15884,6 +16552,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -15961,6 +16633,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16150,6 +16826,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16227,6 +16907,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16289,6 +16973,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16476,6 +17164,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16568,6 +17260,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16645,6 +17341,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16761,6 +17461,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16826,6 +17530,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16904,6 +17612,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -16982,6 +17694,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17120,6 +17836,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17197,6 +17917,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17274,6 +17998,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17351,6 +18079,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17428,6 +18160,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17506,7 +18242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96a7493feee30fa4d99804e70f3864c2, type: 2}
+  - {fileID: 2100000, guid: 9c13328962481e84e9a802797fe8a9ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17615,6 +18351,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17692,6 +18432,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17769,6 +18513,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17849,6 +18597,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -17911,6 +18663,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18124,6 +18880,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18217,6 +18977,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18294,6 +19058,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18371,6 +19139,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18792,6 +19564,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18884,6 +19660,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -18963,6 +19743,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19132,6 +19916,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19209,6 +19997,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19273,6 +20065,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19401,6 +20197,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19478,6 +20278,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19541,6 +20345,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.3
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19634,6 +20442,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19711,6 +20523,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19823,6 +20639,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19900,6 +20720,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -19977,6 +20801,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20250,6 +21078,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20327,6 +21159,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20419,6 +21255,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20575,6 +21415,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20667,6 +21511,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20744,6 +21592,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20806,6 +21658,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -20973,7 +21829,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9b9249004c1249347a97f090d1ed7cce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21167,6 +22023,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21262,6 +22122,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21354,6 +22218,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21573,6 +22441,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21650,6 +22522,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21727,6 +22603,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -21859,7 +22739,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22121,6 +23001,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -22213,6 +23097,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -22396,6 +23284,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.5
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -22460,6 +23352,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
