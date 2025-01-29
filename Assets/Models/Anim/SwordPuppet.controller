@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Slash
-  m_Speed: 1
+  m_Speed: 3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8666650981559185471}
@@ -69,7 +69,7 @@ AnimatorStateMachine:
     m_Position: {x: 340, y: -80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -618568881636084523}
-    m_Position: {x: 600, y: -80, z: 0}
+    m_Position: {x: 670, y: -80, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1098005011361523565}
@@ -89,7 +89,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sheathe
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6544730343840739232}
@@ -169,7 +169,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TakeStance
-  m_Speed: 1
+  m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 8083445425093326665}

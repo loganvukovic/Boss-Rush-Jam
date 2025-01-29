@@ -36,6 +36,6 @@ public class PuppetManager : MonoBehaviour
         swordPuppet.wontShoot = false;
         spiderBullets.enabled = true;
         fightStarted = true;
-        audioSource.Play();
+        //audioSource.Play();
     }
 }

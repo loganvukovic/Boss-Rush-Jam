@@ -173,7 +173,7 @@ public class BossActions : MonoBehaviour
             }
         }
 
-        attackTimer += Time.deltaTime;
+        if (!wontShoot) attackTimer += Time.deltaTime;
         if (attackTimer > attackCooldown && !wontShoot)
         {
             if (curPhase == 1)
@@ -277,7 +277,7 @@ public class BossActions : MonoBehaviour
             previousAttack = attack;
             attackTimer = 0;
 
-            if (spawners[attack].bossAnimator == null)
+            if (!spawners[attack].bossAnimator)
             {
                 spawners[attack].Fire();
                 attackCooldown = spawners[attack].cooldown;
