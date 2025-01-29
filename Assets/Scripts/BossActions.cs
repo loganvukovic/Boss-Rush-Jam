@@ -276,18 +276,22 @@ public class BossActions : MonoBehaviour
         {
             previousAttack = attack;
             attackTimer = 0;
-            spawners[attack].Fire();
-            Debug.Log(spawners[attack].gameObject);
-            attackCooldown = spawners[attack].cooldown;
 
-            BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
-            if (linkedSpawners.Length != 0)
+            if (spawners[attack].bossAnimator == null)
             {
-                foreach (BulletSpawner spawner in linkedSpawners)
+                spawners[attack].Fire();
+                attackCooldown = spawners[attack].cooldown;
+
+                BulletSpawner[] linkedSpawners = spawners[attack].linkedSpawners;
+                if (linkedSpawners.Length != 0)
                 {
-                    spawner.Fire();
+                    foreach (BulletSpawner spawner in linkedSpawners)
+                    {
+                        spawner.Fire();
+                    }
                 }
             }
+            else StartCoroutine(AnimateAndAttack(spawners[attack]));
         }
     }
     public void IncreaseSpeed(float speed)
@@ -336,5 +340,24 @@ public class BossActions : MonoBehaviour
         }
 
         return angle;
+    }
+
+    public IEnumerator AnimateAndAttack(BulletSpawner spawner)
+    {
+        spawner.bossAnimator.SetTrigger("Attack");
+        yield return new WaitForSeconds(spawner.animationTime);
+        spawner.Fire();
+        attackCooldown = spawner.cooldown;
+        attackTimer = 0;
+
+        BulletSpawner[] linkedSpawners = spawner.linkedSpawners;
+        if (linkedSpawners.Length != 0)
+        {
+            foreach (BulletSpawner spawner2 in linkedSpawners)
+            {
+                spawner2.Fire();
+            }
+        }
+        yield return null;
     }
 }

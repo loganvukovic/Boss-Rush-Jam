@@ -43,6 +43,11 @@ public class BulletSpawner : MonoBehaviour
     public float followUpTimer;
     public float followUpTime;
     public bool justFired;
+    public Animator bossAnimator;
+    //public AnimationClip attackClip;
+    public float animationTimer;
+    public float animationTime;
+    public bool animating;
     public BulletSpawner lightningConnector1;
     public BulletSpawner lightningConnector2;
     public BulletSpawner tripwireSpawner;
