@@ -47,33 +47,33 @@ public class SpiderScript : MonoBehaviour
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(transform.rotation.x, 0, 0);
+                transform.localRotation = Quaternion.Euler(transform.rotation.x, -90, 0);
             }
-            else transform.rotation = Quaternion.Euler(transform.rotation.x, 180, 180);
+            else transform.localRotation = Quaternion.Euler(transform.rotation.x, 90, 0);
         }
         else if (direction == "Down")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(transform.rotation.x, 0, 180);
+                transform.localRotation = Quaternion.Euler(transform.rotation.x, 0, 180);
             }
-            else transform.rotation = Quaternion.Euler(transform.rotation.x, 180, 180);
+            else transform.localRotation = Quaternion.Euler(transform.rotation.x, 180, 180);
         }
         else if (direction == "Left")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(0, transform.rotation.y, -90);
+                transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 0);
             }
-            else transform.rotation = Quaternion.Euler(180, transform.rotation.y, -90);
+            else transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 180);
         }
         else if (direction == "Right")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(90, transform.rotation.y, 90);
+                transform.localRotation = Quaternion.Euler(90, transform.rotation.y, 180);
             }
-            else transform.rotation = Quaternion.Euler(-90, transform.rotation.y, 90);
+            else transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 0);
         }
 
         if (!cloneScript.moving && !playerMovement.rotating && (!movingUpDown && (transform.position.x > 10 || transform.position.z > 10))

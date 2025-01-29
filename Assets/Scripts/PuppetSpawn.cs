@@ -31,6 +31,9 @@ public class PuppetSpawn : MonoBehaviour
             GameObject[] tempThrowPoints = throwPoints;
             throwPoints = altSpawn.GetComponent<PuppetSpawn>().throwPoints;
             altSpawn.GetComponent<PuppetSpawn>().throwPoints = tempThrowPoints;
+            string tempDirection = spiderDirection;
+            spiderDirection = altSpawn.GetComponent<PuppetSpawn>().spiderDirection;
+            altSpawn.GetComponent <PuppetSpawn>().spiderDirection = tempDirection;
         }
     }
 }
