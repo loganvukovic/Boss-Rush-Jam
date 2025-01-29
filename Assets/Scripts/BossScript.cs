@@ -60,7 +60,7 @@ public class BossScript : MonoBehaviour
                 {
                     StartCoroutine(PuppetDeath());
                 }
-                else if (isHydra)
+                else if (isHydra && !GetComponentInParent<BossActions>().dying)
                 {
                     StartCoroutine(HydraDeath());
                 }
