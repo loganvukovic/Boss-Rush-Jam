@@ -11,6 +11,7 @@ public class SpiderScript : MonoBehaviour
     public float moveSpeed;
     public string direction;
     public PuppetManager puppetManager;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,14 @@ public class SpiderScript : MonoBehaviour
         {
             return;
         }
+        if (cloneScript.moving)
+        {
+            animator.SetBool("Crawling", false); 
+        }
+        else
+        {
+            animator.SetBool("Crawling", true);
+        }
 
         if (cloneScript.side == "East" || cloneScript.side == "South")
         {
@@ -38,33 +47,33 @@ public class SpiderScript : MonoBehaviour
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 0);
+                transform.rotation = Quaternion.Euler(transform.rotation.x, 0, 0);
             }
-            else transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 180, 180);
+            else transform.rotation = Quaternion.Euler(transform.rotation.x, 180, 180);
         }
         else if (direction == "Down")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 0, 180);
+                transform.rotation = Quaternion.Euler(transform.rotation.x, 0, 180);
             }
-            else transform.rotation = Quaternion.Euler(transform.eulerAngles.x, 180, 180);
+            else transform.rotation = Quaternion.Euler(transform.rotation.x, 180, 180);
         }
         else if (direction == "Left")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, -90);
+                transform.rotation = Quaternion.Euler(0, transform.rotation.y, -90);
             }
-            else transform.rotation = Quaternion.Euler(180, transform.eulerAngles.y, -90);
+            else transform.rotation = Quaternion.Euler(180, transform.rotation.y, -90);
         }
         else if (direction == "Right")
         {
             if (movingPositive)
             {
-                transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 90);
+                transform.rotation = Quaternion.Euler(90, transform.rotation.y, 90);
             }
-            else transform.rotation = Quaternion.Euler(180, transform.eulerAngles.y, 90);
+            else transform.rotation = Quaternion.Euler(-90, transform.rotation.y, 90);
         }
 
         if (!cloneScript.moving && !playerMovement.rotating && (!movingUpDown && (transform.position.x > 10 || transform.position.z > 10))
