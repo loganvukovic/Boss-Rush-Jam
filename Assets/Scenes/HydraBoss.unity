@@ -1644,11 +1644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a782c40bb81fb4f4490cd7b2d32ee89e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &217045723 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2901332794433771022, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
-  m_PrefabInstance: {fileID: 276817019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &243342372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,10 +2005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2901332794433771022, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1323843736}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
 --- !u!1 &310472810
@@ -2101,7 +2093,7 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
-  lightning: {fileID: 1323843737}
+  lightning: {fileID: 0}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: Water
@@ -5699,7 +5691,7 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
-  lightning: {fileID: 1323843737}
+  lightning: {fileID: 0}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: Fire
@@ -6409,7 +6401,7 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
-  lightning: {fileID: 1323843737}
+  lightning: {fileID: 0}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: Electric
@@ -9229,7 +9221,7 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
-  lightning: {fileID: 1323843737}
+  lightning: {fileID: 0}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: Grass
@@ -10506,83 +10498,6 @@ Transform:
   - {fileID: 1576214753}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1323843735
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 217045723}
-    m_Modifications:
-    - target: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_Name
-      value: Lightning
-      objectReference: {fileID: 0}
-    - target: {fileID: 7867019157072429234, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6172605684317154504, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-    - {fileID: -3714029015492296607, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
---- !u!4 &1323843736 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-  m_PrefabInstance: {fileID: 1323843735}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1323843737 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7867019157072429234, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
-  m_PrefabInstance: {fileID: 1323843735}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325697114
 GameObject:
   m_ObjectHideFlags: 0
