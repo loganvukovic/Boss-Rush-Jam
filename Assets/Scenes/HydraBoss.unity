@@ -2000,9 +2000,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1516284446}
     - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: fireMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 2bf564320554ac64d9d919a48173f0a5, type: 2}
+    - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: elementDuration
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: electricMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 18cff6bf59cf6ff4cadd59703045eb22, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
