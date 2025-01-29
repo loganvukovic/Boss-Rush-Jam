@@ -8,7 +8,7 @@ public class PuppetManager : MonoBehaviour
     public BossActions swordPuppet;
     public AudioSource audioSource;
     public bool fightStarted;
-    public BulletSpawner spiderBullets;
+    public BossActions spiderPuppet;
 
     // Start is called before the first frame update
     void Start()
@@ -28,13 +28,13 @@ public class PuppetManager : MonoBehaviour
         fightStarted = false;
         mainBoss.wontShoot = true;
         swordPuppet.wontShoot = true;
-        spiderBullets.enabled = false;
+        spiderPuppet.wontShoot = true;
         yield return new WaitForSeconds(3f);
         mainBoss.canClone = true;
         mainBoss.ChooseSpot(0);
         mainBoss.wontShoot = false;
         swordPuppet.wontShoot = false;
-        spiderBullets.enabled = true;
+        spiderPuppet.wontShoot = false;
         fightStarted = true;
         //audioSource.Play();
     }

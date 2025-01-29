@@ -35,7 +35,7 @@ public class SpiderScript : MonoBehaviour
             animator.SetBool("Crawling", true);
         }
 
-        if (cloneScript.side == "East" || cloneScript.side == "South")
+        if (cloneScript.side == "East")
         {
             movingUpDown = true;
         }
@@ -63,11 +63,27 @@ public class SpiderScript : MonoBehaviour
         {
             if (movingPositive)
             {
-                transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 0);
+                transform.localRotation = Quaternion.Euler(90, transform.rotation.y, 0);
             }
             else transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 180);
         }
         else if (direction == "Right")
+        {
+            if (movingPositive)
+            {
+                transform.localRotation = Quaternion.Euler(90, transform.rotation.y, 180);
+            }
+            else transform.localRotation = Quaternion.Euler(-90, transform.rotation.y, 0);
+        }
+        else if (direction == "SouthRight")
+        {
+            if (movingPositive)
+            {
+                transform.localRotation = Quaternion.Euler(-90, 90, 0);
+            }
+            else transform.localRotation = Quaternion.Euler(-90, 180, 90);
+        }
+        else if (direction == "SouthLeft")
         {
             if (movingPositive)
             {
