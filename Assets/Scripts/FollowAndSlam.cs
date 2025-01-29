@@ -16,6 +16,7 @@ public class FollowAndSlam : MonoBehaviour
     public float contactDamage;
     public Collider hitbox;
     public PuppetManager puppetManager;
+    public Animator fatAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class FollowAndSlam : MonoBehaviour
         {
             if(!isSlamming && !GetComponent<CloneScript>().moving)
             {
+                fatAnimator.SetBool("Following", true);
                 FollowPlayer();
             }
             if (!isSlamming && Mathf.Abs(transform.position.x - playerMovement.transform.position.x) < 0.1f && !GetComponent<CloneScript>().moving)
@@ -44,6 +46,7 @@ public class FollowAndSlam : MonoBehaviour
         }
         else /*if (playerMovement.curSide != cloneScript.side)*/
         {
+            fatAnimator.SetBool("Following", false);
             StopAllCoroutines();
             StartCoroutine(ReturnToStart());
             isSlamming = false;
@@ -58,10 +61,13 @@ public class FollowAndSlam : MonoBehaviour
 
     public IEnumerator SlamAfterDelay()
     {
+        fatAnimator.SetBool("Following", false);
         isSlamming = true;
         Vector3 originalPosition = cloneScript.spawnPoint.transform.position;
         Vector3 targetPosition = new Vector3(playerMovement.transform.position.x, transform.position.y - 3, playerMovement.transform.position.z);
         yield return new WaitForSeconds(slamDelay);
+        fatAnimator.SetTrigger("Slam");
+        yield return new WaitForSeconds(1f);
         hitbox.enabled = true;
         while (transform.position != targetPosition)
         {
@@ -70,6 +76,7 @@ public class FollowAndSlam : MonoBehaviour
         }
         hitbox.enabled = false;
         yield return new WaitForSeconds(resumeDelay);
+        fatAnimator.SetTrigger("Rise");
         while (transform.position != originalPosition)
         {
             transform.position = Vector3.MoveTowards(transform.position, originalPosition, raiseSpeed * Time.deltaTime);
