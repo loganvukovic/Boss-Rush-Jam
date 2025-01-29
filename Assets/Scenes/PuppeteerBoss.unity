@@ -1501,7 +1501,7 @@ MonoBehaviour:
   damage: 5
   timer: 0
   firingRate: 5
-  cooldown: 5
+  cooldown: 3.5
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 0ee5d65bcdb6e23409a710ca3e5c14c0, type: 3}
   stage: {fileID: 356460844}
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   bossActions: {fileID: 7518884777301099928}
   aimedOffset: {x: 0, y: 0, z: 0}
   angle: 0
-  autoFire: 1
+  autoFire: 0
   sideDependant: 0
   side: 
   bombSpawner: 0
@@ -1525,9 +1525,9 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1733983843}
   animationTimer: 0
-  animationTime: 0
+  animationTime: 0.8
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -5019,7 +5019,7 @@ MonoBehaviour:
   swordPuppet: {fileID: 1184172412}
   audioSource: {fileID: 374216107}
   fightStarted: 0
-  spiderBullets: {fileID: 325501252}
+  spiderPuppet: {fileID: 1561263264}
 --- !u!4 &977486652
 Transform:
   m_ObjectHideFlags: 0
@@ -7874,7 +7874,7 @@ MonoBehaviour:
   tf: {fileID: 0}
   playerMovement: {fileID: 217045719}
   stage: {fileID: 356460843}
-  wontShoot: 1
+  wontShoot: 0
   canRotate: 0
   rotating: 0
   stageRotating: 0
@@ -7894,8 +7894,10 @@ MonoBehaviour:
   curSpots: 0
   prevSpot: 0
   moving: 0
-  phase1Range: 0
-  spawners: []
+  phase1Range: 2
+  spawners:
+  - {fileID: 325501252}
+  - {fileID: 325501252}
   sideDependentSpawners: 0
   northSpawners: []
   westSpawners: []
@@ -7903,7 +7905,7 @@ MonoBehaviour:
   eastSpawners: []
   playerSide: 
   attackTimer: 0
-  attackCooldown: 0
+  attackCooldown: 3
   healing: 0
   dying: 0
   curSide: 
