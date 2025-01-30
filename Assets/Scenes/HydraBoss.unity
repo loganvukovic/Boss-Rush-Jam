@@ -12234,6 +12234,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DragExp03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4879986917723828791, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137949349484224051, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6137949349484224051, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
