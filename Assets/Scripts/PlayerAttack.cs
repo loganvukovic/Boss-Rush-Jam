@@ -64,6 +64,11 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
+        if(isGrounded)
+        {
+            animator.SetBool("Slamming", false);
+        }
+
         if (elementBar != null)
         {
             elementBar.fillAmount = elementTimer / elementDuration;
@@ -144,6 +149,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxis("Vertical") < 0)
         {
+            animator.SetBool("Slamming", true);
             GroundSlam();
         }
 
