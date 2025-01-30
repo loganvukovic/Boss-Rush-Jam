@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -197,6 +197,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -278,6 +279,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -330,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -359,6 +361,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -517,7 +520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -547,6 +550,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -599,7 +603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -630,6 +634,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -696,6 +701,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -914,6 +920,7 @@ MonoBehaviour:
   followUpTime: 1
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1041,7 +1048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -1070,6 +1077,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1151,6 +1159,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1358,6 +1367,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1456,6 +1466,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1523,7 +1534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -1552,6 +1563,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1690,7 +1702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -1719,6 +1731,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1785,6 +1798,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2157,7 +2171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -2186,6 +2200,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2278,7 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -2307,6 +2322,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2520,7 +2536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -2549,6 +2565,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2685,6 +2702,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2752,7 +2770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -2781,6 +2799,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2862,6 +2881,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -2903,7 +2923,7 @@ MonoBehaviour:
   damage: 5
   timer: 0
   firingRate: 1
-  cooldown: 5
+  cooldown: 6
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
@@ -2928,9 +2948,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.99
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1186065126}
+  animationTrigger: OpenMouth
   animationTimer: 0
-  animationTime: 0
+  animationTime: 3
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -2996,7 +3017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -3025,6 +3046,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3077,7 +3099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -3106,6 +3128,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3267,7 +3290,7 @@ MonoBehaviour:
   damage: 5
   timer: 0
   firingRate: 1
-  cooldown: 5
+  cooldown: 6
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
@@ -3292,9 +3315,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.99
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1186065126}
+  animationTrigger: OpenMouth
   animationTimer: 0
-  animationTime: 0
+  animationTime: 2
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -3374,6 +3398,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3455,6 +3480,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3507,7 +3533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -3536,6 +3562,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3632,6 +3659,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3684,7 +3712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -3713,6 +3741,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -3744,7 +3773,7 @@ Transform:
   m_GameObject: {fileID: 473088233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4203,6 +4232,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4271,7 +4301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -4300,6 +4330,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4352,7 +4383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -4381,6 +4412,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4433,7 +4465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -4462,6 +4494,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4514,7 +4547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -4550,6 +4583,7 @@ MonoBehaviour:
   followUpTime: 1.1
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4587,7 +4621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -4616,6 +4650,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4712,6 +4747,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4805,7 +4841,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 6
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: 4363de63f8bd3854f9d0882b86edb714, type: 3}
   stage: {fileID: 356460844}
@@ -4830,6 +4866,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4943,6 +4980,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5064,7 +5102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -5093,6 +5131,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5174,6 +5213,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5261,7 +5301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -5299,6 +5339,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5426,7 +5467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -5455,6 +5496,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5507,7 +5549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -5536,6 +5578,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5622,7 +5665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -5651,6 +5694,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5807,6 +5851,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5906,6 +5951,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5974,7 +6020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -6005,6 +6051,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6086,6 +6133,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6153,6 +6201,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6220,7 +6269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -6249,6 +6298,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6330,6 +6380,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6472,7 +6523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -6501,6 +6552,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6553,7 +6605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -6588,6 +6640,7 @@ MonoBehaviour:
   followUpTime: 1.2
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6640,7 +6693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -6671,6 +6724,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7366,7 +7420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -7395,6 +7449,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7565,6 +7620,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7646,6 +7702,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7717,6 +7774,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7784,7 +7842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -7813,6 +7871,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8079,7 +8138,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 6
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: e55318ccb6cbece49988dfd6e2515fa4, type: 3}
   stage: {fileID: 356460844}
@@ -8104,6 +8163,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8172,7 +8232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -8201,6 +8261,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8253,7 +8314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -8282,6 +8343,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8364,6 +8426,7 @@ MonoBehaviour:
   followUpTime: 2.99
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8479,6 +8542,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8885,7 +8949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -8914,6 +8978,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8951,7 +9016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -8980,6 +9045,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9047,7 +9113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -9078,6 +9144,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9196,7 +9263,7 @@ MonoBehaviour:
   firingRate: 6
   cooldown: 7
   fireAtStart: 0
-  bullet: {fileID: 7861856096086425545, guid: 01633c8ca07352449a4dbd8291132a93, type: 3}
+  bullet: {fileID: 1123768671257263849, guid: 2e742e43ec48dde4480e4f647a96e04b, type: 3}
   stage: {fileID: 356460844}
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 493662651}
@@ -9219,9 +9286,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.4
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1277681295}
+  animationTrigger: BreatheUp
   animationTimer: 0
-  animationTime: 0
+  animationTime: 2.5
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -9377,7 +9445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -9406,6 +9474,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9578,7 +9647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -9607,6 +9676,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9721,6 +9791,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9773,7 +9844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -9802,6 +9873,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9839,11 +9911,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
-  cooldown: 9
+  cooldown: 10
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
@@ -9881,9 +9953,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.9
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1648095892}
+  animationTrigger: BreatheUp
   animationTimer: 0
-  animationTime: 0
+  animationTime: 2.5
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -9938,7 +10011,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 6
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: 104a66d6d8cacbf4fa172968ba51f956, type: 3}
   stage: {fileID: 356460844}
@@ -9963,6 +10036,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10055,8 +10129,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1186065126}
   m_SourcePrefab: {fileID: 100100000, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+--- !u!1 &1186065125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+  m_PrefabInstance: {fileID: 1186065124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1186065126
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186065125}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2874fab55ce763148b7e3bd29768230d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1194249929
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,6 +10235,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10405,7 +10509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -10434,6 +10538,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10515,6 +10620,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10588,8 +10694,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1277681295}
   m_SourcePrefab: {fileID: 100100000, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+--- !u!1 &1277681294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+  m_PrefabInstance: {fileID: 1277681293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1277681295
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277681294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2874fab55ce763148b7e3bd29768230d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1287212560
 GameObject:
   m_ObjectHideFlags: 0
@@ -10673,7 +10808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -10702,6 +10837,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10754,7 +10890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -10783,6 +10919,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10866,7 +11003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -10901,6 +11038,7 @@ MonoBehaviour:
   followUpTime: 1.1
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10968,7 +11106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -10997,6 +11135,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11078,6 +11217,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11144,6 +11284,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11265,6 +11406,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11280,7 +11422,7 @@ Transform:
   m_GameObject: {fileID: 1460908773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.260002, y: 0, z: 0}
+  m_LocalPosition: {x: 11.32, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11352,6 +11494,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11489,7 +11632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -11518,6 +11661,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11808,6 +11952,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11905,6 +12050,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11942,7 +12088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -11971,6 +12117,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12038,7 +12185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12067,6 +12214,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12119,7 +12267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12148,6 +12296,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12185,7 +12334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12217,6 +12366,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12317,8 +12467,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570788912}
   m_SourcePrefab: {fileID: 100100000, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+--- !u!1 &1570788911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 577b3f82ea4053647bf9cdfb7fd4c79e, type: 3}
+  m_PrefabInstance: {fileID: 1570788910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1570788912
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570788911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2874fab55ce763148b7e3bd29768230d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1576214752
 GameObject:
   m_ObjectHideFlags: 0
@@ -12394,6 +12573,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12550,6 +12730,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12631,6 +12812,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12683,7 +12865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12712,6 +12894,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12764,7 +12947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12793,6 +12976,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12859,6 +13043,7 @@ MonoBehaviour:
   followUpTime: 2.4
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12952,7 +13137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -12981,6 +13166,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13115,7 +13301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -13144,6 +13330,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13254,6 +13441,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13441,7 +13629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -13471,6 +13659,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13624,6 +13813,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13676,7 +13866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -13705,6 +13895,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -13757,11 +13948,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
-  cooldown: 10
+  cooldown: 11
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 91f26e724875e924d8485867aa36213c, type: 3}
   stage: {fileID: 356460844}
@@ -13802,9 +13993,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 1.9
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1648095892}
+  animationTrigger: BreatheUp
   animationTimer: 0
-  animationTime: 0
+  animationTime: 2.5
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -13884,6 +14076,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14070,6 +14263,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14283,7 +14477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -14312,6 +14506,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14344,7 +14539,7 @@ Transform:
   m_GameObject: {fileID: 1798303579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.260002, y: 0, z: 0}
+  m_LocalPosition: {x: 11.32, y: 0.00000023841858, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14393,6 +14588,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14445,7 +14641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -14474,6 +14670,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14615,6 +14812,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14682,7 +14880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -14711,6 +14909,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14763,7 +14962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -14792,6 +14991,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -14936,7 +15136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -14965,6 +15165,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15046,6 +15247,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15134,7 +15336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15163,6 +15365,7 @@ MonoBehaviour:
   followUpTime: 1.9
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15215,7 +15418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15244,6 +15447,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15296,7 +15500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15325,6 +15529,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15377,7 +15582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15406,6 +15611,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15462,7 +15668,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 6
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 1512310168047667362, guid: a36186c8a0d5d724cbf6aace84da3a3a, type: 3}
   stage: {fileID: 356460844}
@@ -15487,6 +15693,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15543,7 +15750,7 @@ MonoBehaviour:
   damage: 5
   timer: 0
   firingRate: 1
-  cooldown: 5
+  cooldown: 6
   fireAtStart: 0
   bullet: {fileID: 2348641644619225322, guid: 407f81709011dee46b80eb5113224246, type: 3}
   stage: {fileID: 356460844}
@@ -15569,9 +15776,10 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 2.99
   justFired: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1186065126}
+  animationTrigger: OpenMouth
   animationTimer: 0
-  animationTime: 0
+  animationTime: 3
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -15854,7 +16062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15883,6 +16091,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -15920,7 +16129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -15949,6 +16158,7 @@ MonoBehaviour:
   followUpTime: 0.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -16374,6 +16584,7 @@ MonoBehaviour:
   followUpTime: 1.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -16455,6 +16666,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -16747,7 +16959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -16776,6 +16988,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -16828,7 +17041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletType: 0
   speed: 5
-  bulletLife: 2
+  bulletLife: 3
   damage: 5
   timer: 0
   firingRate: 1
@@ -16857,6 +17070,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0

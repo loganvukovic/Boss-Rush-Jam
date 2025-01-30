@@ -44,7 +44,7 @@ public class BulletSpawner : MonoBehaviour
     public float followUpTime;
     public bool justFired;
     public Animator bossAnimator;
-    //public AnimationClip attackClip;
+    public string animationTrigger;
     public float animationTimer;
     public float animationTime;
     public bool animating;

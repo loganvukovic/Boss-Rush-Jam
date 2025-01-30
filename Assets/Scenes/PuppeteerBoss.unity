@@ -1026,6 +1026,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1243,6 +1244,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -1526,6 +1528,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 1733983843}
+  animationTrigger: Attack
   animationTimer: 0
   animationTime: 0.8
   animating: 0
@@ -1684,6 +1687,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 1129031044}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 3
   animating: 0
@@ -2001,6 +2005,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 1129031044}
+  animationTrigger: Attack
   animationTimer: 0
   animationTime: 2
   animating: 0
@@ -4017,6 +4022,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4639,6 +4645,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -4980,6 +4987,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5366,6 +5374,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5552,6 +5561,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -5653,6 +5663,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6056,6 +6067,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6122,6 +6134,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -6908,6 +6921,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7687,6 +7701,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -7986,6 +8001,7 @@ MonoBehaviour:
   followUpTime: 2.5
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8321,6 +8337,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -8421,6 +8438,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 1129031044}
+  animationTrigger: Attack
   animationTimer: 0
   animationTime: 2
   animating: 0
@@ -8990,6 +9008,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -9816,6 +9835,7 @@ MonoBehaviour:
   followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 1129031044}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 3
   animating: 0
@@ -9929,6 +9949,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -10533,6 +10554,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -11133,6 +11155,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0
@@ -12006,6 +12029,7 @@ MonoBehaviour:
   followUpTime: 0
   justFired: 0
   bossAnimator: {fileID: 0}
+  animationTrigger: 
   animationTimer: 0
   animationTime: 0
   animating: 0

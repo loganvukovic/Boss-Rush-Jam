@@ -344,7 +344,7 @@ public class BossActions : MonoBehaviour
 
     public IEnumerator AnimateAndAttack(BulletSpawner spawner)
     {
-        spawner.bossAnimator.SetTrigger("Attack");
+        spawner.bossAnimator.SetTrigger(spawner.animationTrigger);
         yield return new WaitForSeconds(spawner.animationTime);
         spawner.Fire();
         attackCooldown = spawner.cooldown;
