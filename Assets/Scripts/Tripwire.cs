@@ -19,7 +19,7 @@ public class Tripwire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (bossActions.moving)
+        /*if (bossActions.moving)
         {
             Destroy(gameObject);
         }
@@ -32,7 +32,7 @@ public class Tripwire : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
+        }*/
     }
 
     void OnTriggerStay(Collider other)

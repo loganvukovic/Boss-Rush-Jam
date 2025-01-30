@@ -252,7 +252,7 @@ public class BulletSpawner : MonoBehaviour
             }
             else if (bulletType == BulletType.Tripwire)
             {
-                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage);
                 spawnedBullet.GetComponent<Tripwire>().life = bulletLife;
                 spawnedBullet.GetComponent<Tripwire>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Tripwire>().bossActions = bossActions;
