@@ -31,6 +31,7 @@ public class BossScript : MonoBehaviour
     public Collider puppetHitbox;
     public string elementToGive;
     public HydraManager hydraManager;
+    public Animator bossAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -170,7 +171,7 @@ public class BossScript : MonoBehaviour
 
     IEnumerator HydraDeath()
     {
-        //Hydra droop/death animation here
+        bossAnimator.SetTrigger("Die");
         GetComponentInParent<BossActions>().dying = true;
         hydraManager.hydraDeaths++;
         yield return null;

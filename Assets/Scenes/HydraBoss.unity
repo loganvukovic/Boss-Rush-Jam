@@ -2032,7 +2032,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 18cff6bf59cf6ff4cadd59703045eb22, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2901332794433771022, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 724688431}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
 --- !u!1 &310472810
@@ -2120,11 +2123,12 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   bossActions: {fileID: 0}
   healthBar: {fileID: 0}
-  lightning: {fileID: 0}
+  lightning: {fileID: 1936374131}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: Water
   hydraManager: {fileID: 181316876}
+  bossAnimator: {fileID: 1277681295}
 --- !u!1 &313671235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,6 +3139,11 @@ MonoBehaviour:
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
+--- !u!4 &386810997 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2901332794433771022, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+  m_PrefabInstance: {fileID: 276817019}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &390947530
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,6 +5264,88 @@ Transform:
   - {fileID: 193977233}
   m_Father: {fileID: 473088234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &724688430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 386810997}
+    m_Modifications:
+    - target: {fileID: -3714029015492296607, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3051894099085196225, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_Name
+      value: Lightning
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172605684317154504, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867019157072429234, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+--- !u!4 &724688431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8100294043456468327, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+  m_PrefabInstance: {fileID: 724688430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &725707429
 GameObject:
   m_ObjectHideFlags: 0
@@ -5755,6 +5846,7 @@ MonoBehaviour:
   puppetHitbox: {fileID: 0}
   elementToGive: Fire
   hydraManager: {fileID: 181316876}
+  bossAnimator: {fileID: 1648095892}
 --- !u!4 &767437929
 Transform:
   m_ObjectHideFlags: 0
@@ -6477,6 +6569,7 @@ MonoBehaviour:
   puppetHitbox: {fileID: 0}
   elementToGive: Electric
   hydraManager: {fileID: 181316876}
+  bossAnimator: {fileID: 1570788912}
 --- !u!1 &894904452
 GameObject:
   m_ObjectHideFlags: 0
@@ -9399,6 +9492,7 @@ MonoBehaviour:
   puppetHitbox: {fileID: 0}
   elementToGive: Grass
   hydraManager: {fileID: 181316876}
+  bossAnimator: {fileID: 1186065126}
 --- !u!1 &1127582505
 GameObject:
   m_ObjectHideFlags: 0
@@ -15618,6 +15712,11 @@ MonoBehaviour:
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
+--- !u!23 &1936374131 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7867019157072429234, guid: 5b9716138e2ed674387812fd7ea16f49, type: 3}
+  m_PrefabInstance: {fileID: 724688430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1941405312
 GameObject:
   m_ObjectHideFlags: 0
