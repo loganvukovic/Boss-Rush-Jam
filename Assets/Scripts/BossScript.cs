@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,9 @@ public class BossScript : MonoBehaviour
     public string elementToGive;
     public HydraManager hydraManager;
     public Animator bossAnimator;
+    public GameObject empty;
+    public GameObject stage;
+    public bool dying;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +61,7 @@ public class BossScript : MonoBehaviour
                 {
                     StartCoroutine(LoadScene());
                 }
-                else if (isPuppet)
+                else if (isPuppet && !GetComponentInParent<BossActions>().dying)
                 {
                     StartCoroutine(PuppetDeath());
                 }
@@ -161,12 +165,41 @@ public class BossScript : MonoBehaviour
 
     IEnumerator PuppetDeath()
     {
-        //Clone ragdoll stuff here
-        puppetRenderer.enabled = false;
+        bossAnimator.SetTrigger("Die");
+        //puppetRenderer.enabled = false;
         GetComponentInParent<BossActions>().dying = true;
+        dying = true;
+        GetComponent<Collider>().enabled = false;
         yield return null;
         GetComponentInParent<BossActions>().enabled = false;
-        if (GetComponentInParent<FollowAndSlam>() != null) GetComponentInParent<FollowAndSlam>().enabled = false;
+        if (GetComponentInParent<FollowAndSlam>() != null)
+        {
+            GetComponentInParent<FollowAndSlam>().enabled = false;
+            float deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 4f;
+            GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, deathY, transform.position.z), transform.rotation, stage.transform);
+            while (transform.parent.transform.position != deathPoint.transform.position)
+            {
+                transform.parent.transform.position = Vector3.MoveTowards(transform.parent.transform.position, deathPoint.transform.position, 5f * Time.deltaTime);
+                yield return null;
+            }
+            Destroy(deathPoint.gameObject);
+        }
+        if (GetComponentInParent<SpiderScript>() != null)
+        {
+            GetComponentInParent<SpiderScript>().enabled = false;
+            transform.parent.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            float deathY;
+            if (GetComponentInParent<CloneScript>().side != "South" || GetComponentInParent<CloneScript>().side != "North") deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 3.8f;
+            else deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y;
+                GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, deathY, transform.position.z), transform.rotation, stage.transform);
+            while (transform.parent.transform.position != deathPoint.transform.position)
+            {
+                transform.parent.transform.position = Vector3.MoveTowards(transform.parent.transform.position, deathPoint.transform.position, 5f * Time.deltaTime);
+                yield return null;
+            }
+            Destroy(deathPoint.gameObject);
+            bossAnimator.SetTrigger("Bounce");
+        }
     }
 
     IEnumerator HydraDeath()
