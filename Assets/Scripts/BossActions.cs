@@ -272,7 +272,7 @@ public class BossActions : MonoBehaviour
 
     private void PickAttack(int attack)
     {
-        if(attack != previousAttack)
+        if(attack != previousAttack && attack < spawners.Length)
         {
             previousAttack = attack;
             attackTimer = 0;
