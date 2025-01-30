@@ -31,6 +31,15 @@ public class MouseScript : MonoBehaviour
             if (playerMovement.curSide == bossActions.spawnSide)
             {
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(playerMovement.transform.position.x, transform.position.y, transform.position.z), speed * Time.deltaTime);
+
+                if (playerMovement.transform.position.x < transform.position.x)
+                {
+                    transform.localRotation = Quaternion.Euler(transform.rotation.x, 90, transform.rotation.z);
+                }
+                else
+                {
+                    transform.localRotation = Quaternion.Euler(transform.rotation.x, -90, transform.rotation.z);
+                }
             }
             chasingTimer += Time.deltaTime;
             yield return null;
