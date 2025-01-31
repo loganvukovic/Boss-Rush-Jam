@@ -2142,7 +2142,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -4059,7 +4059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 30
+  maxHealth: 200
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -7794,7 +7794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 30
+  maxHealth: 200
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -9166,7 +9166,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 3
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -13024,7 +13024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 30
+  maxHealth: 200
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
@@ -13521,7 +13521,7 @@ MonoBehaviour:
   - {fileID: 1787498077}
   - {fileID: 448775830}
   hitCounter: 0
-  reqHits: 3
+  reqHits: 10
   spawnSide: North
   sides:
   - North
@@ -13573,7 +13573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 200
+  maxHealth: 150
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0
