@@ -7,20 +7,27 @@ public class GameManager : MonoBehaviour
 {
     public BlackoutSquare blackOutSquare;
     public GameObject gameOverScreen;
+    public GameObject pauseScreen;
+    private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        /*if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             PlayerPrefs.SetInt("RotationDirection", 1);
-        }
+        }*/
+
+        isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
     }
 
     public void RetryButton()
@@ -40,10 +47,19 @@ public class GameManager : MonoBehaviour
         blackOutSquare.gameObject.SetActive(true);
         StartCoroutine(StartGame());
     }
+    public void ReturnButton()
+    {
+        Time.timeScale = 1f;
+        gameOverScreen.SetActive(false);
+        pauseScreen.SetActive(false);
+        blackOutSquare.gameObject.SetActive(true);
+        StartCoroutine(ReturnToTitle());
+    }
 
     public IEnumerator Retry()
     {
         gameOverScreen.SetActive(false);
+        pauseScreen.SetActive(false);
         StartCoroutine(blackOutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -54,5 +70,27 @@ public class GameManager : MonoBehaviour
         StartCoroutine(blackOutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
+    }
+    public IEnumerator ReturnToTitle()
+    {
+        StartCoroutine(blackOutSquare.FadeBlackOutSquare());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(0);
+    }
+
+    public void Pause()
+    {
+        if (!isPaused)
+        {
+            pauseScreen.SetActive(true);
+            isPaused = true;
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            pauseScreen.SetActive(false);
+            isPaused = false;
+            Time.timeScale = 1f;
+        }
     }
 }
