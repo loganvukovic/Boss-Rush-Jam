@@ -209,6 +209,7 @@ public class BossScript : MonoBehaviour
     IEnumerator HydraDeath()
     {
         bossAnimator.SetTrigger("Die");
+        GetComponent<BoxCollider>().center = new Vector3(GetComponent<BoxCollider>().center.x, GetComponent<BoxCollider>().center.y - 0.7f, GetComponent<BoxCollider>().center.z);
         GetComponentInParent<BossActions>().dying = true;
         hydraManager.hydraDeaths++;
         yield return null;

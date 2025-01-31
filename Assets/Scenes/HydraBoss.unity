@@ -2109,7 +2109,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 2.62, z: 2.01}
-  m_Center: {x: 0, y: 0, z: 0.95}
+  m_Center: {x: 0, y: 0.62, z: 0.95}
 --- !u!114 &310472813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2150,6 +2150,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0
+  shield: {fileID: 0}
 --- !u!1 &313671235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2516,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
+  bossAnimator: {fileID: 0}
 --- !u!1 &327269916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,6 +4199,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
+  bossAnimator: {fileID: 0}
 --- !u!1 &506316699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6216,6 +6219,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0
+  shield: {fileID: 0}
 --- !u!4 &767437929
 Transform:
   m_ObjectHideFlags: 0
@@ -6901,7 +6905,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 2.26, z: 2.23}
-  m_Center: {x: 0, y: 0, z: 1.07}
+  m_Center: {x: 0, y: 0.65, z: 1.07}
 --- !u!114 &893383921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6942,6 +6946,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0
+  shield: {fileID: 0}
 --- !u!1 &894904452
 GameObject:
   m_ObjectHideFlags: 0
@@ -9827,7 +9832,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 2.11, y: 2.06, z: 1}
-  m_Center: {x: -1.1, y: 0, z: 0}
+  m_Center: {x: -1.1, y: 0.44, z: 0}
 --- !u!114 &1115202767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9868,6 +9873,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0
+  shield: {fileID: 0}
 --- !u!1 &1127582505
 GameObject:
   m_ObjectHideFlags: 0
@@ -11689,6 +11695,8 @@ MonoBehaviour:
   blackOutSquare: {fileID: 958043989}
   gameOverScreen: {fileID: 939868214}
   pauseScreen: {fileID: 629416836}
+  titleUI: []
+  controlsMenu: {fileID: 0}
 --- !u!4 &1371988436
 Transform:
   m_ObjectHideFlags: 0
@@ -15430,6 +15438,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
+  bossAnimator: {fileID: 0}
 --- !u!1 &1778997056
 GameObject:
   m_ObjectHideFlags: 0
@@ -17348,6 +17357,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
+  bossAnimator: {fileID: 0}
 --- !u!1 &2049459468
 GameObject:
   m_ObjectHideFlags: 0
