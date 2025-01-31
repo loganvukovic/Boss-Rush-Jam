@@ -31,12 +31,13 @@ public class CloneScript : MonoBehaviour
         {
             moving = true;
             GameObject tempObject = Instantiate(empty, spawnPoint.transform.position, transform.rotation, stage.transform);
-            transform.localRotation = CalcNewAngle();
             while (transform.position != tempObject.transform.position && !GetComponentInChildren<BossScript>().dying)
             {
                 transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
+                if (!GetComponent<SpiderScript>()) transform.localRotation = Quaternion.Slerp(transform.rotation, CalcNewAngle(), 0.05f);
                 yield return new WaitForSeconds(0.01f);
             }
+            if (!GetComponent<SpiderScript>()) transform.localRotation = CalcNewAngle();
             if (!GetComponentInChildren<BossScript>().dying) transform.position = tempObject.transform.position;
             Destroy(tempObject);
             moving = false;

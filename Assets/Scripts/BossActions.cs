@@ -307,12 +307,14 @@ public class BossActions : MonoBehaviour
         wontShoot = true;
         moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
-        transform.localRotation = CalcNewAngle(spot);
+        
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);
+            transform.localRotation = Quaternion.Slerp(transform.rotation, CalcNewAngle(spot), 0.05f);
             yield return new WaitForSeconds(0.01f);
         }
+        transform.localRotation = CalcNewAngle(spot);
         moving = false;
         wontShoot = false;
         transform.position = tempObject.transform.position;
