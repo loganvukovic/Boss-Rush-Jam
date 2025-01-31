@@ -15,6 +15,7 @@ TagManager:
   - Slammable
   - Elemental
   - Puppet
+  - Rotate
   layers:
   - Default
   - TransparentFX

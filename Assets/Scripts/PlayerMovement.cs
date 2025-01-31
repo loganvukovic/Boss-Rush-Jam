@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     private float timeElapsed;
     public string curSide;
     public int rotationInvert = 1;
+    private float prevAngle;
 
     public bool attacking;
     private int curCombo;
@@ -308,6 +309,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Rotate(float angle)
     {
+        prevAngle = angle;
         if (curSide == "North")
         {
             if (angle == -90) curSide = "West";
@@ -367,6 +369,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "Bubble" && !rotating && !inBubble && !GetComponent<PlayerAttack>().imbuing)
         {
             StartCoroutine(EnterBubble(other));
+        }
+        if (other.tag == "Rotate" && !rotating)
+        {
+            Rotate(prevAngle * -1);
         }
         /*if (other.tag == "Key" && !rotating)
         {
