@@ -47,6 +47,7 @@ public class FollowAndSlam : MonoBehaviour
         else if (!GetComponentInChildren<BossScript>().dying)
         {
             fatAnimator.SetBool("Following", false);
+            fatAnimator.SetBool("Stop", false);
             StopAllCoroutines();
             StartCoroutine(ReturnToStart());
             isSlamming = false;

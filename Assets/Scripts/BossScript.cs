@@ -175,7 +175,7 @@ public class BossScript : MonoBehaviour
         if (GetComponentInParent<FollowAndSlam>() != null)
         {
             GetComponentInParent<FollowAndSlam>().enabled = false;
-            float deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 4f;
+            float deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 4.5f;
             GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, deathY, transform.position.z), transform.rotation, stage.transform);
             while (transform.parent.transform.position != deathPoint.transform.position)
             {
@@ -191,7 +191,7 @@ public class BossScript : MonoBehaviour
             float deathY;
             if (GetComponentInParent<CloneScript>().side != "South" || GetComponentInParent<CloneScript>().side != "North") deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 3.8f;
             else deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y;
-                GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, deathY, transform.position.z), transform.rotation, stage.transform);
+                GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, 6.4f, transform.position.z), transform.rotation, stage.transform);
             while (transform.parent.transform.position != deathPoint.transform.position)
             {
                 transform.parent.transform.position = Vector3.MoveTowards(transform.parent.transform.position, deathPoint.transform.position, 5f * Time.deltaTime);

@@ -125,3 +125,5 @@ MonoBehaviour:
   timer: 0
   playerMovement: {fileID: 0}
   bossActions: {fileID: 0}
+  tempSpawner: {fileID: 0}
+  spawner: {fileID: 8160404692752863580, guid: 9d75dae056848114a85c7f52f93f5bc2, type: 3}

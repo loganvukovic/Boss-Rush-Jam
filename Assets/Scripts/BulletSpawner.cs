@@ -246,6 +246,7 @@ public class BulletSpawner : MonoBehaviour
                 spawnedBullet.GetComponent<Tripwire>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Tripwire>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Tripwire>().linkedSpawner = tripwireSpawner;
+                spawnedBullet.GetComponent<Tripwire>().stage = stage;
             }
             //Normal Bullet
             else
