@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public BlackoutSquare blackOutSquare;
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
+    public GameObject[] titleUI;
     private bool isPaused;
 
     // Start is called before the first frame update
@@ -67,6 +68,10 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator StartGame()
     {
+        foreach (GameObject obj in titleUI)
+        {
+            obj.SetActive(false);
+        }
         StartCoroutine(blackOutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
