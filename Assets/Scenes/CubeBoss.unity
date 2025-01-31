@@ -4854,7 +4854,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b0e8bc6a9cdd8d44fa181cef2dcc83af, type: 2}
+  - {fileID: 2100000, guid: 36b67a4743b1ad846b14db9fac64b22b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19101,6 +19101,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 174304654}
   pauseScreen: {fileID: 737252080}
   titleUI: []
+  controlsMenu: {fileID: 0}
 --- !u!4 &1720130565
 Transform:
   m_ObjectHideFlags: 0
@@ -22336,7 +22337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2dcb65f1a501d9046ae273a3e4248574, type: 2}
+  - {fileID: 2100000, guid: 8bc78256cdcea294287b571569c934c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
