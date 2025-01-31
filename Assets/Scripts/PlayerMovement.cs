@@ -386,7 +386,7 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator EnterBubble(Collider bubble)
     {
         canRotate = false;
-        bubble.GetComponent<Bullet>().bulletLife = 999999f;
+        bubble.GetComponent<Bullet>().bulletLife = 20f;
         inBubble = true;
         element = bubble.GetComponent<Bullet>().element;
         Vector3 bubblePos = new Vector3(bubble.transform.position.x, bubble.transform.position.y - 1.1f, transform.position.z);
