@@ -6513,7 +6513,7 @@ MonoBehaviour:
   - {fileID: 1566709018}
   - {fileID: 1488930209}
   followUpTimer: 0
-  followUpTime: 0.5
+  followUpTime: 0.6
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -7191,7 +7191,7 @@ MonoBehaviour:
   - {fileID: 1109332802}
   - {fileID: 1691546034}
   followUpTimer: 0
-  followUpTime: 0.5
+  followUpTime: 0.6
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -9611,7 +9611,7 @@ MonoBehaviour:
   - {fileID: 833829817}
   - {fileID: 1675420652}
   followUpTimer: 0
-  followUpTime: 0.5
+  followUpTime: 0.6
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -11775,7 +11775,7 @@ MonoBehaviour:
   - {fileID: 2125717917}
   - {fileID: 1325697116}
   followUpTimer: 0
-  followUpTime: 1.1
+  followUpTime: 1.3
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -13237,7 +13237,7 @@ MonoBehaviour:
   - {fileID: 876672970}
   - {fileID: 2130781472}
   followUpTimer: 0
-  followUpTime: 0.5
+  followUpTime: 1
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
