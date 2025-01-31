@@ -13582,7 +13582,7 @@ MonoBehaviour:
   isPuppet: 0
   isHydra: 0
   deathLeadsToScene: 1
-  sceneToLoad: 3
+  sceneToLoad: 4
   timeBeforeLoad: 7
   blackoutSquare: {fileID: 59280668}
   elemental: 0

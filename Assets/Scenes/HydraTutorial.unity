@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sameScene: 0
-  sceneToLoad: 4
+  sceneToLoad: 5
   blackoutSquare: {fileID: 1438370070}
   objectsToDisable: []
   objectsToEnable: []
