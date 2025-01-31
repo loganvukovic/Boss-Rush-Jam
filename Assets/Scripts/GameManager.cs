@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +10,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
     public GameObject[] titleUI;
+    public GameObject controlsMenu;
     private bool isPaused;
+    private bool controls;
 
     // Start is called before the first frame update
     void Start()
@@ -96,6 +99,28 @@ public class GameManager : MonoBehaviour
             pauseScreen.SetActive(false);
             isPaused = false;
             Time.timeScale = 1f;
+        }
+    }
+
+    public void Controls()
+    {
+        if (!controls)
+        {
+            controls = true;
+            controlsMenu.SetActive(true);
+            foreach (GameObject obj in titleUI)
+            {
+                obj.SetActive(false);
+            }
+        }
+        else
+        {
+            controls = false;
+            controlsMenu.SetActive(false);
+            foreach (GameObject obj in titleUI)
+            {
+                obj.SetActive(true);
+            }
         }
     }
 }
