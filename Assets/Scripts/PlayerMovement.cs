@@ -111,13 +111,13 @@ public class PlayerMovement : MonoBehaviour
         attacking = GetComponent<PlayerAttack>().attacking;
         isSlamming = GetComponent<PlayerAttack>().isSlamming;
 
-        if (horizontalInput < 0)
+        if (horizontalInput < 0 && !attacking)
         {
             transform.localScale = new Vector3(-1, -1, 1);
             projectileSpawner.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        else if (horizontalInput > 0)
+        else if (horizontalInput > 0 && !attacking)
         {
             transform.localScale = new Vector3(1, 1, 1);
             projectileSpawner.transform.rotation = Quaternion.Euler(0, 180, 0);
@@ -218,7 +218,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (attacking)
+        if (attacking && isGrounded())
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
         }
@@ -233,7 +233,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector3(0, rb.velocity.y, 0);
             }
-            else if (!attacking)
+            else if (!attacking || !isGrounded())
             {
                 horizontalInput = Input.GetAxis("Horizontal");
                 rb.velocity = new Vector3(-1 * maxSpeed * horizontalInput, rb.velocity.y, 0);

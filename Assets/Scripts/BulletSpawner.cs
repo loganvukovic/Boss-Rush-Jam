@@ -44,7 +44,7 @@ public class BulletSpawner : MonoBehaviour
     public float followUpTime;
     public bool justFired;
     public Animator bossAnimator;
-    //public AnimationClip attackClip;
+    public string animationTrigger;
     public float animationTimer;
     public float animationTime;
     public bool animating;
@@ -218,18 +218,7 @@ public class BulletSpawner : MonoBehaviour
                 float angleIncrement = coneAngle / (coneBulletCount - 1);
                 for (int i = 0; i < coneBulletCount; i++)
                 {
-                    float angle = startAngle + (angleIncrement * i);
-                    Quaternion bulletRotation;
-                    if (((playerMovement.curSide == "West" || playerMovement.curSide == "East") && (GetComponentInParent<CloneScript>().side == "West" || GetComponentInParent<CloneScript>().side == "East"))
-                        || ((playerMovement.curSide == "North" || playerMovement.curSide == "South") && (GetComponentInParent<CloneScript>().side == "North" || GetComponentInParent<CloneScript>().side == "South")))
-                    {
-                        bulletRotation = Quaternion.Euler(0f, 0f, angle);
-                    }
-                    else
-                    {
-                        bulletRotation = Quaternion.Euler(0f, 90f, angle);
-                    }
-                    spawnedBullet = Instantiate(bullet, transform.position, bulletRotation, stage.transform);
+                    spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
                     spawnedBullet.GetComponent<Bullet>().speed = speed;
                     spawnedBullet.GetComponent<Bullet>().bulletLife = bulletLife;
                     spawnedBullet.GetComponent<Bullet>().damage = damage;
@@ -252,11 +241,12 @@ public class BulletSpawner : MonoBehaviour
             }
             else if (bulletType == BulletType.Tripwire)
             {
-                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage.transform);
+                spawnedBullet = Instantiate(bullet, transform.position, transform.rotation, stage);
                 spawnedBullet.GetComponent<Tripwire>().life = bulletLife;
                 spawnedBullet.GetComponent<Tripwire>().playerMovement = playerMovement;
                 spawnedBullet.GetComponent<Tripwire>().bossActions = bossActions;
                 spawnedBullet.GetComponent<Tripwire>().linkedSpawner = tripwireSpawner;
+                spawnedBullet.GetComponent<Tripwire>().stage = stage;
             }
             //Normal Bullet
             else

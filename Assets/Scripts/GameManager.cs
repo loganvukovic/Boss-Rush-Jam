@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             PlayerPrefs.SetInt("RotationDirection", 1);
         }
@@ -53,6 +53,6 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(blackOutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

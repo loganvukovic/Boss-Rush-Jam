@@ -9,17 +9,23 @@ public class Tripwire : MonoBehaviour
     public float timer;
     public PlayerMovement playerMovement;
     public BossActions bossActions;
+    public GameObject tempSpawner;
+    public GameObject spawner;
+    public Transform stage;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tempSpawner = Instantiate(spawner, linkedSpawner.transform.position, linkedSpawner.transform.rotation, stage);
+        tempSpawner.GetComponent<BulletSpawner>().playerMovement = playerMovement;
+        tempSpawner.GetComponent<BulletSpawner>().stage = stage;
+        tempSpawner.GetComponent<BulletSpawner>().bossActions = bossActions;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (bossActions.moving)
+        /*if (bossActions.moving)
         {
             Destroy(gameObject);
         }
@@ -32,14 +38,15 @@ public class Tripwire : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
+        }*/
     }
 
     void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player")
         {
-            linkedSpawner.Fire();
+            tempSpawner.GetComponent<BulletSpawner>().Fire();
+            //Destroy(tempSpawner);
             Destroy(gameObject);
         }
     }

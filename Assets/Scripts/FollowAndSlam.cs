@@ -32,7 +32,7 @@ public class FollowAndSlam : MonoBehaviour
             return;
         }
 
-        if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating && !GetComponent<CloneScript>().moving)
+        if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating && !GetComponent<CloneScript>().moving && !GetComponentInChildren<BossScript>().dying)
         {
             if(!isSlamming && !GetComponent<CloneScript>().moving)
             {
@@ -44,12 +44,18 @@ public class FollowAndSlam : MonoBehaviour
                 StartCoroutine(SlamAfterDelay());
             }
         }
-        else /*if (playerMovement.curSide != cloneScript.side)*/
+        else if (!GetComponentInChildren<BossScript>().dying)
         {
             fatAnimator.SetBool("Following", false);
+            fatAnimator.SetBool("Stop", false);
             StopAllCoroutines();
             StartCoroutine(ReturnToStart());
             isSlamming = false;
+        }
+        else
+        {
+            fatAnimator.SetBool("Following", false);
+            StopAllCoroutines();
         }
     }
 
