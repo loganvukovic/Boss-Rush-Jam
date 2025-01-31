@@ -5596,7 +5596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
+  - {fileID: 2100000, guid: e35adca408a93144498306a84f2ce6ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7694,7 +7694,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7b92920ec0e1e114d9e3dc4d6f483ec4, type: 2}
+  - {fileID: 2100000, guid: e35adca408a93144498306a84f2ce6ae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8117,6 +8117,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 1
+  bossAnimator: {fileID: 0}
 --- !u!4 &1242455125
 Transform:
   m_ObjectHideFlags: 0
@@ -10893,6 +10894,10 @@ PrefabInstance:
       propertyPath: elementBar
       value: 
       objectReference: {fileID: 1123049632}
+    - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: fireMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 2bf564320554ac64d9d919a48173f0a5, type: 2}
     - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: elementDuration
       value: 10
