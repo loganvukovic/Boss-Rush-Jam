@@ -34,7 +34,8 @@ public class FollowAndSlam : MonoBehaviour
 
         if (playerMovement.curSide == cloneScript.side && !playerMovement.rotating && !GetComponent<CloneScript>().moving && !GetComponentInChildren<BossScript>().dying)
         {
-            if(!isSlamming && !GetComponent<CloneScript>().moving)
+            fatAnimator.SetBool("Stop", false);
+            if (!isSlamming && !GetComponent<CloneScript>().moving)
             {
                 fatAnimator.SetBool("Following", true);
                 FollowPlayer();
@@ -47,7 +48,7 @@ public class FollowAndSlam : MonoBehaviour
         else if (!GetComponentInChildren<BossScript>().dying)
         {
             fatAnimator.SetBool("Following", false);
-            fatAnimator.SetBool("Stop", false);
+            fatAnimator.SetBool("Stop", true);
             StopAllCoroutines();
             StartCoroutine(ReturnToStart());
             isSlamming = false;
@@ -70,7 +71,7 @@ public class FollowAndSlam : MonoBehaviour
         fatAnimator.SetBool("Following", false);
         isSlamming = true;
         Vector3 originalPosition = cloneScript.spawnPoint.transform.position;
-        Vector3 targetPosition = new Vector3(playerMovement.transform.position.x, transform.position.y - 3, playerMovement.transform.position.z);
+        Vector3 targetPosition = new Vector3(playerMovement.transform.position.x, transform.position.y - 6f, playerMovement.transform.position.z);
         yield return new WaitForSeconds(slamDelay);
         fatAnimator.SetTrigger("Slam");
         yield return new WaitForSeconds(1f);
