@@ -58,6 +58,8 @@ public class BossActions : MonoBehaviour
     public int curPhase;
     public bool fakeBoss;
 
+    public Animator bossAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -308,7 +310,7 @@ public class BossActions : MonoBehaviour
         wontShoot = true;
         moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
- 
+        bossAnimator.SetTrigger("Move");
         while (transform.position != tempObject.transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, tempObject.transform.position, 0.1f);

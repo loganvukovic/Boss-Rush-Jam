@@ -9,6 +9,8 @@ public class PuppetManager : MonoBehaviour
     public AudioSource audioSource;
     public bool fightStarted;
     public BossActions spiderPuppet;
+    public Animator bossAnimator;
+    public GameObject shield;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,11 @@ public class PuppetManager : MonoBehaviour
         swordPuppet.wontShoot = true;
         spiderPuppet.wontShoot = true;
         yield return new WaitForSeconds(3f);
+        bossAnimator.SetTrigger("ActivateShield");
+        yield return new WaitForSeconds(3f);
+        shield.SetActive(true);
+        bossAnimator.SetTrigger("RevivePuppets");
+        yield return new WaitForSeconds(5f);
         mainBoss.canClone = true;
         mainBoss.ChooseSpot(0);
         mainBoss.wontShoot = false;
