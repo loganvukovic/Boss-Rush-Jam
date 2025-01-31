@@ -107,6 +107,7 @@ public class FollowAndSlam : MonoBehaviour
             if (!other.GetComponentInParent<PlayerMovement>().tookDamage && !other.GetComponentInParent<PlayerMovement>().rotating)
             {
                 other.GetComponentInParent<PlayerMovement>().curHealth -= contactDamage;
+                other.GetComponentInParent<PlayerMovement>().tookDamage = true;
             }
         }
     }
