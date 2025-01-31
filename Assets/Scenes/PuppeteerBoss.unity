@@ -1379,6 +1379,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4769480267238200372, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bffc2b7902f03da4cb849998d354bace, type: 2}
+    - target: {fileID: 5735440338000692378, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bffc2b7902f03da4cb849998d354bace, type: 2}
     - target: {fileID: 6225882800527347530, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -15103,7 +15111,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.71, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
