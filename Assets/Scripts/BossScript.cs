@@ -36,6 +36,7 @@ public class BossScript : MonoBehaviour
     public GameObject empty;
     public GameObject stage;
     public bool dying;
+    public GameObject shield;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,7 @@ public class BossScript : MonoBehaviour
             {
                 //transform.parent.gameObject.SetActive(false);
 
-                if(deathLeadsToScene)
+                if(deathLeadsToScene && !GetComponentInParent<BossActions>().dying)
                 {
                     StartCoroutine(LoadScene());
                 }
@@ -87,6 +88,8 @@ public class BossScript : MonoBehaviour
             {
                 invincible = false;
                 healthBar.SetActive(true);
+                bossAnimator.SetTrigger("ShieldBreak");
+                shield.SetActive(false);
             }
         }
     }
@@ -154,7 +157,7 @@ public class BossScript : MonoBehaviour
 
     IEnumerator LoadScene()
     {
-        //animator.SetTrigger("Die");
+        bossAnimator.SetTrigger("Die");
         bossActions.dying = true;
         yield return null; bossActions.enabled = false;
         yield return new WaitForSeconds(timeBeforeLoad);
