@@ -9911,7 +9911,7 @@ MonoBehaviour:
   keepMovingOnBossMove: 0
   playerInBubble: 0
   floatInBubble: 0
-  element: 
+  element: Electric
   destroyableByElement: 0
   weakness: 
   spot: 0

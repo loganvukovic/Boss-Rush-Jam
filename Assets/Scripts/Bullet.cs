@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
     public bool keepMovingOnBossMove;
     public bool playerInBubble = false;
     public bool floatInBubble;
-    public string element;
+    public string element = "";
     public bool destroyableByElement;
     public string weakness;
     public int spot;
@@ -129,7 +129,8 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating && (tag == "Bullet" || tag == "Destroyable"))
+        if (other.tag == "Player" && !other.GetComponentInParent<PlayerMovement>().tookDamage && !playerMovement.rotating && !bossActions.rotating && (tag == "Bullet" || tag == "Destroyable") 
+            && element != other.GetComponentInParent<PlayerMovement>().element)
         {
             other.GetComponentInParent<PlayerMovement>().curHealth -= damage;
             other.GetComponentInParent<PlayerMovement>().tookDamage = true;

@@ -121,6 +121,7 @@ public class BossScript : MonoBehaviour
         {
             if (other.GetComponent<Bullet>().element == weakness)
             {
+                playerMovement.element = "None";
                 curHealth -= damageFromBubble;
                 Destroy(other.gameObject);
 

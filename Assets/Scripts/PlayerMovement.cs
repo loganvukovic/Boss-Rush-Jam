@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool inBubble;
     public bool floating;
+    public string element;
 
     public int heldKeys = 0;
 
@@ -89,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             rotationInvert = PlayerPrefs.GetInt("RotationDirection");
         }
         else rotationInvert = 1;
+        element = "None";
     }
     void Update()
     {
@@ -386,6 +388,7 @@ public class PlayerMovement : MonoBehaviour
         canRotate = false;
         bubble.GetComponent<Bullet>().bulletLife = 999999f;
         inBubble = true;
+        element = bubble.GetComponent<Bullet>().element;
         Vector3 bubblePos = new Vector3(bubble.transform.position.x, bubble.transform.position.y - 1.1f, transform.position.z);
         while (transform.position != bubblePos)
         {
