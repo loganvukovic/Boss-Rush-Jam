@@ -9941,13 +9941,13 @@ MonoBehaviour:
   invincible: 0
   playerMovement: {fileID: 1319437050}
   bossActions: {fileID: 1957851013}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1957851008}
   lightning: {fileID: 0}
   puppetRenderer: {fileID: 0}
   puppetHitbox: {fileID: 0}
   elementToGive: 
   hydraManager: {fileID: 0}
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1957851014}
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0

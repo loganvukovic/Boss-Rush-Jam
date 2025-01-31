@@ -122,6 +122,7 @@ public class BossActions : MonoBehaviour
             rotateTimer += Time.deltaTime;
             if (rotateTimer > rotateCooldown)
             {
+                GetComponent<Animator>().enabled = false;
                 if (Random.Range(0f, 1f) < 0.5f)
                 {
                     Rotate(90);
@@ -138,6 +139,7 @@ public class BossActions : MonoBehaviour
 
                 if (Quaternion.Angle(transform.localRotation, targetRotation) < 0.1f)
                 {
+                    GetComponent<Animator>().enabled = true;
                     timeElapsed = 0;
                     rotating = false;
                 }
