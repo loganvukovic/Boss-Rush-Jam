@@ -304,6 +304,7 @@ public class BossActions : MonoBehaviour
 
     public IEnumerator UpdatePosition(int spot)
     {
+        wontShoot = true;
         moving = true;
         GameObject tempObject = Instantiate(empty, spawnPoints[spot].transform.position, transform.rotation, stage.transform);
         transform.localRotation = CalcNewAngle(spot);
@@ -313,6 +314,7 @@ public class BossActions : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         moving = false;
+        wontShoot = false;
         transform.position = tempObject.transform.position;
         Destroy(tempObject);
         //loat westRNG = Random.Range(0f, 1f);

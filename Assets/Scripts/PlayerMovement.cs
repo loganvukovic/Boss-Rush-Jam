@@ -364,7 +364,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Bubble" && !rotating && !inBubble)
+        if (other.tag == "Bubble" && !rotating && !inBubble && !GetComponent<PlayerAttack>().imbuing)
         {
             StartCoroutine(EnterBubble(other));
         }
