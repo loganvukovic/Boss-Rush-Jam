@@ -9951,6 +9951,7 @@ MonoBehaviour:
   empty: {fileID: 0}
   stage: {fileID: 0}
   dying: 0
+  shield: {fileID: 0}
 --- !u!1 &924631366
 GameObject:
   m_ObjectHideFlags: 0
@@ -22288,7 +22289,6 @@ GameObject:
   - component: {fileID: 1957851009}
   - component: {fileID: 1957851013}
   - component: {fileID: 1957851014}
-  - component: {fileID: 1957851015}
   m_Layer: 0
   m_Name: BossCube
   m_TagString: Untagged
@@ -22465,6 +22465,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
+  bossAnimator: {fileID: 0}
 --- !u!95 &1957851014
 Animator:
   serializedVersion: 5
@@ -22486,21 +22487,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1957851015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957851008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6607d3b1411886428b6fdfe50b1f192, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  faces:
-  - {fileID: 2800000, guid: c270b3f5831c91c489a3a8d69cc95c65, type: 3}
-  FaceMT: {fileID: 2100000, guid: b0e8bc6a9cdd8d44fa181cef2dcc83af, type: 2}
 --- !u!1 &1960643335
 GameObject:
   m_ObjectHideFlags: 0
