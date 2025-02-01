@@ -38,7 +38,7 @@ public class PuppetManager : MonoBehaviour
         //bossAnimator.SetTrigger("RevivePuppets");
         yield return new WaitForSeconds(2f);
         mainBoss.canClone = true;
-        mainBoss.ChooseSpot(0);
+        mainBoss.ChooseSpot(1);
         mainBoss.wontShoot = false;
         swordPuppet.wontShoot = false;
         spiderPuppet.wontShoot = false;

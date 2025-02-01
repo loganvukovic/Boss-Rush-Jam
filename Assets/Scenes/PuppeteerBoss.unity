@@ -14131,7 +14131,7 @@ Transform:
   m_GameObject: {fileID: 1357394913}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 10.34, z: 0}
+  m_LocalPosition: {x: 7, y: 9.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15573,7 +15573,7 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   movingUpDown: 0
   movingPositive: 0
-  moveSpeed: 5
+  moveSpeed: 2
   direction: 
   puppetManager: {fileID: 977486651}
   animator: {fileID: 1733983843}
@@ -16650,11 +16650,11 @@ MonoBehaviour:
   playerMovement: {fileID: 217045719}
   isSlamming: 0
   followSpeed: 5
-  slamDelay: 1
+  slamDelay: 0.001
   fallSpeed: 9
-  resumeDelay: 2
-  raiseSpeed: 5
-  contactDamage: 10
+  resumeDelay: 0.1
+  raiseSpeed: 7
+  contactDamage: 5
   hitbox: {fileID: 1686398107}
   puppetManager: {fileID: 977486651}
   fatAnimator: {fileID: 401435704}
@@ -25088,7 +25088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curHealth: 0
-  maxHealth: 150
+  maxHealth: 130
   curPhase: 0
   healAfterFirstPhase: 0
   healing: 0

@@ -70,11 +70,11 @@ public class FollowAndSlam : MonoBehaviour
     {
         fatAnimator.SetBool("Following", false);
         isSlamming = true;
-        Vector3 originalPosition = cloneScript.spawnPoint.transform.position;
+        Vector3 originalPosition = transform.position;
         Vector3 targetPosition = new Vector3(playerMovement.transform.position.x, transform.position.y - 6f, playerMovement.transform.position.z);
         yield return new WaitForSeconds(slamDelay);
         fatAnimator.SetTrigger("Slam");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         hitbox.enabled = true;
         while (transform.position != targetPosition)
         {
