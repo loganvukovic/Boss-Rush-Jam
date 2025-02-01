@@ -22465,7 +22465,7 @@ MonoBehaviour:
   curSide: 
   curPhase: 0
   fakeBoss: 0
-  bossAnimator: {fileID: 0}
+  bossAnimator: {fileID: 1957851014}
 --- !u!95 &1957851014
 Animator:
   serializedVersion: 5
