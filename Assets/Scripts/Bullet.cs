@@ -156,6 +156,7 @@ public class Bullet : MonoBehaviour
     {
         if(playerInBubble)
         {
+            playerMovement.element = "None";
             playerMovement.inBubble = false;
 
             if(floatInBubble)

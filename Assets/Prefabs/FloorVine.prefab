@@ -63,7 +63,7 @@ MonoBehaviour:
   keepMovingOnBossMove: 0
   playerInBubble: 0
   floatInBubble: 0
-  element: 
+  element: Grass
   destroyableByElement: 1
   weakness: Fire
   spot: 0

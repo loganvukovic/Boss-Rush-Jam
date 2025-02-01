@@ -66,9 +66,9 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cooldown < 1)
+        if (cooldown < 2)
         {
-            cooldown = 1;
+            cooldown = 2;
         }
 
         if (bulletType == BulletType.Aimed)
