@@ -8,6 +8,8 @@ public class HydraManager : MonoBehaviour
     public AudioSource musicSource;
     public GameObject[] heads;
     public GameObject endingText;
+    public GameObject[] healthBars;
+    public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,42 @@ public class HydraManager : MonoBehaviour
         foreach (var head in heads)
         {
             head.GetComponent<BossActions>().wontShoot = false;
+        }
+    }
+
+    public void SwitchHealthBars()
+    {
+        if (playerMovement.curSide == "North")
+        {
+            foreach (GameObject bar in healthBars)
+            {
+                bar.SetActive(false);
+            }
+            healthBars[0].SetActive(true);
+        }
+        else if (playerMovement.curSide == "West")
+        {
+            foreach (GameObject bar in healthBars)
+            {
+                bar.SetActive(false);
+            }
+            healthBars[1].SetActive(true);
+        }
+        else if (playerMovement.curSide == "South")
+        {
+            foreach (GameObject bar in healthBars)
+            {
+                bar.SetActive(false);
+            }
+            healthBars[2].SetActive(true);
+        }
+        else if (playerMovement.curSide == "East")
+        {
+            foreach (GameObject bar in healthBars)
+            {
+                bar.SetActive(false);
+            }
+            healthBars[3].SetActive(true);
         }
     }
 }

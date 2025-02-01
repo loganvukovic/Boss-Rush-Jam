@@ -1553,6 +1553,34 @@ PrefabInstance:
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 276220311}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[0]
+      value: 
+      objectReference: {fileID: 419418909}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[1]
+      value: 
+      objectReference: {fileID: 396780215}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[2]
+      value: 
+      objectReference: {fileID: 2080034473}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[3]
+      value: 
+      objectReference: {fileID: 1516284444}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[4]
+      value: 
+      objectReference: {fileID: 679453623}
+    - target: {fileID: 8127577409306176760, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+      propertyPath: healthBars.Array.data[5]
+      value: 
+      objectReference: {fileID: 1398990873}
     - target: {fileID: 9183519726952632691, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
       propertyPath: axe
       value: 

@@ -73,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
     public int heldKeys = 0;
 
     private bool gameOvered;
+    public HydraManager hydraManager;
+    public GameObject[] healthBars;
 
     void Start()
     {
@@ -99,6 +101,13 @@ public class PlayerMovement : MonoBehaviour
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
             gameOvered = true;
+            if (healthBars.Length > 0)
+            {
+                foreach (GameObject bar in healthBars)
+                {
+                    Destroy(bar);
+                }
+            }
         }
         if(Input.GetKeyDown(KeyCode.I))
         {
@@ -331,6 +340,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (angle == -90) curSide = "North";
             else curSide = "South";
+        }
+
+        if (hydraManager)
+        {
+            hydraManager.SwitchHealthBars();
         }
 
         startRotation = stage.transform.rotation;
