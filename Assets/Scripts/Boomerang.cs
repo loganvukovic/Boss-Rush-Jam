@@ -42,6 +42,7 @@ public class Boomerang : MonoBehaviour
                 flightTimer += Time.deltaTime;
                 yield return null;
             }
+            else yield return null;
         }
         while (flightSpeed > 0)
         {
@@ -58,6 +59,7 @@ public class Boomerang : MonoBehaviour
                 flightTimer += Time.deltaTime;
                 yield return null;
             }
+            else yield return null;
         }
         while (transform.position != trueSpawn.transform.position)
         {
@@ -68,6 +70,7 @@ public class Boomerang : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, trueSpawn.transform.position, 1f * Time.deltaTime);
                 yield return null;
             }
+            else yield return null;
         }
         Destroy(trueSpawn.gameObject);
         Destroy(gameObject);
