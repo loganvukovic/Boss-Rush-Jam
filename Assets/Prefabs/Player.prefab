@@ -558,6 +558,11 @@ MonoBehaviour:
   followUpTimer: 0
   followUpTime: 0
   justFired: 0
+  bossAnimator: {fileID: 0}
+  animationTrigger: 
+  animationTimer: 0
+  animationTime: 0
+  animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
   tripwireSpawner: {fileID: 0}
@@ -681,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41df853d2ead354488f28811cb45deba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 2
 --- !u!1 &6225882800527347530
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +846,7 @@ MonoBehaviour:
   canRotate: 0
   rotationDuration: 1
   curSide: 
+  rotationInvert: 1
   attacking: 0
   isDashing: 0
   dashingPower: 24
@@ -859,6 +865,7 @@ MonoBehaviour:
   canMove: 0
   inBubble: 0
   floating: 0
+  element: 
   heldKeys: 0
 --- !u!54 &161858060241552197
 Rigidbody:

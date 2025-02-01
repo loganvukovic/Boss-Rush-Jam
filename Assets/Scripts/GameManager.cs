@@ -10,9 +10,11 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject pauseScreen;
     public GameObject[] titleUI;
+    public GameObject[] difficultyButtons;
     public GameObject controlsMenu;
     private bool isPaused;
     private bool controls;
+    private bool difficulty;
 
     // Start is called before the first frame update
     void Start()
@@ -48,8 +50,36 @@ public class GameManager : MonoBehaviour
 
     public void StartButton()
     {
+        if (!difficulty)
+        {
+            foreach (GameObject obj in titleUI)
+            {
+                obj.SetActive(false);
+            }
+            foreach (GameObject obj in difficultyButtons)
+            {
+                obj.SetActive(true);
+            }
+            difficulty = true;
+        }
+        else
+        {
+            foreach (GameObject obj in titleUI)
+            {
+                obj.SetActive(true);
+            }
+            foreach (GameObject obj in difficultyButtons)
+            {
+                obj.SetActive(false);
+            }
+            difficulty = false;
+        }
+    }
+
+    public void DifficultyButton(float diff)
+    {
         blackOutSquare.gameObject.SetActive(true);
-        StartCoroutine(StartGame());
+        StartCoroutine(StartGame(diff));
     }
     public void ReturnButton()
     {
@@ -69,12 +99,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public IEnumerator StartGame()
+    public IEnumerator StartGame(float diff)
     {
         foreach (GameObject obj in titleUI)
         {
             obj.SetActive(false);
         }
+        PlayerPrefs.SetFloat("DamageMult", diff);
         StartCoroutine(blackOutSquare.FadeBlackOutSquare());
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);

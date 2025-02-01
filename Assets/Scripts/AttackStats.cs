@@ -9,7 +9,7 @@ public class AttackStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        damage = damage * PlayerPrefs.GetFloat("DamageMult");
     }
 
     // Update is called once per frame
