@@ -1497,6 +1497,88 @@ PrefabInstance:
       addedObject: {fileID: 1323843736}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11add45ab64625a43ac6a53036a6672c, type: 3}
+--- !u!1 &279755359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279755360}
+  - component: {fileID: 279755361}
+  m_Layer: 0
+  m_Name: Boomerang
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &279755360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279755359}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5675305, y: 0.42179283, z: 0.42179283, w: 0.5675305}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1561263253}
+  m_LocalEulerAnglesHint: {x: 16.76, y: 90, z: 90}
+--- !u!114 &279755361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279755359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9404e592a69d19d43aa519c83ef8e18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: 10
+  speed: 7
+  bulletLife: 1.5
+  damage: 5
+  timer: 0
+  firingRate: 5
+  cooldown: 3.5
+  fireAtStart: 0
+  bullet: {fileID: 2348641644619225322, guid: 7b5f2332aaf2a9c4f8a25709a472f34d, type: 3}
+  stage: {fileID: 356460844}
+  playerMovement: {fileID: 217045719}
+  bossActions: {fileID: 7518884777301099928}
+  aimedOffset: {x: 0, y: 0, z: 0}
+  angle: 0
+  autoFire: 0
+  sideDependant: 0
+  side: 
+  bombSpawner: 0
+  LRBombs: 0
+  gasterBlaster: 0
+  stayOnBossRotate: 0
+  keepMovingOnBossMove: 0
+  bulletsInCircle: 0
+  coneAngle: 60
+  coneBulletCount: 5
+  linkedSpawners: []
+  followUps: []
+  followUpTimer: 0
+  followUpTime: 0
+  justFired: 0
+  bossAnimator: {fileID: 1733983843}
+  animationTrigger: Attack
+  animationTimer: 0
+  animationTime: 0.8
+  animating: 0
+  lightningConnector1: {fileID: 0}
+  lightningConnector2: {fileID: 0}
+  tripwireSpawner: {fileID: 0}
 --- !u!1 &290873008
 GameObject:
   m_ObjectHideFlags: 0
@@ -15535,6 +15617,9 @@ PrefabInstance:
       addedObject: {fileID: 325501251}
     - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 279755360}
+    - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1970245566}
     - targetCorrespondingSourceObject: {fileID: 1987811535542134374, guid: c563a03746ab764478d40a8690c023ef, type: 3}
       insertIndex: -1
@@ -15620,7 +15705,7 @@ MonoBehaviour:
   phase1Range: 2
   spawners:
   - {fileID: 325501252}
-  - {fileID: 325501252}
+  - {fileID: 279755361}
   sideDependentSpawners: 0
   northSpawners: []
   westSpawners: []
