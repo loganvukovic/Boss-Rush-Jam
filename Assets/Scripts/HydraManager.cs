@@ -7,6 +7,7 @@ public class HydraManager : MonoBehaviour
     public int hydraDeaths;
     public AudioSource musicSource;
     public GameObject[] heads;
+    public GameObject endingText;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class HydraManager : MonoBehaviour
 
     public IEnumerator LoadEnding()
     {
-        Debug.Log("Game Beaten!");
+        endingText.SetActive(true);
         yield return null;
     }
 
