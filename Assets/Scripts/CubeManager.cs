@@ -9,6 +9,7 @@ public class CubeManager : MonoBehaviour
     public BulletSpawner spearSpawner;
     public Animator animator;
     public AudioSource audioSource;
+    public GameObject healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class CubeManager : MonoBehaviour
         }
         yield return new WaitForSeconds(5f);
         animator.SetTrigger("Rise");
+        healthBar.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         audioSource.Play();
         yield return new WaitForSeconds(1f);

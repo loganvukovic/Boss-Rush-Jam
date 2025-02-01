@@ -16427,7 +16427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1499616736
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20729,6 +20729,7 @@ MonoBehaviour:
   spearSpawner: {fileID: 1877735177}
   animator: {fileID: 1957851014}
   audioSource: {fileID: 1181480063}
+  healthBar: {fileID: 1499616735}
 --- !u!4 &1810610792
 Transform:
   m_ObjectHideFlags: 0
