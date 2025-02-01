@@ -35,8 +35,8 @@ public class PuppetManager : MonoBehaviour
         bossAnimator.SetTrigger("ActivateShield");
         yield return new WaitForSeconds(3f);
         shield.SetActive(true);
-        bossAnimator.SetTrigger("RevivePuppets");
-        yield return new WaitForSeconds(5f);
+        //bossAnimator.SetTrigger("RevivePuppets");
+        yield return new WaitForSeconds(2f);
         mainBoss.canClone = true;
         mainBoss.ChooseSpot(0);
         mainBoss.wontShoot = false;
