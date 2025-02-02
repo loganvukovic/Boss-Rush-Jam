@@ -142,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else shownHealth = curHealth;
 
-        healthBar.fillAmount = shownHealth / maxHealth;
+        if(healthBar) healthBar.fillAmount = shownHealth / maxHealth;
         if (tookDamage)
         {
             damageTimer += Time.deltaTime;

@@ -178,7 +178,7 @@ public class BossActions : MonoBehaviour
         }
 
         if (!wontShoot) attackTimer += Time.deltaTime;
-        if (attackTimer > attackCooldown && !wontShoot)
+        if (attackTimer > attackCooldown && !wontShoot && !rotating)
         {
             if (curPhase == 1)
             {

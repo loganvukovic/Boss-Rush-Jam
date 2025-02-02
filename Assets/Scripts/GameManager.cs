@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     private bool controls;
     private bool difficulty;
     public PlayerMovement playerMovement;
+    public GameObject lowerDifficultyText;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
         }*/
 
         isPaused = false;
+
+        if (PlayerPrefs.GetFloat("DamageMult") == 1.5f) Destroy(lowerDifficultyText);
     }
 
     // Update is called once per frame
@@ -89,6 +92,14 @@ public class GameManager : MonoBehaviour
         pauseScreen.SetActive(false);
         blackOutSquare.gameObject.SetActive(true);
         StartCoroutine(ReturnToTitle());
+    }
+
+    public void LowerDifficultyButton()
+    {
+        PlayerPrefs.SetFloat("DamageMult", 1.5f);
+        Time.timeScale = 1f;
+        blackOutSquare.gameObject.SetActive(true);
+        StartCoroutine(Retry());
     }
 
     public IEnumerator Retry()
