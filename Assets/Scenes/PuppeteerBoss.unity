@@ -3381,6 +3381,7 @@ MonoBehaviour:
   activeBoss: {fileID: 1447970645}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 1245413745}
 --- !u!114 &396780218
 MonoBehaviour:
@@ -4540,6 +4541,7 @@ MonoBehaviour:
   activeBoss: {fileID: 2088974949}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 981760366}
 --- !u!114 &419418912
 MonoBehaviour:
@@ -13724,9 +13726,9 @@ RectTransform:
   - {fileID: 1516284445}
   - {fileID: 59280667}
   - {fileID: 276220314}
-  - {fileID: 379744628}
   - {fileID: 679453624}
   - {fileID: 1398990874}
+  - {fileID: 379744628}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -14695,6 +14697,7 @@ MonoBehaviour:
   activeBoss: {fileID: 7801342347308306290}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 207921682}
 --- !u!114 &1398990876
 MonoBehaviour:
@@ -25089,6 +25092,7 @@ MonoBehaviour:
   activeBoss: {fileID: 691515483}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 24323974}
 --- !u!114 &2080034476
 MonoBehaviour:

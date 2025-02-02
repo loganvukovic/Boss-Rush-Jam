@@ -14757,8 +14757,8 @@ RectTransform:
   - {fileID: 1651760969}
   - {fileID: 2031756263}
   - {fileID: 174304655}
-  - {fileID: 737252083}
   - {fileID: 1606856495}
+  - {fileID: 737252083}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17569,6 +17569,7 @@ MonoBehaviour:
   activeBoss: {fileID: 920790828}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 2051136335}
 --- !u!1 &1508232501
 GameObject:
