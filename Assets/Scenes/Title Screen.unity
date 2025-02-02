@@ -3533,6 +3533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackFromStart: 0
+  cutsceneManager: {fileID: 0}
+  knight: {fileID: 0}
 --- !u!114 &1281003012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5458,7 +5460,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2efe6e809c3c7b6499e560ab16cb014d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

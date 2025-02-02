@@ -2617,6 +2617,7 @@ MonoBehaviour:
   shield: {fileID: 0}
   invicAudio: {fileID: 310472814}
   slamHitbox: {fileID: 0}
+  healed: 0
 --- !u!82 &310472814
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22625,6 +22626,7 @@ MonoBehaviour:
   shield: {fileID: 0}
   invicAudio: {fileID: 767437931}
   slamHitbox: {fileID: 0}
+  healed: 0
 --- !u!4 &767437929
 Transform:
   m_ObjectHideFlags: 0
@@ -23451,6 +23453,7 @@ MonoBehaviour:
   shield: {fileID: 0}
   invicAudio: {fileID: 893383922}
   slamHitbox: {fileID: 0}
+  healed: 0
 --- !u!82 &893383922
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26781,6 +26784,7 @@ MonoBehaviour:
   shield: {fileID: 0}
   invicAudio: {fileID: 1115202768}
   slamHitbox: {fileID: 0}
+  healed: 0
 --- !u!82 &1115202768
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33989,7 +33993,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe85bca000f38764ab25a9e48f1ba814, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
