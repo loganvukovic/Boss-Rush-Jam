@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BlackoutSquare : MonoBehaviour
 {
     public bool blackFromStart;
+    public Animator cutsceneManager;
+    public GameObject knight;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +62,8 @@ public class BlackoutSquare : MonoBehaviour
             GetComponent<UnityEngine.UI.Image>().color = objectColor;
             yield return null;
         }
+        if (cutsceneManager) cutsceneManager.enabled = true;
+        if (knight) knight.SetActive(true);
         gameObject.SetActive(false);
     }
 }

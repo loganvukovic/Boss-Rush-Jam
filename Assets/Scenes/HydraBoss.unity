@@ -1450,6 +1450,9 @@ MonoBehaviour:
   - {fileID: 2087387640}
   - {fileID: 420083967}
   playerMovement: {fileID: 217045719}
+  timeBeforeLoad: 5
+  sceneToLoad: 6
+  blackoutSquare: {fileID: 958043989}
 --- !u!4 &181316877
 Transform:
   m_ObjectHideFlags: 0
@@ -2613,6 +2616,7 @@ MonoBehaviour:
   dying: 0
   shield: {fileID: 0}
   invicAudio: {fileID: 310472814}
+  slamHitbox: {fileID: 0}
 --- !u!82 &310472814
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22619,6 +22623,7 @@ MonoBehaviour:
   dying: 0
   shield: {fileID: 0}
   invicAudio: {fileID: 767437931}
+  slamHitbox: {fileID: 0}
 --- !u!4 &767437929
 Transform:
   m_ObjectHideFlags: 0
@@ -23444,6 +23449,7 @@ MonoBehaviour:
   dying: 0
   shield: {fileID: 0}
   invicAudio: {fileID: 893383922}
+  slamHitbox: {fileID: 0}
 --- !u!82 &893383922
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24732,6 +24738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackFromStart: 1
+  cutsceneManager: {fileID: 0}
+  knight: {fileID: 0}
 --- !u!114 &958043990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26771,6 +26779,7 @@ MonoBehaviour:
   dying: 0
   shield: {fileID: 0}
   invicAudio: {fileID: 1115202768}
+  slamHitbox: {fileID: 0}
 --- !u!82 &1115202768
 AudioSource:
   m_ObjectHideFlags: 0

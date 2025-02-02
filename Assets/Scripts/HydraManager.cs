@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HydraManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class HydraManager : MonoBehaviour
     public GameObject endingText;
     public GameObject[] healthBars;
     public PlayerMovement playerMovement;
+    public float timeBeforeLoad;
+    public int sceneToLoad;
+    public BlackoutSquare blackoutSquare;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +33,12 @@ public class HydraManager : MonoBehaviour
 
     public IEnumerator LoadEnding()
     {
-        endingText.SetActive(true);
-        yield return null;
+        //endingText.SetActive(true);
+        yield return new WaitForSeconds(timeBeforeLoad);
+        StartCoroutine(blackoutSquare.FadeBlackOutSquare());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoad);
+        //yield return null;
     }
 
     public IEnumerator StartFight()
