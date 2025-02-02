@@ -855,6 +855,7 @@ MonoBehaviour:
   projectileSpawner: {fileID: 5677184850391092951}
   curHealth: 0
   maxHealth: 100
+  shownHealth: 0
   tookDamage: 0
   invincibilityDuration: 0.8
   flickerTimer: 0
@@ -867,6 +868,8 @@ MonoBehaviour:
   floating: 0
   element: 
   heldKeys: 0
+  hydraManager: {fileID: 0}
+  healthBars: []
 --- !u!54 &161858060241552197
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -984,7 +987,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6969203953462381369}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bffc2b7902f03da4cb849998d354bace, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
