@@ -39,6 +39,7 @@ public class BossScript : MonoBehaviour
     public GameObject shield;
     public AudioSource invicAudio;
     public Collider slamHitbox;
+    public bool healed;
 
     // Start is called before the first frame update
     void Start()
@@ -62,7 +63,7 @@ public class BossScript : MonoBehaviour
             {
                 //transform.parent.gameObject.SetActive(false);
 
-                if(deathLeadsToScene && !GetComponentInParent<BossActions>().dying)
+                if(deathLeadsToScene && !GetComponentInParent<BossActions>().dying && ((healed && healAfterFirstPhase) || !healAfterFirstPhase))
                 {
                     StartCoroutine(LoadScene());
                 }
@@ -151,6 +152,7 @@ public class BossScript : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         healing = false;
+        healed = true;
         GetComponent<Collider>().enabled = true;
         curPhase++;
         GetComponentInParent<BossActions>().IncreaseSpeed(phase2Speed);

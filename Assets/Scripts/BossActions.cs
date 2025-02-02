@@ -122,7 +122,7 @@ public class BossActions : MonoBehaviour
             rotateTimer += Time.deltaTime;
             if (rotateTimer > rotateCooldown)
             {
-                GetComponent<Animator>().enabled = false;
+                //GetComponent<Animator>().enabled = false;
                 if (Random.Range(0f, 1f) < 0.5f)
                 {
                     Rotate(90);
