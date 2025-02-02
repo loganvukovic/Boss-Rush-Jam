@@ -1523,6 +1523,12 @@ MonoBehaviour:
   maxHealth: 0
   shownHealth: 0
   healthBar: {fileID: 1122763085}
+  flashState: 0
+  flickerTimer: 0
+  flickerTime: 0
+  hue: 0
+  s: 0
+  v: 0
 --- !u!114 &190764851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,6 +2215,12 @@ MonoBehaviour:
   maxHealth: 0
   shownHealth: 0
   healthBar: {fileID: 994595617}
+  flashState: 0
+  flickerTimer: 0
+  flickerTime: 0
+  hue: 0
+  s: 0
+  v: 0
 --- !u!114 &264361436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8859,6 +8871,12 @@ MonoBehaviour:
   maxHealth: 0
   shownHealth: 0
   healthBar: {fileID: 1868371235}
+  flashState: 0
+  flickerTimer: 0
+  flickerTime: 0
+  hue: 0
+  s: 0
+  v: 0
 --- !u!114 &420083970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26501,7 +26519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5064471, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.5058824, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -43204,7 +43222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.108952045, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.10980368, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -44885,6 +44903,12 @@ MonoBehaviour:
   maxHealth: 0
   shownHealth: 0
   healthBar: {fileID: 2049080322}
+  flashState: 0
+  flickerTimer: 0
+  flickerTime: 0
+  hue: 0
+  s: 0
+  v: 0
 --- !u!114 &2087387643
 MonoBehaviour:
   m_ObjectHideFlags: 0
