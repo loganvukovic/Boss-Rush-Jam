@@ -113,7 +113,7 @@ public class BossScript : MonoBehaviour
                 bossActions.hitCounter++;
             }
         }
-        else if (other.tag == "PlayerHB" && GetComponentInParent<BossActions>().dying)
+        else if (other.tag == "PlayerHB" && GetComponentInParent<BossActions>().dying && !isHydra)
         {
             other.GetComponentInParent<PlayerAttack>().Imbue(elementToGive, false);
         }
