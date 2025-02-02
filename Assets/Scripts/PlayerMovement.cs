@@ -76,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public bool gameOvered;
     public HydraManager hydraManager;
     public GameObject[] healthBars;
+    public AudioSource HitSound;
+    private bool hitSoundPlayed = false;
 
     void Start()
     {
@@ -147,6 +149,12 @@ public class PlayerMovement : MonoBehaviour
         {
             damageTimer += Time.deltaTime;
             flickerTimer += Time.deltaTime;
+            if (!hitSoundPlayed)
+            {
+                HitSound.Play();
+                hitSoundPlayed = true;
+            }
+
         }
 
         if (damageTimer >= invincibilityDuration)
@@ -158,6 +166,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 mesh.enabled = true;
             }
+            hitSoundPlayed = false;
         }
 
         if (tookDamage && flickerTimer >= flickerDuration)
