@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float curHealth;
     public float maxHealth;
+    public float shownHealth;
     public bool tookDamage = false;
     private float damageTimer;
     public float invincibilityDuration;
@@ -135,7 +136,13 @@ public class PlayerMovement : MonoBehaviour
             projectileSpawner.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
 
-        healthBar.fillAmount = curHealth / maxHealth;
+        if (shownHealth > curHealth)
+        {
+            shownHealth -= 30f * Time.deltaTime;
+        }
+        else shownHealth = curHealth;
+
+        healthBar.fillAmount = shownHealth / maxHealth;
         if (tookDamage)
         {
             damageTimer += Time.deltaTime;

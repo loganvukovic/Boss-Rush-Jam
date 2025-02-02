@@ -8,6 +8,7 @@ public class BossHealthBar : MonoBehaviour
     public BossScript activeBoss;
     public float curHealth;
     public float maxHealth;
+    public float shownHealth;
     public Image healthBar;
 
     // Start is called before the first frame update
@@ -22,7 +23,13 @@ public class BossHealthBar : MonoBehaviour
         maxHealth = activeBoss.maxHealth;
         curHealth = activeBoss.curHealth;
 
-        healthBar.fillAmount = curHealth / maxHealth;
+        if (shownHealth > curHealth)
+        {
+            shownHealth -= 30f * Time.deltaTime;
+        }
+        else shownHealth = curHealth;
+
+        healthBar.fillAmount = shownHealth / maxHealth;
 
         if (activeBoss.GetComponentInParent<BossActions>().dying && activeBoss.isPuppet)
         {
