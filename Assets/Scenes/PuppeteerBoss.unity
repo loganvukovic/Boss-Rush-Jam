@@ -3012,7 +3012,7 @@ MonoBehaviour:
   followUps:
   - {fileID: 2053029478}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 1129031044}
   animationTrigger: 
@@ -3305,7 +3305,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 3
+  cooldown: 3.8
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -3330,12 +3330,12 @@ MonoBehaviour:
   followUps:
   - {fileID: 1805661186}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 1129031044}
   animationTrigger: Attack
   animationTimer: 0
-  animationTime: 0.8
+  animationTime: 0
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -11849,7 +11849,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837449161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -15549,7 +15549,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 6
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -15572,7 +15572,7 @@ MonoBehaviour:
   followUps:
   - {fileID: 971757800}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -16576,7 +16576,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513731738}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -17416,7 +17416,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 5
+  cooldown: 6
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -17439,7 +17439,7 @@ MonoBehaviour:
   followUps:
   - {fileID: 1053550669}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 0}
   animationTrigger: 
@@ -17515,7 +17515,7 @@ MonoBehaviour:
   damage: 10
   timer: 0
   firingRate: 4
-  cooldown: 3
+  cooldown: 3.8
   fireAtStart: 0
   bullet: {fileID: 3051894099085196225, guid: f15443b5ad059c149b2ec775e6db281b, type: 3}
   stage: {fileID: 356460844}
@@ -17540,12 +17540,12 @@ MonoBehaviour:
   followUps:
   - {fileID: 1182610193}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 1129031044}
   animationTrigger: Attack
   animationTimer: 0
-  animationTime: 0.8
+  animationTime: 0
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
@@ -19194,12 +19194,12 @@ MonoBehaviour:
   followUps:
   - {fileID: 263544640}
   followUpTimer: 0
-  followUpTime: 1.3
+  followUpTime: 2.1
   justFired: 0
   bossAnimator: {fileID: 1129031044}
   animationTrigger: 
   animationTimer: 0
-  animationTime: 3
+  animationTime: 0
   animating: 0
   lightningConnector1: {fileID: 0}
   lightningConnector2: {fileID: 0}
