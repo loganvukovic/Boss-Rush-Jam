@@ -3,7 +3,27 @@ guid: 5d65a80d09db4134cafefa0c55bfb619
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BaseMesh
+    second: {fileID: 2100000, guid: 6ed5cf47ddf1cb14fa289152a7c28e72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 1f793c0873d73584490911b40cfb3af5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiAmbientOcclusion1
+    second: {fileID: 2100000, guid: 2d96351aa2a7a65439587a5d31f92af7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
+    second: {fileID: 2100000, guid: 7f4b5c98692658240bf1a4fb93ecf1ba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
