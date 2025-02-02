@@ -50,10 +50,11 @@ public class BossScript : MonoBehaviour
     {
         if(curHealth <= 0)
         {
-            if (healAfterFirstPhase && curPhase == 1)
+            if (healAfterFirstPhase && curPhase == 1 && !healing)
             {
                 bossAnimator.SetTrigger("Enrage");
                 StartCoroutine(Heal());
+                healing = true;
             }
             else
             {
