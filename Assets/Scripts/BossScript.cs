@@ -100,7 +100,7 @@ public class BossScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "PlayerHB" && (!elemental || (elemental && weakness == other.GetComponentInParent<PlayerAttack>().curElement)) && !invincible)
+        if (other.tag == "PlayerHB" && (!elemental || (elemental && weakness == other.GetComponentInParent<PlayerAttack>().curElement)) && !invincible && !GetComponentInParent<BossActions>().dying)
         {
             float damage;
             if (other.GetComponent<AttackStats>() != null)

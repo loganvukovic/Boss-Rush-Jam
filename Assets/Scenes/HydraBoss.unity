@@ -3066,6 +3066,7 @@ MonoBehaviour:
   - {fileID: 1466751416}
   - {fileID: 638186852}
   - {fileID: 216802955}
+  - {fileID: 216802955}
   sideDependentSpawners: 0
   northSpawners: []
   westSpawners: []
