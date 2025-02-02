@@ -38,6 +38,7 @@ public class BossScript : MonoBehaviour
     public bool dying;
     public GameObject shield;
     public AudioSource invicAudio;
+    public Collider slamHitbox;
 
     // Start is called before the first frame update
     void Start()
@@ -186,6 +187,8 @@ public class BossScript : MonoBehaviour
         if (GetComponentInParent<FollowAndSlam>() != null)
         {
             GetComponentInParent<FollowAndSlam>().enabled = false;
+            puppetHitbox.enabled = false;
+            slamHitbox.enabled = false;
             float deathY = GetComponentInParent<CloneScript>().spawnPoint.transform.position.y - 4.5f;
             GameObject deathPoint = Instantiate(empty, new Vector3(transform.position.x, deathY, transform.position.z), transform.rotation, stage.transform);
             while (transform.parent.transform.position != deathPoint.transform.position)
