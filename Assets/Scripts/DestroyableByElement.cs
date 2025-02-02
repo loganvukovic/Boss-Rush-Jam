@@ -5,17 +5,7 @@ using UnityEngine;
 public class DestroyableByElement : MonoBehaviour
 {
     public string weakness;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioSource AudioSource;
 
     void OnTriggerStay(Collider other)
     {
@@ -24,6 +14,10 @@ public class DestroyableByElement : MonoBehaviour
             if(other.GetComponentInParent<PlayerAttack>().curElement == weakness)
             {
                 Destroy(gameObject);
+            }
+            else
+            {
+                AudioSource.Play();
             }
         }
         if (other.tag == "Bubble")
