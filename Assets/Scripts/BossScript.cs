@@ -37,6 +37,7 @@ public class BossScript : MonoBehaviour
     public GameObject stage;
     public bool dying;
     public GameObject shield;
+    public AudioSource invicAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -112,6 +113,10 @@ public class BossScript : MonoBehaviour
         else if (other.tag == "PlayerHB" && GetComponentInParent<BossActions>().dying)
         {
             other.GetComponentInParent<PlayerAttack>().Imbue(elementToGive, false);
+        }
+        else if(other.tag == "PlayerHB")
+        {
+            invicAudio.Play();
         }
     }
 
