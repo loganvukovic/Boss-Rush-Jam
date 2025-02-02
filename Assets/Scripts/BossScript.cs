@@ -170,7 +170,7 @@ public class BossScript : MonoBehaviour
     {
         bossAnimator.SetTrigger("Die");
         bossActions.dying = true;
-        foreach (BulletSpawner spawner in bossActions.spawners)
+        foreach (BulletSpawner spawner in GetComponentInParent<BossActions>().spawners)
         {
             spawner.enabled = false;
         }
@@ -188,7 +188,7 @@ public class BossScript : MonoBehaviour
         GetComponentInParent<BossActions>().dying = true;
         dying = true;
         GetComponent<Collider>().enabled = false;
-        foreach (BulletSpawner spawner in bossActions.spawners)
+        foreach (BulletSpawner spawner in GetComponentInParent<BossActions>().spawners)
         {
             spawner.enabled = false;
         }
@@ -232,7 +232,7 @@ public class BossScript : MonoBehaviour
         GetComponent<BoxCollider>().center = new Vector3(GetComponent<BoxCollider>().center.x, GetComponent<BoxCollider>().center.y - 0.7f, GetComponent<BoxCollider>().center.z);
         GetComponentInParent<BossActions>().dying = true;
         hydraManager.hydraDeaths++;
-        foreach (BulletSpawner spawner in bossActions.spawners)
+        foreach (BulletSpawner spawner in GetComponentInParent<BossActions>().spawners)
         {
             spawner.enabled = false;
         }
