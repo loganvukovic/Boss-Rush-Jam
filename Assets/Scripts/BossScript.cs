@@ -170,6 +170,10 @@ public class BossScript : MonoBehaviour
     {
         bossAnimator.SetTrigger("Die");
         bossActions.dying = true;
+        foreach (BulletSpawner spawner in bossActions.spawners)
+        {
+            spawner.enabled = false;
+        }
         yield return null; bossActions.enabled = false;
         yield return new WaitForSeconds(timeBeforeLoad);
         StartCoroutine(blackoutSquare.FadeBlackOutSquare());
