@@ -1098,7 +1098,7 @@ MonoBehaviour:
   difficultyButtons: []
   controlsMenu: {fileID: 0}
   playerMovement: {fileID: 217045719}
-  lowerDifficultyText: {fileID: 0}
+  lowerDifficultyText: {fileID: 104547492}
 --- !u!4 &166982359
 Transform:
   m_ObjectHideFlags: 0
