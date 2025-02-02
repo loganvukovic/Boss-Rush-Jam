@@ -138,6 +138,11 @@ public class BulletSpawner : MonoBehaviour
         {
             justFired = true;
 
+            if(GetComponent<AudioSource>())
+            {
+                GetComponent<AudioSource>().Play();
+            }
+
             //Bomb
             if (bulletType == BulletType.Bomb)
             {
