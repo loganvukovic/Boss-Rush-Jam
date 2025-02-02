@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -63,6 +64,7 @@ public class FollowAndSlam : MonoBehaviour
     public void FollowPlayer()
     {
         float newX = Mathf.MoveTowards(transform.position.x, playerMovement.transform.position.x, followSpeed * Time.deltaTime);
+        Debug.Log(newX);
         transform.position = new Vector3(newX, transform.position.y, transform.position.z);
     }
 
