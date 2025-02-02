@@ -17794,11 +17794,11 @@ RectTransform:
   m_Children:
   - {fileID: 1499616736}
   - {fileID: 1651760969}
-  - {fileID: 1438370067}
   - {fileID: 1123049631}
   - {fileID: 721104905}
   - {fileID: 1775485664}
   - {fileID: 1080220663}
+  - {fileID: 1438370067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -23582,6 +23582,7 @@ MonoBehaviour:
   activeBoss: {fileID: 0}
   curHealth: 0
   maxHealth: 0
+  shownHealth: 0
   healthBar: {fileID: 2051136335}
 --- !u!136 &1534287169 stripped
 CapsuleCollider:
@@ -25107,6 +25108,7 @@ MonoBehaviour:
   titleUI: []
   difficultyButtons: []
   controlsMenu: {fileID: 0}
+  playerMovement: {fileID: 6486891358943912874}
 --- !u!4 &1982461278
 Transform:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private bool isPaused;
     private bool controls;
     private bool difficulty;
+    public PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -119,17 +120,20 @@ public class GameManager : MonoBehaviour
 
     public void Pause()
     {
-        if (!isPaused)
+        if (pauseScreen != null && !playerMovement.gameOvered)
         {
-            pauseScreen.SetActive(true);
-            isPaused = true;
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            pauseScreen.SetActive(false);
-            isPaused = false;
-            Time.timeScale = 1f;
+            if (!isPaused)
+            {
+                pauseScreen.SetActive(true);
+                isPaused = true;
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                pauseScreen.SetActive(false);
+                isPaused = false;
+                Time.timeScale = 1f;
+            }
         }
     }
 

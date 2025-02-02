@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int heldKeys = 0;
 
-    private bool gameOvered;
+    [HideInInspector] public bool gameOvered;
     public HydraManager hydraManager;
     public GameObject[] healthBars;
 

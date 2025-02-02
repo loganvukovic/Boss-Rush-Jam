@@ -27381,7 +27381,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1516284445}
-  - {fileID: 958043988}
   - {fileID: 939868215}
   - {fileID: 111422532}
   - {fileID: 1763959745}
@@ -27391,6 +27390,7 @@ RectTransform:
   - {fileID: 2087387641}
   - {fileID: 2126435678}
   - {fileID: 629416839}
+  - {fileID: 958043988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -33195,6 +33195,7 @@ MonoBehaviour:
   titleUI: []
   difficultyButtons: []
   controlsMenu: {fileID: 0}
+  playerMovement: {fileID: 217045719}
 --- !u!4 &1371988436
 Transform:
   m_ObjectHideFlags: 0

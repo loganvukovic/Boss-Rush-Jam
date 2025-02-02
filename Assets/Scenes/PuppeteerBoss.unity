@@ -828,6 +828,7 @@ MonoBehaviour:
   titleUI: []
   difficultyButtons: []
   controlsMenu: {fileID: 0}
+  playerMovement: {fileID: 217045719}
 --- !u!4 &166982359
 Transform:
   m_ObjectHideFlags: 0
@@ -13724,11 +13725,11 @@ RectTransform:
   - {fileID: 396780216}
   - {fileID: 2080034474}
   - {fileID: 1516284445}
-  - {fileID: 59280667}
   - {fileID: 276220314}
   - {fileID: 679453624}
   - {fileID: 1398990874}
   - {fileID: 379744628}
+  - {fileID: 59280667}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

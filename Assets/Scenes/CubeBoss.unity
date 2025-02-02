@@ -20536,6 +20536,7 @@ MonoBehaviour:
   titleUI: []
   difficultyButtons: []
   controlsMenu: {fileID: 0}
+  playerMovement: {fileID: 1319437050}
 --- !u!4 &1720130565
 Transform:
   m_ObjectHideFlags: 0
